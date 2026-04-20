@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KAMA_PRO_CRUD_APP"
         mc:Ignorable="d"
-        Title="MainWindow1" Height="550" Width="700">
+        Title="MainWindow1" Height="550" Width="700" MinHeight="550" MinWidth="700">
     <Grid>
         <Frame x:Name="mainWindow1" NavigationUIVisibility="Hidden"/>
     </Grid>

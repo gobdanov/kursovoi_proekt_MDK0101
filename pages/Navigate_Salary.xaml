@@ -9,5 +9,29 @@
       Title="Navigate_Salary">
     <Grid>
         <Rectangle HorizontalAlignment="Left" Height="550" Fill="#f0f0f0" VerticalAlignment="Center" Width="213"/>
+        <StackPanel Width="50" Margin="0,100,650,0" HorizontalAlignment="Right" Height="300" VerticalAlignment="Top">
+            <StackPanel.Resources>
+                <Style TargetType="Image">
+                    <Setter Property="Margin" Value="0,0,0,20"/>
+                    <Setter Property="Width" Value="30"/>
+                    <Setter Property="Height" Value="30"/>
+                </Style>
+                <Style TargetType="Grid">
+                    <Setter Property="Margin" Value="0,0,0,20"/>
+                </Style>
+            </StackPanel.Resources>
+            <Grid>
+                <Image Source="/imgs/money-with-wings.png"/>
+                <Label Content="привет я вадим богданов" Height="50" Width="500" />
+            </Grid>
+            <Image Source="/imgs/hammer-and-wrench.png"/>
+            <Image Source="/imgs/file-folder.png"/>
+            <Image Source="/imgs/file-cabinet.png"/>
+            <Grid Width="40" Height="40">
+                <Image Source="/imgs/mechanic-light-skin-tone.png" Width="25" Height="25" Margin="10,5,5,10"/>
+                <Image Source="/imgs/mechanic-medium-light-skin-tone.png" Width="25" Height="25" Margin="2,10,12,6"/>
+            </Grid>
+            <Image Source="/imgs/money-with-wings.png"/>
+        </StackPanel>
     </Grid>
 </Page>

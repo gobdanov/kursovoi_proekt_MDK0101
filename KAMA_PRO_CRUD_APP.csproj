@@ -120,10 +120,20 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="imgs\pattern.png" />
+    <Resource Include="imgs\pricep_authorizing_page.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="imgs\pricep_authorizing_page.jpg" />
+    <Resource Include="hammer-and-wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgs\bar-chart.png" />
+    <Resource Include="imgs\file-cabinet.png" />
+    <Resource Include="imgs\file-folder.png" />
+    <Resource Include="imgs\hammer-and-wrench.png" />
+    <Resource Include="imgs\mechanic-light-skin-tone.png" />
+    <Resource Include="imgs\mechanic-medium-light-skin-tone.png" />
+    <Resource Include="imgs\moai.png" />
+    <Resource Include="imgs\money-with-wings.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
