@@ -5,10 +5,9 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:KAMA_PRO_CRUD_APP.pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="550" d:DesignWidth="700"
       Title="Navigate_Salary">
     <Grid>
-        <Label Content="Label123Label123Label123Label123" HorizontalAlignment="Center" Margin="0,207,0,0" VerticalAlignment="Top"/>
-
+        <Rectangle HorizontalAlignment="Left" Height="550" Fill="#f0f0f0" VerticalAlignment="Center" Width="213"/>
     </Grid>
 </Page>
