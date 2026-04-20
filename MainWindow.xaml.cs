@@ -24,8 +24,8 @@ namespace KAMA_PRO_CRUD_APP
         public MainWindow()
         {
             InitializeComponent();
-            Window init1 = this;
-            mainWindow.Navigate(new Authorizing());
+            MainWindow init = this;
+            mainWindow.Navigate(new Authorizing(this));
         }
     }
 }

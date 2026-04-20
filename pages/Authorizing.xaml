@@ -31,7 +31,7 @@
             <TextBox HorizontalAlignment="Center" Margin="0,44,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="213" Height="29" FontSize="18" Style="{StaticResource MyTextBoxStyle}"/>
             <Label Content="пароль" HorizontalAlignment="Left" Margin="32,76,0,0" VerticalAlignment="Top" FontSize="18"/>
             <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="213" Height="29" FontSize="18" Style="{StaticResource MyTextBoxStyle}" Margin="0,109,0,0"/>
-            <Button Content="войти" HorizontalAlignment="Left" Margin="92,154,0,0" VerticalAlignment="Top" Width="113" Height="32" FontSize="18" Style="{StaticResource MyButtonStyle}"/>
+            <Button Content="войти" HorizontalAlignment="Left" Click="SignIn"  Margin="92,154,0,0" VerticalAlignment="Top" Width="113" Height="32" FontSize="18" Style="{StaticResource MyButtonStyle}"/>
             <Label Margin="0,190,0,0" Foreground="#FFB2B2B2" HorizontalAlignment="Center" Width="273" Height="39" VerticalAlignment="Top" Cursor="" >
                 <TextBlock TextAlignment="Center" Text="только администратор может зарегистрировать пользователя" TextWrapping="Wrap" FontSize="11" HorizontalAlignment="Left" Width="264"/>
             </Label>

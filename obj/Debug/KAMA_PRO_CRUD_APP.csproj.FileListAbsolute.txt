@@ -18,3 +18,6 @@ C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\ob
 C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\KAMA_PRO_CRUD_APP.csproj.CoreCompileInputs.cache
 C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\KAMA_PRO_CRUD_APP.exe
 C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\KAMA_PRO_CRUD_APP.pdb
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\KAMA_PRO_CRUD_APP.exe.config
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\pages\Navigate_Salary.g.cs
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\pages\Navigate_Salary.baml

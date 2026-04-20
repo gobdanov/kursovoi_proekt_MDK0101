@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using KAMA_PRO_CRUD_APP;
+
 
 namespace KAMA_PRO_CRUD_APP.pages
 {
@@ -20,9 +22,17 @@ namespace KAMA_PRO_CRUD_APP.pages
     /// </summary>
     public partial class Authorizing : Page
     {
-        public Authorizing()
+        MainWindow mw;
+        public Authorizing(MainWindow mw)
         {
             InitializeComponent();
+            this.mw = mw;
+        }
+        private void SignIn(object sender, RoutedEventArgs e)
+        {
+            MainWindow1 mainWindow1 = new MainWindow1();
+            mainWindow1.Show();
+            mw.Close();
         }
     }
 }
