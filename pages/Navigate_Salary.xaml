@@ -7,6 +7,15 @@
       mc:Ignorable="d" 
       d:DesignHeight="550" d:DesignWidth="700"
       Title="Navigate_Salary">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/style/styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition  Width="213*"/>
@@ -15,6 +24,7 @@
         <!--фон-->
             <StackPanel Grid.ColumnSpan="1" Background="#f0f0f0"/>
         
+        <!--иконка пользователя-->
         <Grid Grid.ColumnSpan="1" Margin="10,30,0,0">
             <Rectangle HorizontalAlignment="Left" Height="46" Fill="White" VerticalAlignment="Top" Width="193" RadiusX="9.733" RadiusY="9.733"/>
             <Image HorizontalAlignment="Left" Source="/imgs/moai.png" Height="28" Margin="0,8" VerticalAlignment="Top" Width="28"/>
@@ -22,6 +32,8 @@
         </Grid>
 
         <StackPanel Grid.ColumnSpan="1" Width="213" Margin="0,100,0,0" HorizontalAlignment="Center" Height="254" VerticalAlignment="Top">
+            
+            <!--стили-->
             <StackPanel.Resources>
                 <Style TargetType="Label">
                     <Setter Property="FontSize" Value="14"/>
@@ -30,10 +42,21 @@
                     <Setter Property="Margin" Value="0,0,0,20"/>
                 </Style>
             </StackPanel.Resources>
-            <Grid>
-                <Label Content="зарплата" Margin="50,0,0,0" />
-                <Image Source="/imgs/money-with-wings.png" Margin="10,0,173,0"/>
+            
+            <!--меню-->
+            <Grid Height="40">
+                <Button>
+                    <Grid>
+                        <Image Source="/imgs/money-with-wings.png" Height="35" Width="35"/>
+                    </Grid>
+                </Button>
             </Grid>
+            <Button Style="{StaticResource NavigateMenuButtonStyle}">
+                <Grid Width="213" VerticalAlignment="Bottom">
+                    <Label Content="зарплата" HorizontalAlignment="Left" Margin="45,0,0,0"/>
+                    <Image Source="/imgs/money-with-wings.png" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+                </Grid>
+            </Button>
             <Grid>
                 <Label Content="сборка" Margin="50,0,0,0" />
                 <Image Source="/imgs/hammer-and-wrench.png" Margin="10,0,173,0"/>
