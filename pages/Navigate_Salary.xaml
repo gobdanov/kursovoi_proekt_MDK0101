@@ -8,30 +8,53 @@
       d:DesignHeight="550" d:DesignWidth="700"
       Title="Navigate_Salary">
     <Grid>
-        <Rectangle HorizontalAlignment="Left" Height="550" Fill="#f0f0f0" VerticalAlignment="Center" Width="213"/>
-        <StackPanel Width="50" Margin="0,100,650,0" HorizontalAlignment="Right" Height="300" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  Width="213*"/>
+            <ColumnDefinition Width="487*"/>
+        </Grid.ColumnDefinitions>
+        <!--фон-->
+            <StackPanel Grid.ColumnSpan="1" Background="#f0f0f0"/>
+        
+        <Grid Grid.ColumnSpan="1" Margin="10,30,0,0">
+            <Rectangle HorizontalAlignment="Left" Height="46" Fill="White" VerticalAlignment="Top" Width="193" RadiusX="9.733" RadiusY="9.733"/>
+            <Image HorizontalAlignment="Left" Source="/imgs/moai.png" Height="28" Margin="0,8" VerticalAlignment="Top" Width="28"/>
+            <Label Content="вадим богданов" FontSize="16" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="153"/>
+        </Grid>
+
+        <StackPanel Grid.ColumnSpan="1" Width="213" Margin="0,100,0,0" HorizontalAlignment="Center" Height="254" VerticalAlignment="Top">
             <StackPanel.Resources>
-                <Style TargetType="Image">
-                    <Setter Property="Margin" Value="0,0,0,20"/>
-                    <Setter Property="Width" Value="30"/>
-                    <Setter Property="Height" Value="30"/>
+                <Style TargetType="Label">
+                    <Setter Property="FontSize" Value="14"/>
                 </Style>
                 <Style TargetType="Grid">
                     <Setter Property="Margin" Value="0,0,0,20"/>
                 </Style>
             </StackPanel.Resources>
             <Grid>
-                <Image Source="/imgs/money-with-wings.png"/>
-                <Label Content="привет я вадим богданов" Height="50" Width="500" />
+                <Label Content="зарплата" Margin="50,0,0,0" />
+                <Image Source="/imgs/money-with-wings.png" Margin="10,0,173,0"/>
             </Grid>
-            <Image Source="/imgs/hammer-and-wrench.png"/>
-            <Image Source="/imgs/file-folder.png"/>
-            <Image Source="/imgs/file-cabinet.png"/>
-            <Grid Width="40" Height="40">
-                <Image Source="/imgs/mechanic-light-skin-tone.png" Width="25" Height="25" Margin="10,5,5,10"/>
-                <Image Source="/imgs/mechanic-medium-light-skin-tone.png" Width="25" Height="25" Margin="2,10,12,6"/>
+            <Grid>
+                <Label Content="сборка" Margin="50,0,0,0" />
+                <Image Source="/imgs/hammer-and-wrench.png" Margin="10,0,173,0"/>
             </Grid>
-            <Image Source="/imgs/money-with-wings.png"/>
+            <Grid>
+                <Label Content="планы" Margin="50,0,0,0" />
+                <Image Source="/imgs/file-folder.png" Margin="10,0,173,0"/>
+            </Grid>
+            <Grid>
+                <Label Content="склад" Margin="50,0,0,0" />
+                <Image Source="/imgs/file-cabinet.png" Margin="10,0,173,0"/>
+            </Grid>
+            <Grid>
+                <Label Content="сборщики" Margin="50,0,0,0" />
+                <Grid Width="40" Height="40" Margin="10,0,173,0">
+                    <Image Source="/imgs/mechanic-light-skin-tone.png" Width="25" Height="25" Margin="10,5,5,10"/>
+                    <Image Source="/imgs/mechanic-medium-light-skin-tone.png" Width="25" Height="25" Margin="2,10,12,6"/>
+                </Grid>
+            </Grid>
         </StackPanel>
+
+
     </Grid>
 </Page>
