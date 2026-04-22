@@ -7,7 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow1" Height="550" Width="700" MinHeight="550" MinWidth="700">
     <Grid>
-        <Frame x:Name="mainWindow1" NavigationUIVisibility="Hidden"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="213"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Frame x:Name="mainWindow1" Grid.Column="0" NavigationUIVisibility="Hidden"/>
+        <Frame x:Name="mainWindow2" Grid.Column="1" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>
 

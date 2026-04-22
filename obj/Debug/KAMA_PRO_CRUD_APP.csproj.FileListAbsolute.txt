@@ -21,3 +21,9 @@ C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\ob
 C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\pages\Navigate_Salary.g.cs
 C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\pages\Navigate_Salary.baml
 C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\KAMA_PRO_CRUD_APP.exe.config
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\pages\Page_Salary.g.cs
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\pages\Page_Salary.baml
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\pages\Page_Assemblage.g.cs
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\pages\Page_Assemblers.g.cs
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\pages\Page_Plan.g.cs
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\pages\Page_Storage.g.cs

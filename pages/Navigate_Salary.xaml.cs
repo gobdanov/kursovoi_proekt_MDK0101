@@ -25,5 +25,36 @@ namespace KAMA_PRO_CRUD_APP.pages
             InitializeComponent();
             
         }
+
+        private void goto_authorization_window(object sender, RoutedEventArgs e)
+        {
+            MainWindow1 mainWindow1 = new MainWindow1();
+            mainWindow1.Show();
+        }
+
+        private void goto_assemblers_page(object sender, RoutedEventArgs e)
+        {
+            mainWindow
+        }
+
+        private void goto_storage_page(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void goto_plans_page(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void goto_assemlage_page(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void goto_salary_page(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

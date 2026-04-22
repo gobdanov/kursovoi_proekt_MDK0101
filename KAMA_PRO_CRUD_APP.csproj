@@ -79,6 +79,26 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="pages\Page_Assemblage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\Page_Assemblers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\Page_Plan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\Page_Salary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\Page_Storage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="style\Styles.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -93,6 +113,21 @@
     </Compile>
     <Compile Include="pages\Navigate_Salary.xaml.cs">
       <DependentUpon>Navigate_Salary.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Page_Assemblage.xaml.cs">
+      <DependentUpon>Page_Assemblage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Page_Assemblers.xaml.cs">
+      <DependentUpon>Page_Assemblers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Page_Plan.xaml.cs">
+      <DependentUpon>Page_Plan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Page_Salary.xaml.cs">
+      <DependentUpon>Page_Salary.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Page_Storage.xaml.cs">
+      <DependentUpon>Page_Storage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -133,6 +168,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="imgs\hammer-and-wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgs\door.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

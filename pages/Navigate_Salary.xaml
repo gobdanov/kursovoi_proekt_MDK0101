@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:KAMA_PRO_CRUD_APP.pages"
       mc:Ignorable="d" 
-      d:DesignHeight="550" d:DesignWidth="700"
+      d:DesignHeight="550" d:DesignWidth="213"
       Title="Navigate_Salary">
 
     <Page.Resources>
@@ -18,21 +18,20 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition  Width="213*"/>
-            <ColumnDefinition Width="487*"/>
+            <ColumnDefinition  Width="213"/>
         </Grid.ColumnDefinitions>
         <!--фон-->
-            <StackPanel Grid.ColumnSpan="1" Background="#f0f0f0"/>
-        
+        <StackPanel Grid.ColumnSpan="1" Background="#f0f0f0"/>
+
         <!--иконка пользователя-->
-        <Grid Grid.ColumnSpan="1" Margin="10,30,0,0">
+        <Grid Grid.ColumnSpan="1" Margin="10,20,0,0" Height="520" VerticalAlignment="Top">
             <Rectangle HorizontalAlignment="Left" Height="46" Fill="White" VerticalAlignment="Top" Width="193" RadiusX="9.733" RadiusY="9.733"/>
             <Image HorizontalAlignment="Left" Source="/imgs/moai.png" Height="28" Margin="0,8" VerticalAlignment="Top" Width="28"/>
-            <Label Content="вадим богданов" FontSize="16" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="153"/>
+            <Label Content="вадим богданов" FontSize="16" HorizontalAlignment="Left" Margin="30,5,0,484" FontWeight="Bold" Width="153"/>
         </Grid>
 
-        <StackPanel Grid.ColumnSpan="1" Width="213" Margin="0,100,0,0" HorizontalAlignment="Center" Height="254" VerticalAlignment="Top">
-            
+        <StackPanel Width="213" HorizontalAlignment="Center" Height="450" VerticalAlignment="Top" Margin="0,80,0,0">
+
             <!--стили-->
             <StackPanel.Resources>
                 <Style TargetType="Label">
@@ -42,42 +41,84 @@
                     <Setter Property="Margin" Value="0,0,0,20"/>
                 </Style>
             </StackPanel.Resources>
-            
+
             <!--меню-->
             <Grid Height="40">
-                <Button>
-                    <Grid>
-                        <Image Source="/imgs/money-with-wings.png" Height="35" Width="35"/>
-                    </Grid>
-                </Button>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="53"/>
+                    <ColumnDefinition Width="160"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="/imgs/money-with-wings.png" Grid.Column="0" VerticalAlignment="Top" Height="35" Width="35" Margin="9,5,9,0" Grid.RowSpan="2"/>
+                <Label Content="зарплата" Grid.Column="1" Height=" 30" Margin="0,5,0,5" Grid.RowSpan="2"/>
             </Grid>
-            <Button Style="{StaticResource NavigateMenuButtonStyle}">
-                <Grid Width="213" VerticalAlignment="Bottom">
-                    <Label Content="зарплата" HorizontalAlignment="Left" Margin="45,0,0,0"/>
-                    <Image Source="/imgs/money-with-wings.png" HorizontalAlignment="Left" Margin="10,0,0,0"/>
-                </Grid>
-            </Button>
-            <Grid>
-                <Label Content="сборка" Margin="50,0,0,0" />
-                <Image Source="/imgs/hammer-and-wrench.png" Margin="10,0,173,0"/>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="53"/>
+                    <ColumnDefinition Width="160"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="/imgs/hammer-and-wrench.png" Grid.Column="0" VerticalAlignment="Top" Height="35" Width="35" Margin="9,5,9,0" Grid.RowSpan="2"/>
+                <Label Content="сборка" Grid.Column="1" Height=" 30" Margin="0,5,0,5" Grid.RowSpan="2"/>
             </Grid>
-            <Grid>
-                <Label Content="планы" Margin="50,0,0,0" />
-                <Image Source="/imgs/file-folder.png" Margin="10,0,173,0"/>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="53"/>
+                    <ColumnDefinition Width="160"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="/imgs/file-folder.png" Grid.Column="0" VerticalAlignment="Top" Height="35" Width="35" Margin="9,5,9,0" Grid.RowSpan="2"/>
+                <Label Content="планы" Grid.Column="1" Height=" 30" Margin="0,5,0,5" Grid.RowSpan="2"/>
             </Grid>
-            <Grid>
-                <Label Content="склад" Margin="50,0,0,0" />
-                <Image Source="/imgs/file-cabinet.png" Margin="10,0,173,0"/>
+
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="53"/>
+                    <ColumnDefinition Width="160"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="/imgs/file-cabinet.png" Grid.Column="0" VerticalAlignment="Top" Height="35" Width="35" Margin="9,5,9,0" Grid.RowSpan="2"/>
+                <Label Content="cклад" Grid.Column="1" Height=" 30" Margin="0,5,0,5" Grid.RowSpan="2"/>
             </Grid>
-            <Grid>
-                <Label Content="сборщики" Margin="50,0,0,0" />
-                <Grid Width="40" Height="40" Margin="10,0,173,0">
-                    <Image Source="/imgs/mechanic-light-skin-tone.png" Width="25" Height="25" Margin="10,5,5,10"/>
-                    <Image Source="/imgs/mechanic-medium-light-skin-tone.png" Width="25" Height="25" Margin="2,10,12,6"/>
-                </Grid>
+
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="53"/>
+                    <ColumnDefinition Width="160"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="/imgs/mechanic-light-skin-tone.png" Grid.Column="0" VerticalAlignment="Top" Height="35" Width="35" Margin="9,5,9,0" Grid.RowSpan="2"/>
+                <Label Content="cборщики" Grid.Column="1" Height=" 30" Margin="0,5,0,5" Grid.RowSpan="2"/>
+            </Grid>
+        </StackPanel>
+        <StackPanel Width="213" Height="159" VerticalAlignment="Bottom" Margin="0,0,0,-16">
+            <Grid Height="40" Margin="0,60,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="53"/>
+                    <ColumnDefinition Width="160"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="/imgs/door.png" Grid.Column="0" VerticalAlignment="Top" Height="35" Width="35" Grid.RowSpan="2"/>
+                <Label Content="выйти" Grid.Column="1" Height=" 30" Margin="0,5,0,5" Grid.RowSpan="2"/>
             </Grid>
         </StackPanel>
 
+        <StackPanel Grid.ColumnSpan="1" Margin="0,80,0,0">
+            <!--КНОПКИ-->
+            <Grid Height="40">
+                <Button Click="goto_salary_page" Style="{StaticResource NavigateMenuButtonStyle}"/>
+            </Grid>
+            <Grid Height="40" Margin="0,21,0,0"  Opacity="0.5">
+                <Button Click="goto_assemlage_page" Style="{StaticResource NavigateMenuButtonStyle}"/>
+            </Grid>
+            <Grid Height="40" Margin="0,21,0,0"  Opacity="0.5">
+                <Button Click="goto_plans_page" Style="{StaticResource NavigateMenuButtonStyle}"/>
+            </Grid>
+            <Grid Height="40" Margin="0,21,0,0"  Opacity="0.5">
+                <Button Click="goto_storage_page" Style="{StaticResource NavigateMenuButtonStyle}"/>
+            </Grid >
+            <Grid Height="40" Margin="0,21,0,0"  Opacity="0.5">
+                <Button Click="goto_assemblers_page" Style="{StaticResource NavigateMenuButtonStyle}"/>
+            </Grid>
+        </StackPanel>
+
+        <StackPanel Width="213" Height="159" VerticalAlignment="Bottom">
+            <Button Height="40" Margin="0,75,0,0" Opacity="0.5" Click="goto_authorization_window" Style="{StaticResource NavigateMenuButtonStyle} "/>
+        </StackPanel>
 
     </Grid>
 </Page>

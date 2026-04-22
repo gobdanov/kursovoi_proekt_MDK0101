@@ -10,21 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
-using KAMA_PRO_CRUD_APP.pages;
 
-namespace KAMA_PRO_CRUD_APP
+namespace KAMA_PRO_CRUD_APP.pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow1.xaml
+    /// Логика взаимодействия для Page_Assemblage.xaml
     /// </summary>
-    public partial class MainWindow1 : Window
+    public partial class Page_Assemblage : Page
     {
-        public MainWindow1()
+        public Page_Assemblage()
         {
             InitializeComponent();
-            mainWindow1.Navigate(new Navigate_Salary());
-            mainWindow2.Navigate(new Page_Salary());
         }
     }
 }
