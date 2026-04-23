@@ -9,11 +9,42 @@
       Title="Page_Salary">
 
     <Grid>
-        <StackPanel>
-            <Label Content="Salary" HorizontalAlignment="Left" Margin="154,98,0,0" VerticalAlignment="Top"/>
-            <Label Content="Salary" HorizontalAlignment="Left" Margin="154,98,0,0" VerticalAlignment="Top"/>
-            <Label Content="Salary" HorizontalAlignment="Left" Margin="154,98,0,0" VerticalAlignment="Top"/>
-            <Label Content="Salary" HorizontalAlignment="Left" Margin="154,98,0,0" VerticalAlignment="Top"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="150*"/>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="200*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="350*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.ColumnSpan="2" Grid.RowSpan="5">
+            <Label Content="зарплата для пользователя вадим благовещенск" HorizontalAlignment="Left"  VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+            <Label Content="за период 20.04.26-27.04.26" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         </StackPanel>
+
+        <Border Grid.Column="0" Margin="5,5,5,5" Grid.Row="1" CornerRadius="20" Background="#f0f0f0">
+            <StackPanel>
+                <Label Content="сделка:" FontWeight="Bold"/>
+                <Label Content="х4 2513"/>
+                <Label Content="х2 3015"/>
+                <Label Content="х8 3515"/>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Column="0" Margin="5,5,5,5" Grid.Row="2" Background="#f0f0f0" CornerRadius="20">
+            <StackPanel>
+                <Label Content="сделка:" FontWeight="Bold"/>
+                <Label Content="12,5 ч"/>
+            </StackPanel>
+        </Border>
+
+        <Rectangle Grid.Column="0" Margin="5,5,5,5" Grid.Row="3" Fill="#f0f0f0" RadiusX="20" RadiusY="20">
+        </Rectangle>
+
+        <Rectangle Grid.Column="1" Margin="5,5,5,5" Grid.Row="1" Grid.RowSpan="3" Fill="#f0f0f0" RadiusX="20" RadiusY="20">
+        </Rectangle>
     </Grid>
 </Page>
