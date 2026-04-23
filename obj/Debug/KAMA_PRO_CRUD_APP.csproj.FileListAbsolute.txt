@@ -27,3 +27,7 @@ C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\ob
 C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\pages\Page_Assemblers.g.cs
 C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\pages\Page_Plan.g.cs
 C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\pages\Page_Storage.g.cs
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\pages\Page_Assemblage.baml
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\pages\Page_Assemblers.baml
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\pages\Page_Plan.baml
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP\KAMA_PRO_CRUD_APP\obj\Debug\pages\Page_Storage.baml

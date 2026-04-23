@@ -20,11 +20,18 @@ namespace KAMA_PRO_CRUD_APP
     /// </summary>
     public partial class MainWindow1 : Window
     {
+        public static MainWindow1 mainWindow1;
+        public static Frame frame1_out;
+        public static Frame frame2_out;
+
         public MainWindow1()
         {
             InitializeComponent();
-            mainWindow1.Navigate(new Navigate_Salary());
-            mainWindow2.Navigate(new Page_Salary());
+            mainWindow1 = this;
+            frame1_out = frame1;
+            frame2_out = frame2;
+            frame1.Navigate(new Navigate_Salary());
+            frame2.Navigate(new Page_Salary());
         }
     }
 }

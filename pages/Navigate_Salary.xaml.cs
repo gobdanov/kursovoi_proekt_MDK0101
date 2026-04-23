@@ -23,38 +23,39 @@ namespace KAMA_PRO_CRUD_APP.pages
         public Navigate_Salary()
         {
             InitializeComponent();
-            
         }
 
         private void goto_authorization_window(object sender, RoutedEventArgs e)
         {
-            MainWindow1 mainWindow1 = new MainWindow1();
-            mainWindow1.Show();
+            
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            MainWindow1.mainWindow1.Close();
         }
 
         private void goto_assemblers_page(object sender, RoutedEventArgs e)
         {
-            mainWindow
+            MainWindow1.frame2_out.Navigate(new pages.Page_Assemblers());
         }
 
         private void goto_storage_page(object sender, RoutedEventArgs e)
         {
-
+            MainWindow1.frame2_out.Navigate(new pages.Page_Storage());
         }
 
         private void goto_plans_page(object sender, RoutedEventArgs e)
         {
-
+            MainWindow1.frame2_out.Navigate(new pages.Page_Plan());
         }
 
         private void goto_assemlage_page(object sender, RoutedEventArgs e)
         {
-
+            MainWindow1.frame2_out.Navigate(new pages.Page_Assemblage());
         }
 
         private void goto_salary_page(object sender, RoutedEventArgs e)
         {
-
+            MainWindow1.frame2_out.Navigate(new pages.Page_Salary());
         }
     }
 }

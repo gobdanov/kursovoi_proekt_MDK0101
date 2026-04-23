@@ -21,11 +21,12 @@ namespace KAMA_PRO_CRUD_APP
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static MainWindow mainWindow;
         public MainWindow()
         {
             InitializeComponent();
-            MainWindow init = this;
-            mainWindow.Navigate(new Authorizing(this));
+            mainWindow = this;
+            frame0.Navigate(new Authorizing(this));
         }
     }
 }

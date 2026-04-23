@@ -11,8 +11,8 @@
             <ColumnDefinition Width="213"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Frame x:Name="mainWindow1" Grid.Column="0" NavigationUIVisibility="Hidden"/>
-        <Frame x:Name="mainWindow2" Grid.Column="1" NavigationUIVisibility="Hidden"/>
+        <Frame x:Name="frame1" Grid.Column="0" NavigationUIVisibility="Hidden"/>
+        <Frame x:Name="frame2" Grid.Column="1" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>
 

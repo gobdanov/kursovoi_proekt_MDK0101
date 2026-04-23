@@ -99,7 +99,7 @@
 
         <StackPanel Grid.ColumnSpan="1" Margin="0,80,0,0">
             <!--КНОПКИ-->
-            <Grid Height="40">
+            <Grid Height="40" Opacity="0.5">
                 <Button Click="goto_salary_page" Style="{StaticResource NavigateMenuButtonStyle}"/>
             </Grid>
             <Grid Height="40" Margin="0,21,0,0"  Opacity="0.5">
@@ -117,7 +117,7 @@
         </StackPanel>
 
         <StackPanel Width="213" Height="159" VerticalAlignment="Bottom">
-            <Button Height="40" Margin="0,75,0,0" Opacity="0.5" Click="goto_authorization_window" Style="{StaticResource NavigateMenuButtonStyle} "/>
+            <Button Height="40" Margin="0,75,0,0" Opacity="0.5" Click="goto_authorization_window" Style="{StaticResource NavigateMenuButtonStyle}"/>
         </StackPanel>
 
     </Grid>
