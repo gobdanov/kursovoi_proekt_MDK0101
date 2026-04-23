@@ -23,6 +23,10 @@ namespace KAMA_PRO_CRUD_APP.pages
         public Page_Assemblers()
         {
             InitializeComponent();
+            stackpanel.Children.Add(new items.item_assembler { Margin = new Thickness(0, 10, 0, 0) });
+            stackpanel.Children.Add(new items.item_assembler { Margin = new Thickness(0, 10, 0, 0) });
+            stackpanel.Children.Add(new items.item_assembler { Margin = new Thickness(0, 10, 0, 0) });
+            stackpanel.Children.Add(new items.item_assembler { Margin = new Thickness(0, 10, 0, 0) });
         }
     }
 }

@@ -59,6 +59,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="items\item_assembler.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -69,6 +73,9 @@
     </Compile>
     <Compile Include="items\item_assemblage.xaml.cs">
       <DependentUpon>item_assemblage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="items\item_assembler.xaml.cs">
+      <DependentUpon>item_assembler.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -181,6 +188,18 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="contexts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgs\avatars\alien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgs\avatars\mechanic-body.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgs\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgs\pencil.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

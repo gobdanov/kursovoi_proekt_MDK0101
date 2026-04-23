@@ -5,9 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:KAMA_PRO_CRUD_APP.items"
              mc:Ignorable="d" 
-             d:DesignHeight="29" d:DesignWidth="155">
+             d:DesignHeight="40" d:DesignWidth="300">
     <Grid>
-        <Border HorizontalAlignment="Left" Height="29" Background="Gold" VerticalAlignment="Top" Width="155" CornerRadius="10">
+        <Border HorizontalAlignment="Center" VerticalAlignment="Center" Height="29" Background="#ffffff" Width="270" CornerRadius="10">
             <Label Content="123"/>
         </Border>
 

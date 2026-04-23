@@ -8,9 +8,43 @@
       d:DesignHeight="550" d:DesignWidth="487"
       Title="Page_Plan">
 
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/style/styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
     <Grid>
-        <StackPanel>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="323*"/>
+            <ColumnDefinition Width="164*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Grid.Row="0" Margin="0,0,0,144" Grid.RowSpan="2">
+            <Label Content="список планов" Margin="0,20,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
         </StackPanel>
+        <Border Background="#f0f0f0"  Margin="5,5,5,5" CornerRadius="20" Grid.Column="0" Grid.Row="1"  Grid.RowSpan="2">
+            <StackPanel x:Name="parent_Border">
+
+            </StackPanel>
+        </Border>
+        <Button Grid.Column="1" Content="добавить" Style="{StaticResource ButtonStyle2}" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="112" Height="30"/>
+        <StackPanel Grid.Column="2" Grid.Row="2" Grid.RowSpan="2"/>
+        <StackPanel Grid.Row="3">
+            <Label Content="список планов по приоритетности сборки:" HorizontalAlignment="Left"  VerticalAlignment="Top" FontWeight="Bold"/>
+            <Label Content="1. казань (12.02.26)" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+            <Label Content="2. пермь (27.01.26)" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+            <Label Content="3. нижний новгород (21.01.26)" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+        </StackPanel>
+        
+
     </Grid>
 </Page>

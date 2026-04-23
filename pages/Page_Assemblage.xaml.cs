@@ -23,9 +23,10 @@ namespace KAMA_PRO_CRUD_APP.pages
         public Page_Assemblage()
         {
             InitializeComponent();
-            parent_Border.Children.Add(new items.item_assemblage());
-            parent_Border.Children.Add(new items.item_assemblage());
-            parent_Border.Children.Add(new items.item_assemblage());
+            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
+            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
+            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
+            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
         }
     }
 }

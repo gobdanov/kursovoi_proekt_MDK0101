@@ -86,7 +86,7 @@
                 <Label Content="cборщики" Grid.Column="1" Height=" 30" Margin="0,5,0,5" Grid.RowSpan="2"/>
             </Grid>
         </StackPanel>
-        <StackPanel Width="213" Height="159" VerticalAlignment="Bottom" Margin="0,0,0,-16">
+        <StackPanel Width="213" Height="159" VerticalAlignment="Bottom" Margin="0,0,0,-50">
             <Grid Height="40" Margin="0,60,0,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="53"/>
@@ -117,7 +117,7 @@
         </StackPanel>
 
         <StackPanel Width="213" Height="159" VerticalAlignment="Bottom">
-            <Button Height="40" Margin="0,75,0,0" Opacity="0.5" Click="goto_authorization_window" Style="{StaticResource NavigateMenuButtonStyle}"/>
+            <Button Height="40" Opacity="0.5" Click="goto_authorization_window" Margin="0,108,0,0" Style="{StaticResource NavigateMenuButtonStyle}"/>
         </StackPanel>
 
     </Grid>
