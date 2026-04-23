@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="KAMA_PRO_CRUD_APP.items.item_assemblage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KAMA_PRO_CRUD_APP.items"
+             mc:Ignorable="d" 
+             d:DesignHeight="29" d:DesignWidth="155">
+    <Grid>
+        <Border HorizontalAlignment="Left" Height="29" Background="Gold" VerticalAlignment="Top" Width="155" CornerRadius="10">
+            <Label Content="123"/>
+        </Border>
+
+    </Grid>
+</UserControl>

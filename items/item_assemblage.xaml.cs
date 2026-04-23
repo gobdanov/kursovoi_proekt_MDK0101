@@ -13,19 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace KAMA_PRO_CRUD_APP.pages
+namespace KAMA_PRO_CRUD_APP.items
 {
     /// <summary>
-    /// Логика взаимодействия для Page_Assemblage.xaml
+    /// Логика взаимодействия для item_assemblage.xaml
     /// </summary>
-    public partial class Page_Assemblage : Page
+    public partial class item_assemblage : UserControl
     {
-        public Page_Assemblage()
+        public item_assemblage()
         {
             InitializeComponent();
-            parent_Border.Children.Add(new items.item_assemblage());
-            parent_Border.Children.Add(new items.item_assemblage());
-            parent_Border.Children.Add(new items.item_assemblage());
         }
     }
 }

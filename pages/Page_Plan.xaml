@@ -10,10 +10,7 @@
 
     <Grid>
         <StackPanel>
-            <Label Content="Plan" HorizontalAlignment="Left" Margin="154,98,0,0" VerticalAlignment="Top"/>
-            <Label Content="Plan" HorizontalAlignment="Left" Margin="154,98,0,0" VerticalAlignment="Top"/>
-            <Label Content="Plan" HorizontalAlignment="Left" Margin="154,98,0,0" VerticalAlignment="Top"/>
-            <Label Content="Plan" HorizontalAlignment="Left" Margin="154,98,0,0" VerticalAlignment="Top"/>
+            
         </StackPanel>
     </Grid>
 </Page>
