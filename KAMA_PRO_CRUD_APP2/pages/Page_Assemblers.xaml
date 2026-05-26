@@ -1,0 +1,36 @@
+﻿<Page x:Class="KAMA_PRO_CRUD_APP.pages.Page_Assemblers"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KAMA_PRO_CRUD_APP.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="487"
+      Title="Page_Assemblers">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="150*"/>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="200*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="350*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <Label Content="сборщики"  HorizontalAlignment="Left" Margin="0,20,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        </StackPanel>
+
+        <Border Margin="5,5,5,5" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="3" CornerRadius="20" Background="#f0f0f0">
+            <ScrollViewer>
+                <StackPanel x:Name="stackpanel">
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</Page>
