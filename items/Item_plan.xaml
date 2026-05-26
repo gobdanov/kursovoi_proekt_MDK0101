@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="KAMA_PRO_CRUD_APP.items.Item_plan"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KAMA_PRO_CRUD_APP.items"
+             mc:Ignorable="d" 
+             d:DesignHeight="60" d:DesignWidth="274">
+    <Grid>
+        <Border Background="#ffffff" CornerRadius="20" Margin="5,5,5,5"/>
+        <Grid Margin="5,5,5,5">
+            <Label Content="пермь" Margin="20,0,0,0" FontSize="20"  VerticalAlignment="Center"/>
+            <Label Content="всего: 48" Margin="0,0,20,0" FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+            <Label Content="собрано: 24" Margin="0,0,20,0" FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+
+        </Grid>
+
+    </Grid>
+</UserControl>

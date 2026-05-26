@@ -23,6 +23,15 @@ namespace KAMA_PRO_CRUD_APP.pages
         public Page_Storage()
         {
             InitializeComponent();
+            parent.Children.Add(new items.item_storage("дышло__чду", 0));
+            parent.Children.Add(new items.item_storage("дышло__чдш", 0));
+            parent.Children.Add(new items.item_storage("дышло__дду", 0));
+            parent.Children.Add(new items.item_storage("рессора__тл", 0));
+            parent.Children.Add(new items.item_storage("рессора__чл", 0));
+            parent.Children.Add(new items.item_storage("амортизатор", 0));
+            parent.Children.Add(new items.item_storage("удлинитель__у", 0));
+            parent.Children.Add(new items.item_storage("удлинитель__ш", 0));
+            parent.Children.Add(new items.item_storage("проводка", 0));
         }
     }
 }

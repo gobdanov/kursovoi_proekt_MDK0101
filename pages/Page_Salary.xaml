@@ -21,17 +21,19 @@
             <ColumnDefinition Width="350*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.ColumnSpan="2" Grid.RowSpan="5">
-            <Label Content="зарплата для пользователя вадим благовещенск" HorizontalAlignment="Left"  VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
-            <Label Content="за период 20.04.26-27.04.26" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label Content="зарплата для пользователя вадим благовещенск" HorizontalAlignment="Left" Margin="0,20,0,0" VerticalAlignment="Center" FontWeight="Bold" FontSize="14"/>
+            <Label Content="за период 20.04.26-27.04.26" HorizontalAlignment="Left" Margin="0,-5,0,0" VerticalAlignment="Top"/>
         </StackPanel>
 
         <Border Grid.Column="0" Margin="5,5,5,5" Grid.Row="1" CornerRadius="20" Background="#f0f0f0">
-            <StackPanel Margin="10,0,0,0">
-                <Label Content="сделка:" FontWeight="Bold"/>
-                <Label Content="х4 2513"/>
-                <Label Content="х2 3015"/>
-                <Label Content="х8 3515"/>
-            </StackPanel>
+            <ScrollViewer Margin="0,0,15,0">
+                <StackPanel Margin="10,0,0,0">
+                    <Label Content="сделка:" FontWeight="Bold"/>
+                    <Label Content="х4 2513"/>
+                    <Label Content="х2 3015"/>
+                    <Label Content="х8 3515"/>
+                </StackPanel>
+            </ScrollViewer>
         </Border>
 
         <Border Grid.Column="0" Margin="5,5,5,5" Grid.Row="2" Background="#f0f0f0" CornerRadius="20">
@@ -49,12 +51,14 @@
         </Border>
 
         <Border Grid.Column="1" Margin="5,5,5,5" Grid.Row="1" Grid.RowSpan="3" Background="#f0f0f0" CornerRadius="20">
-            <StackPanel Margin="10,0,0,0">
-                <Label Content="прошлые выплаты:" FontWeight="Bold"/>
-                <Label Content="03.02.26 - 18000р (21.01.26-27.01.26)  "/>
-                <Label Content="25.01.26 - 18000р (14.01.26-20.01.26)"/>
-                <Label Content="18.01.26 - 18000р (07.01.26-13.01.26)"/>
-            </StackPanel>
+            <ScrollViewer Margin="0,0,15,0">
+                <StackPanel Margin="10,0,0,0">
+                    <Label Content="прошлые выплаты:" FontWeight="Bold"/>
+                    <Label Content="03.02.26 - 18000р (21.01.26-27.01.26)  "/>
+                    <Label Content="25.01.26 - 18000р (14.01.26-20.01.26)"/>
+                    <Label Content="18.01.26 - 18000р (07.01.26-13.01.26)"/>
+                </StackPanel>
+            </ScrollViewer>
         </Border>
     </Grid>
 </Page>

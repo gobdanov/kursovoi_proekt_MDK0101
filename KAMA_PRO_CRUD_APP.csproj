@@ -63,6 +63,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="items\Item_plan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="items\item_storage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -76,6 +84,12 @@
     </Compile>
     <Compile Include="items\item_assembler.xaml.cs">
       <DependentUpon>item_assembler.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="items\Item_plan.xaml.cs">
+      <DependentUpon>Item_plan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="items\item_storage.xaml.cs">
+      <DependentUpon>item_storage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
