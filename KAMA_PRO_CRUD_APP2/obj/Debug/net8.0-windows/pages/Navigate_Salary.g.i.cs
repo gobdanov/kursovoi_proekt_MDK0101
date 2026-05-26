@@ -53,7 +53,7 @@ namespace KAMA_PRO_CRUD_APP.pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/KAMA_PRO_CRUD_APP2;component/pages/navigate_salary.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/KAMA_PRO_CRUD_APP2;V1.0.0.0;component/pages/navigate_salary.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\pages\Navigate_Salary.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

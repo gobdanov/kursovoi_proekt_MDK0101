@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KAMA_PRO_CRUD_APP2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8f96ad9a6f9f18b8d97b517961c25be2660ff5a")]
 [assembly: System.Reflection.AssemblyProductAttribute("KAMA_PRO_CRUD_APP2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KAMA_PRO_CRUD_APP2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
