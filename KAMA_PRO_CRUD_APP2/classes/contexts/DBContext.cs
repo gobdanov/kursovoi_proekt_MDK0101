@@ -77,10 +77,6 @@ namespace KAMA_PRO_CRUD_APP2.classes.contexts
                 .HasOne<Packs>()
                 .WithMany()
                 .HasForeignKey(PT => PT.Pack);
-
-
         }
-
-
     }
 }

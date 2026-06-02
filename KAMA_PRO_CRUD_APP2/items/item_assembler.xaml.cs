@@ -24,5 +24,19 @@ namespace KAMA_PRO_CRUD_APP.items
         {
             InitializeComponent();
         }
+
+        private void delete_user(object sender, RoutedEventArgs e)
+        {
+            var res = MessageBox.Show("вы действительно хотите удалить пользователя? отменить это действие будет невозможно", "Предупреждение", MessageBoxButton.YesNo);
+            if (res == MessageBoxResult.Yes)
+            {
+                MessageBox.Show("удаление пользователя...");
+            }
+        }
+
+        private void edit_user(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("изменение данных пользователя...");
+        }
     }
 }

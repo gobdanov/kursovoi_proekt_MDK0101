@@ -11,11 +11,16 @@
   <ItemGroup>
     <None Remove="imgs\avatars\mechanic-body.png" />
     <None Remove="imgs\bar-chart.png" />
+    <None Remove="imgs\camera.png" />
+    <None Remove="imgs\car.png" />
+    <None Remove="imgs\casino.png" />
+    <None Remove="imgs\city.png" />
     <None Remove="imgs\cross.png" />
     <None Remove="imgs\door.png" />
     <None Remove="imgs\file-cabinet.png" />
     <None Remove="imgs\file-folder.png" />
     <None Remove="imgs\hammer-and-wrench.png" />
+    <None Remove="imgs\left-arrow.png" />
     <None Remove="imgs\mechanic-light-skin-tone.png" />
     <None Remove="imgs\mechanic-medium-light-skin-tone.png" />
     <None Remove="imgs\moai.png" />
@@ -31,6 +36,12 @@
     <Resource Include="imgs\bar-chart.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="imgs\camera.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="imgs\car.png" />
+    <Resource Include="imgs\casino.png" />
+    <Resource Include="imgs\city.png" />
     <Resource Include="imgs\cross.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -44,6 +55,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="imgs\hammer-and-wrench.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="imgs\left-arrow.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="imgs\mechanic-light-skin-tone.png">

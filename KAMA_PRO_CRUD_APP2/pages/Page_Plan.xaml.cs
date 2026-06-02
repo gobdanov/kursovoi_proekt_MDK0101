@@ -27,5 +27,10 @@ namespace KAMA_PRO_CRUD_APP.pages
             parent_Border.Children.Add(new items.Item_plan());
             parent_Border.Children.Add(new items.Item_plan());
         }
+
+        private void add_plan(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("добавление плана...");
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KAMA_PRO_CRUD_APP2.pages.subpages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -48,6 +49,11 @@ namespace KAMA_PRO_CRUD_APP.pages
             cmbbx_trlr.SelectedIndex = 0;
 
 
+        }
+
+        private void goto_Add_Assemblage(object sender, RoutedEventArgs e)
+        {
+            MainWindow1.frame2_out.Navigate(new Page_Add_Assemblage());
         }
     }
 }

@@ -3,6 +3,66 @@
   "WorkspaceRootPath": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\items\\item_assemblage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\items\\item_assemblage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\items\\item_assembler.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\items\\item_assembler.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\items\\item_assembler.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\items\\item_assembler.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\pages\\subpages\\page_add_assemblage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\pages\\subpages\\page_add_assemblage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\pages\\page_assemblage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\pages\\page_assemblage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\items\\item_add_assemblage_trailer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\items\\item_add_assemblage_trailer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\items\\item_add_assemblage_trailer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\items\\item_add_assemblage_trailer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\pages\\subpages\\page_add_assemblage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\pages\\subpages\\page_add_assemblage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\pages\\navigate_salary.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\pages\\navigate_salary.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\pages\\navigate_salary.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\pages\\navigate_salary.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\style\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\style\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\pages\\page_assemblers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\pages\\page_assemblers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\pages\\page_assemblage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\pages\\page_assemblage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\pages\\page_plan.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\pages\\page_plan.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\pages\\page_plan.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\pages\\page_plan.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\classes\\contexts\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\classes\\contexts\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,32 +99,16 @@
       "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\classes\\models\\plans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\pages\\navigate_salary.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\pages\\navigate_salary.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\pages\\authorizing.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\pages\\authorizing.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\pages\\page_assemblers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\pages\\page_assemblers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\pages\\page_storage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\pages\\page_storage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\pages\\page_plan.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\pages\\page_plan.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\pages\\page_salary.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\pages\\page_salary.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\pages\\page_assemblage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\pages\\page_assemblage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -73,10 +117,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\pages\\navigate_salary.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|solutionrelative:kama_pro_crud_app2\\pages\\navigate_salary.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{528A5C41-A64F-4701-B6FF-F70BDBC5C7FC}|KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2.csproj|c:\\users\\vadim_blagoveshensk\\source\\repos\\kama_pro_crud_app2\\kama_pro_crud_app2\\pages\\authorizing.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -111,118 +151,113 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DBContext.cs",
-              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\contexts\\DBContext.cs",
-              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\classes\\contexts\\DBContext.cs",
-              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\contexts\\DBContext.cs",
-              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\classes\\contexts\\DBContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T15:24:29.275Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Plan_linkto_Trailer.cs",
-              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Plan_linkto_Trailer.cs",
-              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\classes\\models\\Plan_linkto_Trailer.cs",
-              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Plan_linkto_Trailer.cs",
-              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\classes\\models\\Plan_linkto_Trailer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T14:45:50.179Z",
+              "Title": "item_assemblage.xaml",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\items\\item_assemblage.xaml",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\items\\item_assemblage.xaml",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\items\\item_assemblage.xaml",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\items\\item_assemblage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-02T10:51:49.475Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Packs.cs",
-              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Packs.cs",
-              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\classes\\models\\Packs.cs",
-              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Packs.cs",
-              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\classes\\models\\Packs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "item_assembler.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\items\\item_assembler.xaml.cs",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\items\\item_assembler.xaml.cs",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\items\\item_assembler.xaml.cs",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\items\\item_assembler.xaml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwCYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T14:45:45.969Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Components.cs",
-              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Components.cs",
-              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\classes\\models\\Components.cs",
-              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Components.cs",
-              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\classes\\models\\Components.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T14:40:55.37Z",
+              "WhenOpened": "2026-06-01T15:58:37.431Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Component_linkto_Trailer.cs",
-              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Component_linkto_Trailer.cs",
-              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\classes\\models\\Component_linkto_Trailer.cs",
-              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Component_linkto_Trailer.cs",
-              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\classes\\models\\Component_linkto_Trailer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T14:40:54.661Z",
+              "Title": "Page_Assemblage.xaml",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Page_Assemblage.xaml",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\pages\\Page_Assemblage.xaml",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Page_Assemblage.xaml",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\pages\\Page_Assemblage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-26T14:51:47.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Page_Add_Assemblage.xaml",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\subpages\\Page_Add_Assemblage.xaml",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\pages\\subpages\\Page_Add_Assemblage.xaml",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\subpages\\Page_Add_Assemblage.xaml",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\pages\\subpages\\Page_Add_Assemblage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-01T11:21:41.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "item_assembler.xaml",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\items\\item_assembler.xaml",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\items\\item_assembler.xaml",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\items\\item_assembler.xaml",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\items\\item_assembler.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-01T15:53:55.011Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Assemblers.cs",
-              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Assemblers.cs",
-              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\classes\\models\\Assemblers.cs",
-              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Assemblers.cs",
-              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\classes\\models\\Assemblers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "item_add_assemblage_trailer.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\items\\item_add_assemblage_trailer.xaml.cs",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\items\\item_add_assemblage_trailer.xaml.cs",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\items\\item_add_assemblage_trailer.xaml.cs",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\items\\item_add_assemblage_trailer.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwCMAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T14:40:52.866Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Assemblages.cs",
-              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Assemblages.cs",
-              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\classes\\models\\Assemblages.cs",
-              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Assemblages.cs",
-              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\classes\\models\\Assemblages.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T14:40:53.098Z",
+              "WhenOpened": "2026-06-01T14:51:18.28Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Trailers.cs",
-              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Trailers.cs",
-              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\classes\\models\\Trailers.cs",
-              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Trailers.cs",
-              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\classes\\models\\Trailers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Title": "Page_Add_Assemblage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\subpages\\Page_Add_Assemblage.xaml.cs",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\pages\\subpages\\Page_Add_Assemblage.xaml.cs",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\subpages\\Page_Add_Assemblage.xaml.cs",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\pages\\subpages\\Page_Add_Assemblage.xaml.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAYwF0AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T14:45:57.337Z",
+              "WhenOpened": "2026-06-01T11:21:56.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "item_add_assemblage_trailer.xaml",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\items\\item_add_assemblage_trailer.xaml",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\items\\item_add_assemblage_trailer.xaml",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\items\\item_add_assemblage_trailer.xaml",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\items\\item_add_assemblage_trailer.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-01T11:51:24.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Plans.cs",
-              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Plans.cs",
-              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\classes\\models\\Plans.cs",
-              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Plans.cs",
-              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\classes\\models\\Plans.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAsAAAAAAAAAA==",
+              "Title": "Navigate_Salary.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Navigate_Salary.xaml.cs",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\pages\\Navigate_Salary.xaml.cs",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Navigate_Salary.xaml.cs",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\pages\\Navigate_Salary.xaml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAawDUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T14:45:54.121Z",
+              "WhenOpened": "2026-05-26T14:46:06.024Z",
               "EditorCaption": ""
             },
             {
@@ -239,36 +274,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Page_Storage.xaml",
-              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Page_Storage.xaml",
-              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\pages\\Page_Storage.xaml",
-              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Page_Storage.xaml",
-              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\pages\\Page_Storage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-26T14:51:59.096Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Authorizing.xaml",
-              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Authorizing.xaml",
-              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\pages\\Authorizing.xaml",
-              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Authorizing.xaml",
-              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\pages\\Authorizing.xaml",
+              "Title": "Styles.xaml",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\style\\Styles.xaml",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\style\\Styles.xaml",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\style\\Styles.xaml",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\style\\Styles.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-26T14:46:47.924Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Page_Assemblage.xaml",
-              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Page_Assemblage.xaml",
-              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\pages\\Page_Assemblage.xaml",
-              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Page_Assemblage.xaml",
-              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\pages\\Page_Assemblage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-26T14:51:47.948Z"
+              "WhenOpened": "2026-06-02T10:28:01.456Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -283,14 +297,27 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Page_Assemblage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Page_Assemblage.xaml.cs",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\pages\\Page_Assemblage.xaml.cs",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Page_Assemblage.xaml.cs",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\pages\\Page_Assemblage.xaml.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAADAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T11:23:20.989Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "Page_Salary.xaml",
-              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Page_Salary.xaml",
-              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\pages\\Page_Salary.xaml",
-              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Page_Salary.xaml",
-              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\pages\\Page_Salary.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-26T14:51:54.579Z"
+              "Title": "Page_Plan.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Page_Plan.xaml.cs",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\pages\\Page_Plan.xaml.cs",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Page_Plan.xaml.cs",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\pages\\Page_Plan.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAIwBsAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T15:52:55.528Z"
             },
             {
               "$type": "Document",
@@ -301,23 +328,153 @@
               "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Page_Plan.xaml",
               "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\pages\\Page_Plan.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-26T14:51:55.924Z"
+              "WhenOpened": "2026-05-26T14:51:55.924Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Navigate_Salary.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Navigate_Salary.xaml.cs",
-              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\pages\\Navigate_Salary.xaml.cs",
-              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Navigate_Salary.xaml.cs",
-              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\pages\\Navigate_Salary.xaml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAIA2wB8AAAAMAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "DBContext.cs",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\contexts\\DBContext.cs",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\classes\\contexts\\DBContext.cs",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\contexts\\DBContext.cs",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\classes\\contexts\\DBContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T14:46:06.024Z"
+              "WhenOpened": "2026-05-26T15:24:29.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Packs.cs",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Packs.cs",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\classes\\models\\Packs.cs",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Packs.cs",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\classes\\models\\Packs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T14:45:45.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Assemblages.cs",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Assemblages.cs",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\classes\\models\\Assemblages.cs",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Assemblages.cs",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\classes\\models\\Assemblages.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T14:40:53.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Assemblers.cs",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Assemblers.cs",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\classes\\models\\Assemblers.cs",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Assemblers.cs",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\classes\\models\\Assemblers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T14:40:52.866Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
+              "Title": "Component_linkto_Trailer.cs",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Component_linkto_Trailer.cs",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\classes\\models\\Component_linkto_Trailer.cs",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Component_linkto_Trailer.cs",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\classes\\models\\Component_linkto_Trailer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T14:40:54.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Components.cs",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Components.cs",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\classes\\models\\Components.cs",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Components.cs",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\classes\\models\\Components.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T14:40:55.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Plan_linkto_Trailer.cs",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Plan_linkto_Trailer.cs",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\classes\\models\\Plan_linkto_Trailer.cs",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Plan_linkto_Trailer.cs",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\classes\\models\\Plan_linkto_Trailer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T14:45:50.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Trailers.cs",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Trailers.cs",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\classes\\models\\Trailers.cs",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Trailers.cs",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\classes\\models\\Trailers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T14:45:57.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Plans.cs",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Plans.cs",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\classes\\models\\Plans.cs",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\classes\\models\\Plans.cs",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\classes\\models\\Plans.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T14:45:54.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Page_Storage.xaml",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Page_Storage.xaml",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\pages\\Page_Storage.xaml",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Page_Storage.xaml",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\pages\\Page_Storage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-26T14:51:59.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Authorizing.xaml",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Authorizing.xaml",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\pages\\Authorizing.xaml",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Authorizing.xaml",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\pages\\Authorizing.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-26T14:46:47.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Page_Salary.xaml",
+              "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Page_Salary.xaml",
+              "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\pages\\Page_Salary.xaml",
+              "ToolTip": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Page_Salary.xaml",
+              "RelativeToolTip": "KAMA_PRO_CRUD_APP2\\pages\\Page_Salary.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-26T14:51:54.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "Authorizing.xaml.cs",
               "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\pages\\Authorizing.xaml.cs",
               "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\pages\\Authorizing.xaml.cs",
@@ -329,7 +486,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 28,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\MainWindow.xaml.cs",
@@ -341,7 +498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 27,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\MainWindow.xaml",
               "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\MainWindow.xaml",
@@ -352,7 +509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 30,
               "Title": "MainWindow1.xaml.cs",
               "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\MainWindow1.xaml.cs",
               "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\MainWindow1.xaml.cs",
@@ -364,7 +521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 31,
               "Title": "MainWindow1.xaml",
               "DocumentMoniker": "C:\\Users\\vadim_blagoveshensk\\source\\repos\\KAMA_PRO_CRUD_APP2\\KAMA_PRO_CRUD_APP2\\MainWindow1.xaml",
               "RelativeDocumentMoniker": "KAMA_PRO_CRUD_APP2\\MainWindow1.xaml",

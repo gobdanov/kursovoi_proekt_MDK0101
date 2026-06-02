@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\App.xaml
-141696682243
+16-453604120
 
-271264567123
+29-1569397516
 212-1702936241
-items\item_assemblage.xaml;items\item_assembler.xaml;items\Item_plan.xaml;items\item_storage.xaml;MainWindow.xaml;MainWindow1.xaml;pages\Authorizing.xaml;pages\Navigate_Salary.xaml;pages\Page_Assemblage.xaml;pages\Page_Assemblers.xaml;pages\Page_Plan.xaml;pages\Page_Salary.xaml;pages\Page_Storage.xaml;style\Styles.xaml;
+items\item_add_assemblage_trailer.xaml;items\item_assemblage.xaml;items\item_assembler.xaml;items\Item_plan.xaml;items\item_storage.xaml;MainWindow.xaml;MainWindow1.xaml;pages\Authorizing.xaml;pages\Navigate_Salary.xaml;pages\Page_Assemblage.xaml;pages\Page_Assemblers.xaml;pages\Page_Plan.xaml;pages\Page_Salary.xaml;pages\Page_Storage.xaml;pages\subpages\Page_Add_Assemblage.xaml;style\Styles.xaml;
 
 False
 

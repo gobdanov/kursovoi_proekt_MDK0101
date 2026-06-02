@@ -24,5 +24,10 @@ namespace KAMA_PRO_CRUD_APP.items
         {
             InitializeComponent();
         }
+
+        private void goto_assemblage(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("переход к сборке...");
+        }
     }
 }

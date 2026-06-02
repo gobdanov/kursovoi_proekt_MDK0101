@@ -8,8 +8,9 @@
              d:DesignHeight="40" d:DesignWidth="300">
     <Grid>
         <Border HorizontalAlignment="Center" VerticalAlignment="Center" Height="29" Background="#ffffff" Width="270" CornerRadius="10">
-            <Label Content="123"/>
+            <Label Content="сборка от 12.12.23" Margin="10,0,0,0"/>
         </Border>
+        <Button Opacity="0" Cursor="Hand" Margin="15,5" Click="goto_assemblage"></Button>
 
     </Grid>
 </UserControl>

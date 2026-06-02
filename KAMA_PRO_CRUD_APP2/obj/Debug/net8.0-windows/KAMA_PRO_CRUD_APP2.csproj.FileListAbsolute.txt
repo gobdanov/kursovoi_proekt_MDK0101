@@ -127,3 +127,8 @@ C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\
 C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\KAMA_PRO_CRUD_APP2.pdb
 C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\KAMA_PRO_CRUD_APP2.genruntimeconfig.cache
 C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\ref\KAMA_PRO_CRUD_APP2.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\KAMA_PRO_CRUD_APP2.sourcelink.json
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\pages\subpages\Page_Add_Assemblage.g.cs
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\pages\subpages\Page_Add_Assemblage.baml
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\items\item_add_assemblage_trailer.baml
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\items\item_add_assemblage_trailer.g.cs
