@@ -10,10 +10,13 @@
         <Border Background="#ffffff" CornerRadius="20" Margin="5,5,5,5"/>
         <Grid Margin="5,5,5,5">
             <Label Content="пермь" Margin="20,0,0,0" FontSize="20"  VerticalAlignment="Center"/>
-            <Label Content="всего: 48" Margin="0,0,20,0" FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-            <Label Content="собрано: 24" Margin="0,0,20,0" FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
-
+            <Label Content="всего: 48" Margin="0,0,50,0"  FontSize="12" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+            <Label Content="собрано: 24" Margin="0,0,50,0" FontSize="12" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+            <Image Source="/imgs/cross.png" HorizontalAlignment="Right" Width="30" Margin="0,0,7,0"/>
         </Grid>
+
+        <Button Margin="5,5,5,5" Cursor="Hand" Click="goto_plan" Opacity="0"/>
+        <Button HorizontalAlignment="Right" Cursor="Hand" Click="delete_plan" Width="50" Margin="0,0,7,0" Opacity="0"/>
 
     </Grid>
 </UserControl>

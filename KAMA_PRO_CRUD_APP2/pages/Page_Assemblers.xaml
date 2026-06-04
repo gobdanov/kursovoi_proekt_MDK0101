@@ -32,5 +32,7 @@
                 </StackPanel>
             </ScrollViewer>
         </Border>
+
+        <Button Grid.Row="4" Grid.ColumnSpan="2" Height="40" Width="200" Click="add_assembler" Content="добавить"/>
     </Grid>
 </Page>

@@ -5,7 +5,25 @@
     <Compile Update="items\item_add_assemblage_trailer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="items\item_concrete_assemblage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="items\item_concrete_plan.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="pages\subpages\Page_Add_Assemblage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="pages\subpages\Page_Add_Assembler.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="pages\subpages\Page_Add_Plan.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="pages\subpages\Page_Concrete_Assemblage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="pages\subpages\Page_Concrete_Plan.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

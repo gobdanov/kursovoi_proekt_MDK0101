@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KAMA_PRO_CRUD_APP2.pages.subpages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,6 +28,11 @@ namespace KAMA_PRO_CRUD_APP.pages
             stackpanel.Children.Add(new items.item_assembler { Margin = new Thickness(0, 10, 0, 0) });
             stackpanel.Children.Add(new items.item_assembler { Margin = new Thickness(0, 10, 0, 0) });
             stackpanel.Children.Add(new items.item_assembler { Margin = new Thickness(0, 10, 0, 0) });
+        }
+
+        private void add_assembler(object sender, RoutedEventArgs e)
+        {
+            MainWindow1.frame2_out.Navigate(new Page_Add_Assembler());
         }
     }
 }

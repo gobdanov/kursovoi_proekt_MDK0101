@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:KAMA_PRO_CRUD_APP.items"
              mc:Ignorable="d" 
              d:DesignHeight="70" d:DesignWidth="400">
-    <Grid Background="Aqua">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
@@ -14,6 +14,15 @@
         </Grid.ColumnDefinitions>
         <Label Content="test1" x:Name="name" HorizontalAlignment="Left" Grid.Column="0" />
         <Label Content="test1" x:Name="count" HorizontalAlignment="Left" Grid.Column="1" />
-        <Label Content="test1" HorizontalAlignment="Left" Grid.Column="2" />
+        <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Image Source="/imgs/minus.png" Height="20" Width="20"/>
+            <Image Source="/imgs/plus.png" Height="20" Width="20"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Height="20" Width="20" Opacity="0" Click="minus" Cursor="Hand"/>
+            <Button Height="20" Width="20" Opacity="0" Click="plus" Cursor="Hand"/>
+        </StackPanel>
+
     </Grid>
 </UserControl>

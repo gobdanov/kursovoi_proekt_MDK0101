@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KAMA_PRO_CRUD_APP2.pages.subpages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,7 +31,7 @@ namespace KAMA_PRO_CRUD_APP.pages
 
         private void add_plan(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("добавление плана...");
+            MainWindow1.frame2_out.Navigate(new Page_Add_Plan());
         }
     }
 }

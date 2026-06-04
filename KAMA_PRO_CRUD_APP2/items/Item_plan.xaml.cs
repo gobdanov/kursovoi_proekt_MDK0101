@@ -1,4 +1,6 @@
-﻿using System;
+﻿using KAMA_PRO_CRUD_APP.pages;
+using KAMA_PRO_CRUD_APP2.pages.subpages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,16 @@ namespace KAMA_PRO_CRUD_APP.items
         public Item_plan()
         {
             InitializeComponent();
+        }
+
+        private void goto_plan(object sender, RoutedEventArgs e)
+        {
+            MainWindow1.frame2_out.Navigate(new Page_Concrete_Plan());
+        }
+
+        private void delete_plan(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("удаление плана");
         }
     }
 }

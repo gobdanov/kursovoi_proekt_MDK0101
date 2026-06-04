@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KAMA_PRO_CRUD_APP2"
         mc:Ignorable="d"
-            Title="MainWindow" Height="550" MinHeight="550" MaxHeight="550" Width="285" MinWidth="285" MaxWidth="285">
+            Title="АВТОРИЗАЦИЯ" Height="550" MinHeight="550" MaxHeight="550" Width="285" MinWidth="285" MaxWidth="285">
     <Grid>
         <Frame x:Name="frame0" NavigationUIVisibility="Hidden"/>
     </Grid>

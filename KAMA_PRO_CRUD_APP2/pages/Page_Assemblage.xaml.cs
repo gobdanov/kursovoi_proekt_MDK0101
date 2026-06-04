@@ -29,6 +29,14 @@ namespace KAMA_PRO_CRUD_APP.pages
             parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
             parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
             parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
+            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
+            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
+            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
+            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
+            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
+            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
+            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
+            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
 
             cmbbx_trlr.Items.Add("выбрать...");
             cmbbx_trlr.Items.Add("KAMA PRO 2012");

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using KAMA_PRO_CRUD_APP.pages;
+using KAMA_PRO_CRUD_APP2.pages.subpages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +29,12 @@ namespace KAMA_PRO_CRUD_APP.items
 
         private void goto_assemblage(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("переход к сборке...");
+            MainWindow1.frame2_out.Navigate(new Page_Concrete_Assemblage());
+        }
+
+        private void delete_assemblage(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("удаление сборки");
         }
     }
 }

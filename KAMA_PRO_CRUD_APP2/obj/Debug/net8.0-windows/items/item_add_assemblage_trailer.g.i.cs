@@ -60,7 +60,7 @@ namespace KAMA_PRO_CRUD_APP2.items {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/KAMA_PRO_CRUD_APP2;component/items/item_add_assemblage_trailer.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/KAMA_PRO_CRUD_APP2;V1.0.0.0;component/items/item_add_assemblage_trailer.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\items\item_add_assemblage_trailer.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -132,3 +132,15 @@ C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\
 C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\pages\subpages\Page_Add_Assemblage.baml
 C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\items\item_add_assemblage_trailer.baml
 C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\items\item_add_assemblage_trailer.g.cs
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\pages\subpages\Page_Add_Plan.g.cs
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\pages\subpages\Page_Add_Plan.baml
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\items\item_concrete_plan.g.cs
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\pages\subpages\Page_Concrete_Plan.g.cs
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\items\item_concrete_plan.baml
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\pages\subpages\Page_Concrete_Plan.baml
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\items\item_concrete_assemblage.g.cs
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\pages\subpages\Page_Concrete_Assemblage.g.cs
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\items\item_concrete_assemblage.baml
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\pages\subpages\Page_Concrete_Assemblage.baml
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\pages\subpages\Page_Add_Assembler.g.cs
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\KAMA_PRO_CRUD_APP2\obj\Debug\net8.0-windows\pages\subpages\Page_Add_Assembler.baml

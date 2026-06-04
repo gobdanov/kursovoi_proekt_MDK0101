@@ -28,7 +28,7 @@
         <Border Margin="14,14,14,14" Background="White" CornerRadius="14">
             <Grid Grid.Column="0">
                 <Image Margin="0,0,0,3" Height="85" Width="85" Source="/imgs/avatars/mechanic-body.png"/>
-                <Image Height="65" Width="65" Margin="0,-15,0,0" Source="/imgs/avatars/alien.png"/>
+                <Image Height="65" Width="65" Margin="0,-15,0,0" Source="/imgs/moai.png"/>
             </Grid>
         </Border>
 
@@ -44,12 +44,12 @@
 
             <Grid Height="40" VerticalAlignment="Top">
                 <Image Source="/imgs/cross.png" Margin="0,10,0,0" Width="25" Height="25"/>
-                <Button Click="delete_user" Margin="0,10,0,0" Width="25" Height="25" Style="{StaticResource NavigateMenuButtonStyle}"/>
+                <Button Click="delete_user" Margin="0,10,0,0" Width="25" Height="25" Opacity="0" Cursor="Hand"/>
             </Grid>
 
             <Grid Height="40" VerticalAlignment="Bottom">
                 <Image Source="/imgs/pencil.png"  Width="25" Height="25"/>
-                <Button Click="edit_user" Margin="0,0,0,0" Width="25" Height="25" Style="{StaticResource NavigateMenuButtonStyle}"/>
+                <Button Click="edit_user" Margin="0,0,0,0" Width="25" Height="25" Opacity="0" Cursor="Hand"/>
             </Grid>
             
         </Grid>

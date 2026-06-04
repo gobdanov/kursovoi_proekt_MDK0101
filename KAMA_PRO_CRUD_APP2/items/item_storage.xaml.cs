@@ -30,5 +30,15 @@ namespace KAMA_PRO_CRUD_APP.items
             name.Content = Name;
             count.Content = Convert.ToString(Count);
         }
+
+        private void minus(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("минус");
+        }
+
+        private void plus(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("плюс");
+        }
     }
 }
