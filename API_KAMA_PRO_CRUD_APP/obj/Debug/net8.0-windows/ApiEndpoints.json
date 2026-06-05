@@ -1,0 +1,22 @@
+[
+  {
+    "ContainingType": "API_KAMA_PRO_CRUD_APP.Controllers.Assemblers_\u0421ontroller",
+    "Method": "GetAll",
+    "RelativePath": "api/Assemblers_\u0421ontroller/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "KAMA_PRO_CRUD_APP.classes.models.Assemblers",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

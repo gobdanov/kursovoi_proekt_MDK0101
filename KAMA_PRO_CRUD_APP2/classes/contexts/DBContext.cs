@@ -20,63 +20,63 @@ namespace KAMA_PRO_CRUD_APP2.classes.contexts
                 new MySqlServerVersion(new Version(8,0,34)));
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            //ПЕРВИЧНЫЕ КЛЮЧИ
-            //настройка первичного ключа для Traiers
-            modelBuilder.Entity<Trailers>()
-                .HasKey(o => o.Name);
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    //ПЕРВИЧНЫЕ КЛЮЧИ
+        //    //настройка первичного ключа для Traiers
+        //    modelBuilder.Entity<Trailers>()
+        //        .HasKey(o => o.Name);
 
-            //настройка первичного ключа для Plans
-            modelBuilder.Entity<Plans>()
-                .HasKey(o => o.Name);
+        //    //настройка первичного ключа для Plans
+        //    modelBuilder.Entity<Plans>()
+        //        .HasKey(o => o.Name);
 
-            //настройка первичного ключа для Components
-            modelBuilder.Entity<Components>()
-                .HasKey(o => o.Name);
+        //    //настройка первичного ключа для Components
+        //    modelBuilder.Entity<Components>()
+        //        .HasKey(o => o.Name);
 
-            //настройка первичного ключа для Components
-            modelBuilder.Entity<Components>()
-                .HasKey(o => o.Name);
+        //    //настройка первичного ключа для Components
+        //    modelBuilder.Entity<Components>()
+        //        .HasKey(o => o.Name);
 
-            //настройка первичного ключа для Assemblages
-            modelBuilder.Entity<Assemblages>()
-                .HasKey(AV => new { AV.Assembler, AV.VIN });
+        //    //настройка первичного ключа для Assemblages
+        //    modelBuilder.Entity<Assemblages>()
+        //        .HasKey(AV => new { AV.Assembler, AV.VIN });
 
 
-            //ВНЕШНИЕ КЛЮЧИ
-            //настройка внешнего ключа для Assemblages
-            modelBuilder.Entity<Assemblages>()
-                .HasOne<Assemblers>()
-                .WithMany()
-                .HasForeignKey(a => a.Assembler);
+        //    //ВНЕШНИЕ КЛЮЧИ
+        //    //настройка внешнего ключа для Assemblages
+        //    modelBuilder.Entity<Assemblages>()
+        //        .HasOne<Assemblers>()
+        //        .WithMany()
+        //        .HasForeignKey(a => a.Assembler);
 
-            //настройка внешнего ключа для Component_linkto_Trailer
-            modelBuilder.Entity<Component_linkto_Trailer>()
-                .HasOne<Components>()
-                .WithMany()
-                .HasForeignKey(CT => CT.Component);
+        //    //настройка внешнего ключа для Component_linkto_Trailer
+        //    modelBuilder.Entity<Component_linkto_Trailer>()
+        //        .HasOne<Components>()
+        //        .WithMany()
+        //        .HasForeignKey(CT => CT.Component);
 
-            modelBuilder.Entity<Component_linkto_Trailer>()
-                .HasOne<Trailers>()
-                .WithMany()
-                .HasForeignKey(CT => CT.Trailer);
+        //    modelBuilder.Entity<Component_linkto_Trailer>()
+        //        .HasOne<Trailers>()
+        //        .WithMany()
+        //        .HasForeignKey(CT => CT.Trailer);
 
-            //настройка внешнего ключа для Plan_linkto_Trailer
-            modelBuilder.Entity<Plan_linkto_Trailer>()
-                .HasOne<Plans>()
-                .WithMany()
-                .HasForeignKey(PT => PT.Plan);
+        //    //настройка внешнего ключа для Plan_linkto_Trailer
+        //    modelBuilder.Entity<Plan_linkto_Trailer>()
+        //        .HasOne<Plans>()
+        //        .WithMany()
+        //        .HasForeignKey(PT => PT.Plan);
 
-            modelBuilder.Entity<Plan_linkto_Trailer>()
-                .HasOne<Trailers>()
-                .WithMany()
-                .HasForeignKey(PT => PT.Trailer);
+        //    modelBuilder.Entity<Plan_linkto_Trailer>()
+        //        .HasOne<Trailers>()
+        //        .WithMany()
+        //        .HasForeignKey(PT => PT.Trailer);
 
-            modelBuilder.Entity<Plan_linkto_Trailer>()
-                .HasOne<Packs>()
-                .WithMany()
-                .HasForeignKey(PT => PT.Pack);
-        }
+        //    modelBuilder.Entity<Plan_linkto_Trailer>()
+        //        .HasOne<Packs>()
+        //        .WithMany()
+        //        .HasForeignKey(PT => PT.Pack);
+        //}
     }
 }
