@@ -1,0 +1,243 @@
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\KAMA_PRO_CRUD_APP2.deps.json
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\KAMA_PRO_CRUD_APP2.runtimeconfig.json
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\KAMA_PRO_CRUD_APP2.exe
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\appsettings.Development.json
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\appsettings.json
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.staticwebassets.endpoints.json
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.exe
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.deps.json
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.runtimeconfig.json
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.pdb
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.OpenApi.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\MySqlConnector.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\KAMA_PRO_CRUD_APP2.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\KAMA_PRO_CRUD_APP2.pdb
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.csproj.AssemblyReference.cache
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\rpswa.dswa.cache.json
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.AssemblyInfoInputs.cache
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.AssemblyInfo.cs
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.csproj.CoreCompileInputs.cache
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.sourcelink.json
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\rjimswa.dswa.cache.json
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\rjsmrazor.dswa.cache.json
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\rjsmcshtml.dswa.cache.json
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\scopedcss\bundle\API_KAMA_PRO_CRUD_APP.styles.css
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\staticwebassets.build.json
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\staticwebassets.build.json.cache
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\staticwebassets.development.json
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\staticwebassets.build.endpoints.json
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\staticwebassets.upToDateCheck.txt
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA.DA6AB277.Up2Date
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\refint\API_KAMA_PRO_CRUD_APP.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.pdb
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.genruntimeconfig.cache
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\ref\API_KAMA_PRO_CRUD_APP.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Humanizer.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Mono.TextTemplating.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\System.Composition.AttributedModel.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\System.Composition.Convention.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\System.Composition.Hosting.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\System.Composition.Runtime.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\System.Composition.TypedParts.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\vadim_blagoveshensk\source\repos\KAMA_PRO_CRUD_APP2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\appsettings.Development.json
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\appsettings.json
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\KAMA_PRO_CRUD_APP2.deps.json
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\KAMA_PRO_CRUD_APP2.runtimeconfig.json
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\KAMA_PRO_CRUD_APP2.exe
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.staticwebassets.endpoints.json
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.exe
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.deps.json
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.runtimeconfig.json
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.pdb
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Humanizer.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Microsoft.OpenApi.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Mono.TextTemplating.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\MySqlConnector.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\System.Composition.AttributedModel.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\System.Composition.Convention.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\System.Composition.Hosting.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\System.Composition.Runtime.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\System.Composition.TypedParts.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\KAMA_PRO_CRUD_APP2.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\bin\Debug\net8.0-windows\KAMA_PRO_CRUD_APP2.pdb
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.csproj.AssemblyReference.cache
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\rpswa.dswa.cache.json
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.AssemblyInfoInputs.cache
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.AssemblyInfo.cs
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.csproj.CoreCompileInputs.cache
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\rjimswa.dswa.cache.json
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\rjsmrazor.dswa.cache.json
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\rjsmcshtml.dswa.cache.json
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\scopedcss\bundle\API_KAMA_PRO_CRUD_APP.styles.css
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\staticwebassets.build.json
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\staticwebassets.build.json.cache
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\staticwebassets.development.json
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\staticwebassets.build.endpoints.json
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\staticwebassets.upToDateCheck.txt
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA.DA6AB277.Up2Date
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\refint\API_KAMA_PRO_CRUD_APP.dll
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.pdb
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\API_KAMA_PRO_CRUD_APP.genruntimeconfig.cache
+C:\Users\вадим благодетель\Desktop\kursovoi_proekt_MDK0101-master2\API_KAMA_PRO_CRUD_APP\obj\Debug\net8.0-windows\ref\API_KAMA_PRO_CRUD_APP.dll

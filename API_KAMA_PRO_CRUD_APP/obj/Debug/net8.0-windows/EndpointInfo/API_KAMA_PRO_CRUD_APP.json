@@ -1,0 +1,377 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "API_KAMA_PRO_CRUD_APP",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Assemblages_/GetAll": {
+      "get": {
+        "tags": [
+          "Assemblages_"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Assemblages"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Assemblages"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Assemblages"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Assemblers_Сontroller/GetAll": {
+      "get": {
+        "tags": [
+          "Assemblers_Сontroller"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Assemblers"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Assemblers"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Assemblers"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Components_/GetAll": {
+      "get": {
+        "tags": [
+          "Components_"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Components"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Components"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Components"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Components_linkto_Trailer_/GetAll": {
+      "get": {
+        "tags": [
+          "Components_linkto_Trailer_"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Component_linkto_Trailer"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Component_linkto_Trailer"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Component_linkto_Trailer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Packs_/GetAll": {
+      "get": {
+        "tags": [
+          "Packs_"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Packs"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Packs"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Packs"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Plan_linkto_Trailer_/GetAll": {
+      "get": {
+        "tags": [
+          "Plan_linkto_Trailer_"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Plan_linkto_Trailer"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Plan_linkto_Trailer"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Plan_linkto_Trailer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Plans_/GetAll": {
+      "get": {
+        "tags": [
+          "Plans_"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Plans"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Plans"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Plans"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Trailers_/GetAll": {
+      "get": {
+        "tags": [
+          "Trailers_"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Trailers"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Trailers"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Trailers"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Assemblages": {
+        "type": "object",
+        "properties": {
+          "assembler": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vin": {
+            "type": "string",
+            "nullable": true
+          },
+          "date_": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Assemblers": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "surname": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastname": {
+            "type": "string",
+            "nullable": true
+          },
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "pwd": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Component_linkto_Trailer": {
+        "type": "object",
+        "properties": {
+          "trailer": {
+            "type": "string",
+            "nullable": true
+          },
+          "component": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Components": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Packs": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Plan_linkto_Trailer": {
+        "type": "object",
+        "properties": {
+          "plan": {
+            "type": "string",
+            "nullable": true
+          },
+          "trailer": {
+            "type": "string",
+            "nullable": true
+          },
+          "vin": {
+            "type": "string",
+            "nullable": true
+          },
+          "ready": {
+            "type": "boolean"
+          },
+          "pack": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Plans": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Trailers": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

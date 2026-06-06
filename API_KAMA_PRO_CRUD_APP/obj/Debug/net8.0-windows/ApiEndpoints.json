@@ -1,0 +1,162 @@
+[
+  {
+    "ContainingType": "API_KAMA_PRO_CRUD_APP.Controllers.Assemblages_Controller",
+    "Method": "GetAll",
+    "RelativePath": "api/Assemblages_/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "KAMA_PRO_CRUD_APP.classes.models.Assemblages",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_KAMA_PRO_CRUD_APP.Controllers.Assemblers_\u0421ontroller",
+    "Method": "GetAll",
+    "RelativePath": "api/Assemblers_\u0421ontroller/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "KAMA_PRO_CRUD_APP.classes.models.Assemblers",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_KAMA_PRO_CRUD_APP.Controllers.Components_Controller",
+    "Method": "GetAll",
+    "RelativePath": "api/Components_/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "KAMA_PRO_CRUD_APP.classes.models.Components",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_KAMA_PRO_CRUD_APP.Controllers.Components_linkto_Trailer_Controller",
+    "Method": "GetAll",
+    "RelativePath": "api/Components_linkto_Trailer_/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "KAMA_PRO_CRUD_APP.classes.models.Component_linkto_Trailer",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_KAMA_PRO_CRUD_APP.Controllers.Packs_Controller",
+    "Method": "GetAll",
+    "RelativePath": "api/Packs_/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "KAMA_PRO_CRUD_APP.classes.models.Packs",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_KAMA_PRO_CRUD_APP.Controllers.Plan_linkto_Trailer_Controller",
+    "Method": "GetAll",
+    "RelativePath": "api/Plan_linkto_Trailer_/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "KAMA_PRO_CRUD_APP.classes.models.Plan_linkto_Trailer",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_KAMA_PRO_CRUD_APP.Controllers.Plans_Controller",
+    "Method": "GetAll",
+    "RelativePath": "api/Plans_/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "KAMA_PRO_CRUD_APP.classes.models.Plans",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_KAMA_PRO_CRUD_APP.Controllers.Trailers_Controller",
+    "Method": "GetAll",
+    "RelativePath": "api/Trailers_/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "KAMA_PRO_CRUD_APP.classes.models.Trailers",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="items\item_add_assemblage_trailer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="items\item_concrete_assemblage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="items\item_concrete_plan.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="pages\subpages\Page_Add_Assemblage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="pages\subpages\Page_Add_Assembler.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="pages\subpages\Page_Add_Plan.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="pages\subpages\Page_Concrete_Assemblage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="pages\subpages\Page_Concrete_Plan.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
