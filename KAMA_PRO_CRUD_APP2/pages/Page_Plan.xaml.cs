@@ -1,0 +1,37 @@
+﻿using KAMA_PRO_CRUD_APP2.pages.subpages;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace KAMA_PRO_CRUD_APP.pages
+{
+    /// <summary>
+    /// Логика взаимодействия для Page_Plan.xaml
+    /// </summary>
+    public partial class Page_Plan : Page
+    {
+        public Page_Plan()
+        {
+            InitializeComponent();
+            parent_Border.Children.Add(new items.Item_plan());
+            parent_Border.Children.Add(new items.Item_plan());
+            parent_Border.Children.Add(new items.Item_plan());
+        }
+
+        private void add_plan(object sender, RoutedEventArgs e)
+        {
+            MainWindow1.frame2_out.Navigate(new Page_Add_Plan());
+        }
+    }
+}

@@ -1,0 +1,6 @@
+@API_KAMA_PRO_CRUD_APP_HostAddress = http://localhost:5090
+
+GET {{API_KAMA_PRO_CRUD_APP_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,56 @@
+﻿<Page x:Class="KAMA_PRO_CRUD_APP2.pages.subpages.Page_Add_Assembler"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KAMA_PRO_CRUD_APP2.pages.subpages"
+      mc:Ignorable="d" 
+     d:DesignHeight="550" d:DesignWidth="487"
+      Title="Page_Add_Assembler">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Column="0" Grid.Row="0">
+            <Image Source="/imgs/left-arrow.png" Margin="0,4,0,0"  Height="20" Width="20" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <Label Content="вернуться" Margin="20,0,0,0"/>
+        </Grid>
+
+        <Button Click="goto_back" Grid.Column="0" Grid.Row="0" Margin="0,0,80,45" Opacity="0" Cursor="Hand"/>
+
+        <StackPanel Grid.Column="0" Grid.Row="0">
+            <Label Content="добавить план" Margin="0,20,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="20,0,0,0">
+            <Label Content="укажите имя:" FontSize="18"/>
+            <Grid>
+                <Image Source="/imgs/file-folder.png" Height="30" HorizontalAlignment="Left"/>
+                <TextBox Margin="50,0,30,0" FontSize="14"/>
+            </Grid>
+
+            <Label Content="укажите фамилию:" FontSize="18"/>
+            <Grid>
+                <Image Source="/imgs/pencil.png" Height="30" HorizontalAlignment="Left"/>
+                <TextBox Margin="50,0,30,0" FontSize="14"/>
+            </Grid>
+
+            <Label Content="укажите имя пользователя:" FontSize="18"/>
+            <Grid>
+                <Image Source="/imgs/calendar.png" Height="30" HorizontalAlignment="Left"/>
+                <TextBox Margin="50,0,30,0" FontSize="14"/>
+            </Grid>
+
+            <Label Content="укажите пароль" FontSize="18"/>
+            <Grid>
+                <Image Source="/imgs/calendar.png" Height="30" HorizontalAlignment="Left"/>
+                <PasswordBox Margin="50,0,30,0" FontSize="14"/>
+            </Grid>
+        </StackPanel>
+
+        <Button HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="2" Width="175" Height="30" Click="add_assembler" Margin="0,0,0,30 " Content="добавить"/>
+    </Grid>
+</Page>
