@@ -4,21 +4,21 @@ using Microsoft.AspNetCore.Mvc;
 namespace API_KAMA_PRO_CRUD_APP.Controllers
 {
     [ApiController]
-    [Route("api/Plans")]
-    public class Plans_Controller : ControllerBase
+    [Route("api/Packs")]
+    public class PacksController : ControllerBase
     {
         private DBContext db;
 
-        public Plans_Controller(DBContext context)
+        public PacksController(DBContext context)
         {
             db = context;
         }
 
         [HttpGet]
-        public ActionResult<Plans> GetAll()
+        public ActionResult<Packs> GetAll()
         {
-            var plans = db.Plans.ToList();
-            return Ok(plans);
+            var packs = db.Packs.ToList();
+            return Ok(packs);
         }
     }
 }

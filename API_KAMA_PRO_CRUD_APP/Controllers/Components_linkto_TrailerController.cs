@@ -5,11 +5,11 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
 {
     [ApiController]
     [Route("api/Components_linkto_Trailer")]
-    public class Components_linkto_Trailer_Controller : ControllerBase
+    public class Components_linkto_TrailerController : ControllerBase
     {
         private DBContext db;
 
-        public Components_linkto_Trailer_Controller(DBContext context)
+        public Components_linkto_TrailerController(DBContext context)
         {
             db = context;
         }

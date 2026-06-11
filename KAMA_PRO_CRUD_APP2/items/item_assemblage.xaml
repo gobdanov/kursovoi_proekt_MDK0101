@@ -9,7 +9,7 @@
     <Grid>
         <Border HorizontalAlignment="Center" VerticalAlignment="Center" Height="29" Background="#ffffff" Width="270" CornerRadius="10">
             <Grid>
-                <Label Content="сборка от 12.12.23" HorizontalAlignment="Center"/>
+                <Label x:Name="date_tb" Content="сборка от 12.12.23" HorizontalAlignment="Center"/>
                 <Image Source="/imgs/cross.png" HorizontalAlignment="Right" Margin="0,0,10,0"/>
             </Grid>
         </Border>

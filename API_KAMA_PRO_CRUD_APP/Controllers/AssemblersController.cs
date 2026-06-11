@@ -5,11 +5,11 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
 {
     [ApiController]
     [Route("api/Assemblers")]
-    public class Assemblers_Сontroller : ControllerBase
+    public class AssemblersController : ControllerBase
     {
         private DBContext db;
 
-        public Assemblers_Сontroller(DBContext context)
+        public AssemblersController(DBContext context)
         {
             db = context;
         }

@@ -20,9 +20,20 @@ namespace KAMA_PRO_CRUD_APP2.items
     /// </summary>
     public partial class item_concrete_assemblage : UserControl
     {
-        public item_concrete_assemblage()
+        public item_concrete_assemblage(
+            string trailer,
+            string assemblers,
+            string comments,
+            string plan,
+            string nameplate,
+            string photo)
         {
             InitializeComponent();
+            Trailer.Content = trailer;
+            Assemblers.Content = assemblers;
+            Comments.Content = comments;
+            Plan.Content = plan;
+            Nameplate.Content = nameplate;
         }
     }
 }

@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using KAMA_PRO_CRUD_APP2.classes.repo;
 
 namespace KAMA_PRO_CRUD_APP.pages
 {
@@ -25,38 +26,26 @@ namespace KAMA_PRO_CRUD_APP.pages
         {
             InitializeComponent();
 
-            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
-            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
-            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
-            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
-            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
-            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
-            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
-            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
-            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
-            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
-            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
-            parent_Border.Children.Add(new items.item_assemblage { Margin = new Thickness(0, 5, 0, 0) });
+            this.Loaded += Page_AssemblageLoaded;
+        }
+
+        private async void Page_AssemblageLoaded(object sender, RoutedEventArgs e)
+        {
+            Repository repo = new Repository();
+            await repo.GetAssemblagesAsync();
+            foreach(var i in repo.Assemblages)
+            {
+                parent_Border.Children.Add(new items.item_assemblage(i.Date_) { Margin = new Thickness(0, 5, 0, 0) });
+            }
+            
 
             cmbbx_trlr.Items.Add("выбрать...");
-            cmbbx_trlr.Items.Add("KAMA PRO 2012");
-            cmbbx_trlr.Items.Add("KAMA PRO 2013");
-            cmbbx_trlr.Items.Add("KAMA TRAIL 2013");
-            cmbbx_trlr.Items.Add("KAMA PRO 2513");
-            cmbbx_trlr.Items.Add("KAMA TRAIL 2513");
-            cmbbx_trlr.Items.Add("KAMA PRO 2515");
-            cmbbx_trlr.Items.Add("KAMA PRO 3015");
-            cmbbx_trlr.Items.Add("KAMA PRO 3015(2оси)");
-            cmbbx_trlr.Items.Add("KAMA PRO 3515");
-            cmbbx_trlr.Items.Add("KAMA PRO 3515(2оси)");
-            cmbbx_trlr.Items.Add("KAMA PRIME 3015");
-            cmbbx_trlr.Items.Add("KAMA PRIME 3015(2оси)");
-            cmbbx_trlr.Items.Add("KAMA PRIME 3515");
-            cmbbx_trlr.Items.Add("KAMA PRIME 3515(2оси");
-            cmbbx_trlr.Items.Add("KAMA WATER");
+            await repo.GetTrailersAsync();
+            foreach (var i in repo.Trailers)
+            {
+                cmbbx_trlr.Items.Add(i.Name);
+            }
             cmbbx_trlr.SelectedIndex = 0;
-
-
         }
 
         private void goto_Add_Assemblage(object sender, RoutedEventArgs e)

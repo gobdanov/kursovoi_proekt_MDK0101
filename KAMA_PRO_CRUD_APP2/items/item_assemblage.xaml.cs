@@ -22,9 +22,10 @@ namespace KAMA_PRO_CRUD_APP.items
     /// </summary>
     public partial class item_assemblage : UserControl
     {
-        public item_assemblage()
+        public item_assemblage(DateOnly date)
         {
             InitializeComponent();
+            date_tb.Content = "сборка от " + date.ToString();
         }
 
         private void goto_assemblage(object sender, RoutedEventArgs e)

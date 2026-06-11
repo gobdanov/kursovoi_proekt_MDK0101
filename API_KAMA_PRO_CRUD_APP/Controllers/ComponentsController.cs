@@ -5,11 +5,11 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
 {
     [ApiController]
     [Route("api/Components")]
-    public class Components_Controller : ControllerBase
+    public class ComponentsController : ControllerBase
     {
         private DBContext db;
 
-        public Components_Controller(DBContext context)
+        public ComponentsController(DBContext context)
         {
             db = context;
         }

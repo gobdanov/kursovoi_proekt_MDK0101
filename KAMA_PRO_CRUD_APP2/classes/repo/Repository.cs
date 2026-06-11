@@ -24,6 +24,10 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
 
         public static String BASE_ADDRESS = "https://localhost:7238/api/";
 
+        public async Task GetAssemblagesAsync()
+        {
+            Assemblages = await GetSmthngAsync<Assemblages>("Assemblages");
+        }
         public async Task GetAssemblersAsync()
         {
             Assemblers = await GetSmthngAsync<Assemblers>("Assemblers");
