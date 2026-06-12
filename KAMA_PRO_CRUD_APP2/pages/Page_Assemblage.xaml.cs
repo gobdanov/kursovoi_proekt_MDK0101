@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using KAMA_PRO_CRUD_APP2.classes.repo;
+using KAMA_PRO_CRUD_APP.classes.models;
 
 namespace KAMA_PRO_CRUD_APP.pages
 {
@@ -33,9 +34,11 @@ namespace KAMA_PRO_CRUD_APP.pages
         {
             Repository repo = new Repository();
             await repo.GetAssemblagesAsync();
-            foreach(var i in repo.Assemblages)
+            List<DateOnly> assemblages = repo.Assemblages.Select(x => x.Date_).Distinct().ToList();
+
+            foreach(var i in assemblages)
             {
-                parent_Border.Children.Add(new items.item_assemblage(i.Date_) { Margin = new Thickness(0, 5, 0, 0) });
+                parent_Border.Children.Add(new items.item_assemblage(i) { Margin = new Thickness(0, 5, 0, 0) });
             }
             
 

@@ -1,6 +1,7 @@
 ﻿using KAMA_PRO_CRUD_APP.classes.models;
 using Microsoft.AspNetCore.Mvc;
 using KAMA_PRO_CRUD_APP.classes.models;
+using KAMA_PRO_CRUD_APP2.classes;
 
 namespace API_KAMA_PRO_CRUD_APP.Controllers
 {
@@ -20,16 +21,6 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
         {
             var assemblages = db.Assemblages.ToList();
             return Ok(assemblages);
-        }
-
-        public class Concrete_Assemblage_Date
-        {
-            public string Trailer { get; set; }
-            public List<int> Assemblers { get; set; }
-            public string Comments { get; set; }
-            public string Plan { get; set; }
-            public string Nameplate { get; set; }
-            public string Photo { get; set; }
         }
 
 

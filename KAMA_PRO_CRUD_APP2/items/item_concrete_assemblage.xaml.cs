@@ -25,8 +25,7 @@ namespace KAMA_PRO_CRUD_APP2.items
             string assemblers,
             string comments,
             string plan,
-            string nameplate,
-            string photo)
+            string nameplate)
         {
             InitializeComponent();
             Trailer.Content = trailer;

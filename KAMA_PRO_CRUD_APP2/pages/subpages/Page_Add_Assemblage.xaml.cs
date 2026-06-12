@@ -35,8 +35,8 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
         public async void Page_Add_Assemblage_Loaded(object sender, RoutedEventArgs e)
         {
             Repository repository = new Repository();
-            await repository.GetTrailersAsync();
 
+            await repository.GetTrailersAsync();
             foreach(var i in repository.Trailers)
             {
                 trailers_cmbbx.Items.Add(i.Name);

@@ -10,4 +10,14 @@ namespace KAMA_PRO_CRUD_APP2.classes
     {
         public static string inset_navigate = "зарплата";
     }
+
+    public class Concrete_Assemblage_Date
+    {
+        public string Trailer { get; set; }
+        public List<int> Assemblers { get; set; }
+        public string Comments { get; set; }
+        public string Plan { get; set; }
+        public string Nameplate { get; set; }
+        public string Photo { get; set; }
+    }
 }

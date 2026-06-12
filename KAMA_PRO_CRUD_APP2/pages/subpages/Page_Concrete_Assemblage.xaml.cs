@@ -1,5 +1,6 @@
 ﻿using KAMA_PRO_CRUD_APP;
 using KAMA_PRO_CRUD_APP.pages;
+using KAMA_PRO_CRUD_APP2.classes.repo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace KAMA_PRO_CRUD_APP2.pages.subpages
 {
@@ -22,10 +24,27 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
     /// </summary>
     public partial class Page_Concrete_Assemblage : Page
     {
-        public Page_Concrete_Assemblage()
+        string date;
+        public Page_Concrete_Assemblage(string date)
         {
             InitializeComponent();
-            parent.Children.Add(new items.item_concrete_assemblage("аа", "аа", "аа", "аа", "аа", "аа"));
+            this.date = date;
+            this.Loaded += Page_Concrete_AssemblageLoaded;
+        }
+
+        private async void Page_Concrete_AssemblageLoaded(object sender, RoutedEventArgs e)
+        {
+            Repository repo = new Repository();
+            await repo.GetConcreteAssemblagesAsync(date);
+            foreach (var i in repo.concrete_Assemblage)
+            {
+                string assemblers = "";
+                foreach(var a in i.Assemblers)
+                {
+                    assemblers += a+" ";
+                }
+                parent.Children.Add(new items.item_concrete_assemblage(i.Trailer, assemblers, i.Comments, i.Plan, i.Nameplate));
+            }
         }
 
         private void goto_back(object sender, RoutedEventArgs e)
