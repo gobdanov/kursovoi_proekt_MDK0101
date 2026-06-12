@@ -1,5 +1,6 @@
 ﻿using KAMA_PRO_CRUD_APP;
 using KAMA_PRO_CRUD_APP.pages;
+using KAMA_PRO_CRUD_APP2.classes.repo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,14 +28,31 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
             InitializeComponent();
         }
 
-        private void add_assembler(object sender, RoutedEventArgs e)
+        private async void add_assembler(object sender, RoutedEventArgs e)
         {
-            
+            DTO.DTO_Assembler assembler = new DTO.DTO_Assembler
+            {
+                Name = name_tb.Text,
+                Surname = surname_tb.Text,
+                Lastname = lastname_tb.Text,
+                Username = username_tb.Text,
+                Pwd = pwd_tb.Text
+            };
+
+            Repository repo = new Repository();
+
+            await repo.CreateAssemblerAsync(assembler);
+            MessageBox.Show("сборщик создан!");
         }
 
         private void goto_back(object sender, RoutedEventArgs e)
         {
             MainWindow1.frame2_out.Navigate(new Page_Assemblers());
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

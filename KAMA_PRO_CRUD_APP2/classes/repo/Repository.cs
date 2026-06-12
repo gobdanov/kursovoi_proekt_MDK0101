@@ -1,13 +1,15 @@
-﻿using System;
+﻿using KAMA_PRO_CRUD_APP.classes.models;
+using KAMA_PRO_CRUD_APP2;
+using KAMA_PRO_CRUD_APP2.DTO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows;
-using KAMA_PRO_CRUD_APP.classes.models;
-using KAMA_PRO_CRUD_APP2.classes;
 
 namespace KAMA_PRO_CRUD_APP2.classes.repo
 {
@@ -43,6 +45,11 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
         {
             Assemblages = await GetSmthngAsync<Assemblages>("Assemblages");
         }
+        // СБОРЩИКИ!!
+        public async Task CreateAssemblerAsync(DTO.DTO_Assembler assembler)
+        {
+            await CreateSmthngAsync<DTO_Assembler>("Assemblers", assembler);
+        }
         public async Task GetAssemblersAsync()
         {
             Assemblers = await GetSmthngAsync<Assemblers>("Assemblers");
@@ -66,13 +73,38 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
         //http-client
         HttpClient client = new HttpClient();
 
-        //универсальный метод
+        //универсальные методы
+
+        public async Task CreateSmthngAsync<T>(string endpoint, T obj)
+        {
+            try
+            {
+                var options = new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                };
+
+                await client.PostAsJsonAsync(BASE_ADDRESS + endpoint, obj);
+            }
+            catch (HttpIOException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            catch (JsonException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         public async Task<List<T>> GetSmthngAsync<T>(string endpoint)
         {
             List<T> massive = new List<T>();
             try
             {
-                
                 var response = await client.GetAsync(BASE_ADDRESS + endpoint);
                 if (response.IsSuccessStatusCode)
                 {

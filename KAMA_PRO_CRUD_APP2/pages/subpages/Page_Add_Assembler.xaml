@@ -29,28 +29,34 @@
             <Label Content="укажите имя:" FontSize="18"/>
             <Grid>
                 <Image Source="/imgs/file-folder.png" Height="30" HorizontalAlignment="Left"/>
-                <TextBox Margin="50,0,30,0" FontSize="14"/>
+                <TextBox x:Name="name_tb" Margin="50,0,30,0" FontSize="14"/>
             </Grid>
 
             <Label Content="укажите фамилию:" FontSize="18"/>
             <Grid>
                 <Image Source="/imgs/pencil.png" Height="30" HorizontalAlignment="Left"/>
-                <TextBox Margin="50,0,30,0" FontSize="14"/>
+                <TextBox x:Name="surname_tb" Margin="50,0,30,0" FontSize="14"/>
+            </Grid>
+
+            <Label Content="укажите отчество:" FontSize="18"/>
+            <Grid>
+                <Image Source="/imgs/file-folder.png" Height="30" HorizontalAlignment="Left"/>
+                <TextBox x:Name="lastname_tb" Margin="50,0,30,0" FontSize="14"/>
             </Grid>
 
             <Label Content="укажите имя пользователя:" FontSize="18"/>
             <Grid>
                 <Image Source="/imgs/calendar.png" Height="30" HorizontalAlignment="Left"/>
-                <TextBox Margin="50,0,30,0" FontSize="14"/>
+                <TextBox x:Name="username_tb" Margin="50,0,30,0" FontSize="14"/>
             </Grid>
 
             <Label Content="укажите пароль" FontSize="18"/>
             <Grid>
                 <Image Source="/imgs/calendar.png" Height="30" HorizontalAlignment="Left"/>
-                <PasswordBox Margin="50,0,30,0" FontSize="14"/>
+                <TextBox x:Name="pwd_tb" Margin="50,0,30,0" FontSize="14"/>
             </Grid>
         </StackPanel>
 
-        <Button HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="2" Width="175" Height="30" Click="add_assembler" Margin="0,0,0,30 " Content="добавить"/>
+        <Button Click="add_assembler" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="2" Width="175" Height="30" Margin="0,0,0,30 " Content="добавить"/>
     </Grid>
 </Page>
