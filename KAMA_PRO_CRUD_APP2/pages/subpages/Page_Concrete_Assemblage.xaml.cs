@@ -25,7 +25,7 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
         public Page_Concrete_Assemblage()
         {
             InitializeComponent();
-            parent.Children.Add(new items.item_concrete_assemblage());
+            parent.Children.Add(new items.item_concrete_assemblage("аа", "аа", "аа", "аа", "аа", "аа"));
         }
 
         private void goto_back(object sender, RoutedEventArgs e)
