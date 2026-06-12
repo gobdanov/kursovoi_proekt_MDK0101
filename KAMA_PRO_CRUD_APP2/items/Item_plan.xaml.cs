@@ -22,14 +22,17 @@ namespace KAMA_PRO_CRUD_APP.items
     /// </summary>
     public partial class Item_plan : UserControl
     {
-        public Item_plan()
+        public Item_plan(string city,int all_trailers, int ready_trailers)
         {
             InitializeComponent();
+            city_tb.Content = city;
+            all_trailers_tb.Content = "всего: "+ all_trailers;
+            ready_trailers_tb.Content = "собрано: "+ready_trailers;
         }
 
         private void goto_plan(object sender, RoutedEventArgs e)
         {
-            MainWindow1.frame2_out.Navigate(new Page_Concrete_Plan());
+            MainWindow1.frame2_out.Navigate(new Page_Concrete_Plan(Convert.ToString(city_tb.Content)));
         }
 
         private void delete_plan(object sender, RoutedEventArgs e)

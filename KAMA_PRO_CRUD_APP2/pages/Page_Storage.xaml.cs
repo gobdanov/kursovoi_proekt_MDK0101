@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using KAMA_PRO_CRUD_APP2.classes.repo;
 
 namespace KAMA_PRO_CRUD_APP.pages
 {
@@ -23,15 +24,20 @@ namespace KAMA_PRO_CRUD_APP.pages
         public Page_Storage()
         {
             InitializeComponent();
-            parent.Children.Add(new items.item_storage("дышло__чду", 0));
-            parent.Children.Add(new items.item_storage("дышло__чдш", 0));
-            parent.Children.Add(new items.item_storage("дышло__дду", 0));
-            parent.Children.Add(new items.item_storage("рессора__тл", 0));
-            parent.Children.Add(new items.item_storage("рессора__чл", 0));
-            parent.Children.Add(new items.item_storage("амортизатор", 0));
-            parent.Children.Add(new items.item_storage("удлинитель__у", 0));
-            parent.Children.Add(new items.item_storage("удлинитель__ш", 0));
-            parent.Children.Add(new items.item_storage("проводка", 0));
+            this.Loaded += Page_StorageLoaded;
+            
         }
+        private async void Page_StorageLoaded(object sender, RoutedEventArgs e)
+        {
+            Repository repo = new Repository();
+            await repo.GetComponentsAsync();
+        
+            foreach(var i in repo.Components)
+            {
+                parent.Children.Add(new items.item_storage($"{i.Name}", i.Quantity));
+            }
+            
+        }
+        
     }
 }

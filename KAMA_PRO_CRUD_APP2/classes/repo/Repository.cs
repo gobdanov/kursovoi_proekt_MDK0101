@@ -34,6 +34,11 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
             concrete_Assemblage = await GetSmthngAsync<Concrete_Assemblage_Date>("Assemblages/"+date);
         }
 
+        public async Task GetPlan_linkto_TrailerAsync()
+        {
+            Plan_linkto_Trailer = await GetSmthngAsync<Plan_linkto_Trailer>("Plan_linkto_Trailer");
+        }
+
         public async Task GetAssemblagesAsync()
         {
             Assemblages = await GetSmthngAsync<Assemblages>("Assemblages");

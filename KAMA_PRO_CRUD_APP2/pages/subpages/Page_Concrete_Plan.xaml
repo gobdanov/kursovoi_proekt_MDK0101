@@ -23,7 +23,7 @@
         <Button Click="goto_back" Grid.Column="0" Grid.Row="0" Margin="0,0,80,45" Opacity="0" Cursor="Hand"/>
 
         <StackPanel Grid.Column="0" Grid.Row="0">
-            <Label Content="название плана" Margin="0,20,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+            <Label Content="название плана" x:Name="plan_name" Margin="0,20,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
         </StackPanel>
 
         <Grid Grid.Row="1" Background="AliceBlue" Margin="20,0,20,0" Height="30" VerticalAlignment="Top">
