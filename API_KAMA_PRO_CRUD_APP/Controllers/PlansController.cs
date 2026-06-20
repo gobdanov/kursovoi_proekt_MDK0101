@@ -14,6 +14,12 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
             db = context;
         }
 
+        [HttpPost]
+        public ActionResult<Plans> Create([FromQuery] string name, [FromBody] List<Plan_linkto_Trailer> plan_content)
+        {
+            return Ok();
+        }
+
         [HttpGet]
         public ActionResult<Plans> GetAll()
         {

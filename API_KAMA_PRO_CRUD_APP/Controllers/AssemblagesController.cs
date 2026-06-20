@@ -16,10 +16,60 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
             db = context;
         }
 
+
+        //вывод всех сборок с возможностью фильтрации по параметрам:
+        //вин-код, дата, вид прицепа
         [HttpGet]
-        public ActionResult<Assemblages> Read()
+        public ActionResult<Assemblages> Read(
+            [FromQuery] string EAV = null,
+            [FromQuery] DateOnly? date = null,
+            [FromQuery] string trailer = null)
         {
-            var assemblages = db.Assemblages.ToList();
+
+            //получаем все сборки
+            List<Assemblages> assemblages = db.Assemblages.ToList();
+
+            //если надо с определенным VIN-кодом, то меняем список
+            if (EAV != null)
+            {
+                assemblages = assemblages.Where(x => x.VIN == EAV).ToList();
+            }
+            //если надо с определенной датой, то меняем список
+            if (date != null)
+            {
+                assemblages = assemblages.Where(x => x.Date_ == date).ToList();
+            }
+            //если надо с определенным прицепом, то меняем список
+            if (trailer != null)
+            {
+                //получаем записи с тем прицепом, который указали
+                List<Plan_linkto_Trailer> list_of_eav_trailers = db.Plan_linkto_Trailer.Where(x => x.Trailer == trailer).ToList();
+                //работаем с другим спмском
+                List<Assemblages> assemblages2 = assemblages;
+                // , новый обнуляем
+                assemblages = new List<Assemblages>();
+
+                for (int i = 0; i < list_of_eav_trailers.Count; i++)
+                {
+                    for (int j = 0; j < assemblages2.Count; j++)
+                    {
+                        //если в конкретной записи списка определенных прицепов одного вида
+                        //есть та же запись, что и в сборках
+                        // то мы ее добавляем в выводимый список
+                        if (list_of_eav_trailers[i].VIN == assemblages2[j].VIN)
+                        {
+                            Assemblages assemblage = new Assemblages()
+                            {
+                                Assembler = assemblages2[j].Assembler,
+                                Date_ = assemblages2[j].Date_,
+                                VIN = assemblages2[j].VIN,
+                            };
+                            assemblages.Add(assemblage);
+                        }
+                    }
+                }
+            }
+
             return Ok(assemblages);
         }
 
@@ -69,7 +119,7 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
             catch( Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                return Ok("ошибка");
+                return BadRequest("ошибка");
             }
         }
 
@@ -77,9 +127,17 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
         [HttpPost]
         public ActionResult<Assemblages> Create([FromBody] Assemblages assemblage)
         {
-            db.Assemblages.Add(assemblage);
-            db.SaveChanges();
-            return Ok();
+            try
+            {
+                db.Assemblages.Add(assemblage);
+                db.SaveChanges();
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            
         }
     }
 }

@@ -1,9 +1,11 @@
 ﻿using KAMA_PRO_CRUD_APP.classes.models;
 using KAMA_PRO_CRUD_APP2;
+using KAMA_PRO_CRUD_APP2.classes.contexts;
 using KAMA_PRO_CRUD_APP2.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Text;
@@ -31,9 +33,10 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
 
         public static String BASE_ADDRESS = "https://localhost:7238/api/";
 
+
         public async Task GetConcreteAssemblagesAsync(string date)
         {
-            concrete_Assemblage = await GetSmthngAsync<Concrete_Assemblage_Date>("Assemblages/"+date);
+            concrete_Assemblage = await GetSmthngAsync<Concrete_Assemblage_Date>("Assemblages/" + date);
         }
 
         public async Task GetPlan_linkto_TrailerAsync()
@@ -45,7 +48,6 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
         {
             Assemblages = await GetSmthngAsync<Assemblages>("Assemblages");
         }
-        // СБОРЩИКИ!!
         public async Task CreateAssemblerAsync(DTO.DTO_Assembler assembler)
         {
             await CreateSmthngAsync<DTO_Assembler>("Assemblers", assembler);
@@ -69,7 +71,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
         {
             Plans = await GetSmthngAsync<Plans>("Plans");
         }
-        
+
         //http-client
         HttpClient client = new HttpClient();
 

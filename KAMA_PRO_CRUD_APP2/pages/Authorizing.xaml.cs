@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using KAMA_PRO_CRUD_APP;
 using KAMA_PRO_CRUD_APP2;
+using KAMA_PRO_CRUD_APP2.classes.repo;
 
 
 namespace KAMA_PRO_CRUD_APP.pages
@@ -31,6 +32,7 @@ namespace KAMA_PRO_CRUD_APP.pages
         }
         private void SignIn(object sender, RoutedEventArgs e)
         {
+            Repository repo = new Repository();
             MainWindow1 mainWindow1 = new MainWindow1();
             mainWindow1.Show();
             mw.Close();

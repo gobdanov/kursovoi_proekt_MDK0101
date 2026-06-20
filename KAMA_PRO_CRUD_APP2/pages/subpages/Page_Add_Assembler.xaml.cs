@@ -1,6 +1,7 @@
 ﻿using KAMA_PRO_CRUD_APP;
 using KAMA_PRO_CRUD_APP.pages;
 using KAMA_PRO_CRUD_APP2.classes.repo;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using KAMA_PRO_CRUD_APP2.classes.contexts;
 
 namespace KAMA_PRO_CRUD_APP2.pages.subpages
 {
@@ -30,6 +32,8 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
 
         private async void add_assembler(object sender, RoutedEventArgs e)
         {
+            DBContext db = new DBContext();
+
             DTO.DTO_Assembler assembler = new DTO.DTO_Assembler
             {
                 Name = name_tb.Text,
