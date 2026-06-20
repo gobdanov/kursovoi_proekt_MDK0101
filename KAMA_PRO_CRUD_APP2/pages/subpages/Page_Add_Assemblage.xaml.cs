@@ -16,6 +16,10 @@ using KAMA_PRO_CRUD_APP2.pages;
 using System.Windows.Shapes;
 using KAMA_PRO_CRUD_APP.pages;
 using KAMA_PRO_CRUD_APP2.classes.repo;
+using KAMA_PRO_CRUD_APP2.items;
+using KAMA_PRO_CRUD_APP2.classes.services;
+using KAMA_PRO_CRUD_APP.classes.models;
+using KAMA_PRO_CRUD_APP2.classes.contexts;
 
 namespace KAMA_PRO_CRUD_APP2.pages.subpages
 {
@@ -45,7 +49,7 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
             await repository.GetAssemblersAsync();
             foreach (var i in repository.Assemblers)
             {
-                assemblers.Children.Add(new CheckBox { Content = i.Surname+" " + i.Name+" "+ i.Lastname  });
+                assemblers_sp.Children.Add(new CheckBox { Content = i.Username  });
             }
 
             await repository.GetComponentsAsync();
@@ -71,6 +75,7 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
 
                 if (count >= 13) {
                     MessageBox.Show("слишком много прицепов!");
+                    quantity_trailers.Text = "";
                     return;
                 } 
                 else
@@ -97,14 +102,82 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
             catch
             {
                 MessageBox.Show("введите корректное число!");
+                quantity_trailers.Text = "";
                 return;
             }
             
         }
 
-        private void add_assemblage(object sender, RoutedEventArgs e)
+        private async void add_assemblage(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("добавление сборки...");
+            DBContext db = new DBContext();
+
+            Services service = new Services();
+
+            // содержит id сборщиков для последующего добавления
+            List<int> assemblers = new List<int>();
+            foreach (CheckBox i in assemblers_sp.Children)
+            {
+                // если checkbox выделен, то
+                if (i.IsChecked == true)
+                {
+                    // сохраняем айди того сборщика, который выделен
+                    Assemblers ass = db.Assemblers.Where(x => x.Username == i.Content).First();
+                    assemblers.Add(ass.Id);
+                }
+            }
+            // сохраняем собираемый прицеп
+            string trailer = trailers_cmbbx.SelectedValue.ToString();
+            // сохраняем план
+            string plan = plans_cmbbx.SelectedValue.ToString();
+
+            // сохраняем кол-во прицепов
+            int count = Convert.ToInt32(quantity_trailers.Text);
+
+            //сохраняем шильды
+            List<string> EAV = new List<string>();
+            //если четное, то
+            if (count % 2 == 0)
+            {
+                foreach (item_add_assemblage_trailer i in trailers.Children)
+                {
+                    EAV.Add(i.upper_vin.Text.ToString());
+                    EAV.Add(i.downer_vin.Text.ToString());
+                }
+            }
+            else
+            {
+                bool flag = false;
+                foreach (item_add_assemblage_trailer i in trailers.Children)
+                {
+                    if (flag == false)
+                    {
+                        EAV.Add(i.downer_vin.Text.ToString());
+                        flag = true;
+                    }
+                    else
+                    {
+                        EAV.Add(i.upper_vin.Text.ToString());
+                        EAV.Add(i.downer_vin.Text.ToString());
+                    }
+                }
+            }
+
+            for (int i = 0; i < assemblers.Count; i++)
+            {
+                for (int j = 0; j < EAV.Count; j++)
+                {
+                    Assemblages assemblage = new Assemblages
+                    {
+                        Assembler = assemblers[i],
+                        VIN = EAV[j],
+                        Date_ = DateOnly.FromDateTime(DateTime.Now)
+                    };
+
+                    await service.CreateAssemblage(assemblage);
+                }
+            }
+            MessageBox.Show("добавлено");
         }
 
         private void goto_back(object sender, RoutedEventArgs e)

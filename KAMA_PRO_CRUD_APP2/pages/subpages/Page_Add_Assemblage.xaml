@@ -63,7 +63,7 @@
             <Grid Margin="0,10,0,0" Grid.Column="0" Grid.Row="1" Grid.RowSpan="1">
                 <Label Content="укажите сборщиков:" Margin="20,0,0,0"/>
                 <ScrollViewer>
-                    <StackPanel x:Name="assemblers" Margin="10,30,0,0"/>
+                    <StackPanel x:Name="assemblers_sp" Margin="10,30,0,0"/>
                 </ScrollViewer>
 
             </Grid>
