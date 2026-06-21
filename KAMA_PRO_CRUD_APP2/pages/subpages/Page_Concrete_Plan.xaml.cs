@@ -42,7 +42,35 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
             
             foreach(var i in plan_Linkto_Trailer)
             {
-                parent.Children.Add(new items.item_concrete_plan(i.Trailer, i.VIN, Convert.ToString(i.Ready), "-"));
+                if (Convert.ToString(i.Ready) == "False")
+                {
+                    parent.Children.Add(new items.item_concrete_plan(i.Trailer, i.VIN, Convert.ToString(i.Ready), "-"));
+                }
+                else
+                {
+                    List<int> assemblers = new List<int>();
+
+
+                    await repo.GetAssemblagesAsync();
+
+                    foreach (var j in repo.Assemblages)
+                    {
+                        if (j.VIN == i.VIN)
+                        {
+                            assemblers.Add(Convert.ToInt32(j.Assembler));
+                        }
+                    }
+
+                    string assemblers_stroke = "";
+                    
+                    foreach(int j in assemblers)
+                    {
+                        assemblers_stroke += Convert.ToString(j)+" ";
+                    }
+
+                    parent.Children.Add(new items.item_concrete_plan(i.Trailer, i.VIN, Convert.ToString(i.Ready), assemblers_stroke));
+                }
+
             }
         }
 
