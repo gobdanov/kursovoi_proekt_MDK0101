@@ -174,7 +174,18 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
                         Date_ = DateOnly.FromDateTime(DateTime.Now)
                     };
 
-                    await service.CreateAssemblage(assemblage);
+                    MessageBox.Show($"{assemblers[i]}");
+                    MessageBox.Show($"{EAV[j]}");
+                    MessageBox.Show($"{DateOnly.FromDateTime(DateTime.Now)}");
+
+                    try
+                    {
+                        await service.CreateAssemblage(assemblage);
+                    }
+                    catch (Exception ex) 
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                 }
             }
             MessageBox.Show("добавлено");

@@ -24,7 +24,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.services
                     PropertyNameCaseInsensitive = true
                 };
 
-                await client.PostAsJsonAsync(BASE_ADDRESS + "/Assemblages", assemblage);
+                await client.PostAsJsonAsync(BASE_ADDRESS + "Assemblages", assemblage);
             }
             catch (HttpIOException ex)
             {
