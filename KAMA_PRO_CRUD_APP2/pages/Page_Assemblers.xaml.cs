@@ -37,7 +37,7 @@ namespace KAMA_PRO_CRUD_APP.pages
 
             foreach (var i in repository.Assemblers)
             {
-                stackpanel.Children.Add(new items.item_assembler(i.Name+" " + i.Lastname+" " + i.Surname) { Margin = new Thickness(0, 10, 0, 0) });
+                stackpanel.Children.Add(new items.item_assembler(i.Name+" " + i.Lastname+" " + i.Surname, i.Username) { Margin = new Thickness(0, 10, 0, 0) });
             }
         }
 

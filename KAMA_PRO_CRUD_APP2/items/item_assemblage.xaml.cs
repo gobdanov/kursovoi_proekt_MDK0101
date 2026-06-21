@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using KAMA_PRO_CRUD_APP2.classes.services;
 
 namespace KAMA_PRO_CRUD_APP.items
 {

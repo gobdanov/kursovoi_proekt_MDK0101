@@ -147,9 +147,9 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
         }
 
         [HttpDelete]
-        public ActionResult<Assemblers> Delete([FromQuery] int id)
+        public ActionResult<Assemblers> Delete([FromQuery] string username)
         {
-            Assemblers assembler = db.Assemblers.Where(x => x.Id == id).First();
+            Assemblers assembler = db.Assemblers.Where(x => x.Username == username).First();
             if(assembler != null)
             {
                 db.Assemblers.Remove(assembler);
