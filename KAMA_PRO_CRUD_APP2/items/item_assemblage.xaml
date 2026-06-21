@@ -7,14 +7,40 @@
              mc:Ignorable="d" 
              d:DesignHeight="40" d:DesignWidth="300">
     <Grid>
-        <Border HorizontalAlignment="Center" VerticalAlignment="Center" Height="29" Background="#ffffff" Width="270" CornerRadius="10">
+        <Border HorizontalAlignment="Stretch" 
+                VerticalAlignment="Center" 
+                Height="29" 
+                Background="#ffffff" 
+                CornerRadius="10"
+                Margin="5,0">
             <Grid>
-                <Label x:Name="date_tb" Content="сборка от 12.12.23" HorizontalAlignment="Center"/>
-                <Image Source="/imgs/cross.png" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                <Label x:Name="date_tb" 
+                       Content="сборка от 12.12.23" 
+                       HorizontalAlignment="Stretch"
+                       HorizontalContentAlignment="Center"
+                       VerticalContentAlignment="Center"/>
+                
+                
+                <Image Source="/imgs/cross.png" 
+                       HorizontalAlignment="Right" 
+                       VerticalAlignment="Center"
+                       Width="25" 
+                       Height="25"
+                       Margin="0,0,10,0"/>
             </Grid>
         </Border>
-        <Button Opacity="0" Cursor="Hand" Margin="15,5" Click="goto_assemblage"></Button>
-        <Button Opacity="0" Cursor="Hand" Height="40" Width="40" Margin="0,0,19,0" HorizontalAlignment="Right" Click="delete_assemblage"></Button>
 
+        <Button Opacity="0" 
+                Cursor="Hand" 
+                Margin="5" 
+                Click="goto_assemblage"
+                HorizontalAlignment="Stretch"/>
+
+        <Button Opacity="0" 
+                Cursor="Hand" 
+                Width="40" 
+                Margin="0,0,10,0" 
+                HorizontalAlignment="Right" 
+                Click="delete_assemblage"/>
     </Grid>
 </UserControl>

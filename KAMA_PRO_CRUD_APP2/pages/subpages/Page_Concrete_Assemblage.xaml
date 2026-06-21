@@ -43,6 +43,9 @@
             <Label Content="шильды" x:Name="Nameplate" Grid.Column="4"/>
             <Label Content="фото" x:Name="Photo" Grid.Column="5"/>
         </Grid>
-        <StackPanel x:Name="parent" Grid.Row="1" Margin="20,30,20,0"/>
+
+        <ScrollViewer Grid.Row="1" Margin="20,30,20,30">
+            <StackPanel x:Name="parent" />
+        </ScrollViewer>
     </Grid>
 </Page>
