@@ -6,5 +6,6 @@ namespace KAMA_PRO_CRUD_APP.classes.models
     {
         public string Trailer { get; set; }
         public string Component { get; set; }
+        public int Quantity { get; set; }
     }
 }

@@ -24,7 +24,8 @@ namespace KAMA_PRO_CRUD_APP2.classes.services
                     PropertyNameCaseInsensitive = true
                 };
 
-                await client.PostAsJsonAsync(BASE_ADDRESS + "Assemblages", assemblage);
+                 await client.PostAsJsonAsync(BASE_ADDRESS + "Assemblages", assemblage);
+
             }
             catch (HttpIOException ex)
             {
@@ -69,12 +70,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.services
         {
             try
             {
-                var options = new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                };
-
-                await client.PostAsync(BASE_ADDRESS + $"Components?name={name}/count={count}", null);
+                await client.PostAsync(BASE_ADDRESS + $"Components?name={name}&count={count}", null);
             }
             catch (HttpIOException ex)
             {

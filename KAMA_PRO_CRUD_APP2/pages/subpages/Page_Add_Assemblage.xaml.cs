@@ -33,15 +33,15 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
             InitializeComponent();
 
             this.Loaded += Page_Add_Assemblage_Loaded;
-
         }
+
 
         public async void Page_Add_Assemblage_Loaded(object sender, RoutedEventArgs e)
         {
             Repository repository = new Repository();
 
             await repository.GetTrailersAsync();
-            foreach(var i in repository.Trailers)
+            foreach (var i in repository.Trailers)
             {
                 trailers_cmbbx.Items.Add(i.Name);
             }
@@ -49,7 +49,7 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
             await repository.GetAssemblersAsync();
             foreach (var i in repository.Assemblers)
             {
-                assemblers_sp.Children.Add(new CheckBox { Content = i.Username  });
+                assemblers_sp.Children.Add(new CheckBox { Content = i.Username });
             }
 
             await repository.GetComponentsAsync();
@@ -73,11 +73,12 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
             {
                 int count = Convert.ToInt32(quantity_trailers.Text);
 
-                if (count >= 13) {
+                if (count >= 13)
+                {
                     MessageBox.Show("слишком много прицепов!");
                     quantity_trailers.Text = "";
                     return;
-                } 
+                }
                 else
                 {
                     if (count % 2 == 0)
@@ -105,7 +106,7 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
                 quantity_trailers.Text = "";
                 return;
             }
-            
+
         }
 
         private async void add_assemblage(object sender, RoutedEventArgs e)
@@ -114,81 +115,106 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
 
             Services service = new Services();
 
-            // содержит id сборщиков для последующего добавления
-            List<int> assemblers = new List<int>();
-            foreach (CheckBox i in assemblers_sp.Children)
-            {
-                // если checkbox выделен, то
-                if (i.IsChecked == true)
-                {
-                    // сохраняем айди того сборщика, который выделен
-                    Assemblers ass = db.Assemblers.Where(x => x.Username == i.Content).First();
-                    assemblers.Add(ass.Id);
-                }
-            }
             // сохраняем собираемый прицеп
             string trailer = trailers_cmbbx.SelectedValue.ToString();
-            // сохраняем план
-            string plan = plans_cmbbx.SelectedValue.ToString();
 
             // сохраняем кол-во прицепов
             int count = Convert.ToInt32(quantity_trailers.Text);
 
-            //сохраняем шильды
-            List<string> EAV = new List<string>();
-            //если четное, то
-            if (count % 2 == 0)
+            List<string> components = db.Component_linkto_Trailer.Where(x => x.Trailer == trailer).Select(x => x.Component).ToList();
+
+            bool flag2 = false;
+
+            foreach(var i in components)
             {
-                foreach (item_add_assemblage_trailer i in trailers.Children)
+                if (Convert.ToInt32(db.Components.Where(x => x.Name == i).Select(x => x.Quantity).First()) * count > Convert.ToInt32(db.Component_linkto_Trailer.Where(x => x.Component == i).Select(x => x.Quantity).First()))
                 {
-                    EAV.Add(i.upper_vin.Text.ToString());
-                    EAV.Add(i.downer_vin.Text.ToString());
+                    flag2 = true;
                 }
             }
-            else
+
+            if (flag2)
             {
-                bool flag = false;
-                foreach (item_add_assemblage_trailer i in trailers.Children)
+                // содержит id сборщиков для последующего добавления
+                List<int> assemblers = new List<int>();
+                foreach (CheckBox i in assemblers_sp.Children)
                 {
-                    if (flag == false)
+                    // если checkbox выделен, то
+                    if (i.IsChecked == true)
                     {
-                        EAV.Add(i.downer_vin.Text.ToString());
-                        flag = true;
+                        // сохраняем айди того сборщика, который выделен
+                        Assemblers ass = db.Assemblers.Where(x => x.Username == i.Content).First();
+                        assemblers.Add(ass.Id);
                     }
-                    else
+                }
+
+                // сохраняем план
+                string plan = plans_cmbbx.SelectedValue.ToString();
+
+                
+
+                //сохраняем шильды
+                List<string> EAV = new List<string>();
+                //если четное, то
+                if (count % 2 == 0)
+                {
+                    foreach (item_add_assemblage_trailer i in trailers.Children)
                     {
                         EAV.Add(i.upper_vin.Text.ToString());
                         EAV.Add(i.downer_vin.Text.ToString());
                     }
                 }
-            }
-
-            for (int i = 0; i < assemblers.Count; i++)
-            {
-                for (int j = 0; j < EAV.Count; j++)
+                else
                 {
-                    Assemblages assemblage = new Assemblages
+                    bool flag = false;
+                    foreach (item_add_assemblage_trailer i in trailers.Children)
                     {
-                        Assembler = assemblers[i],
-                        VIN = EAV[j],
-                        Date_ = DateOnly.FromDateTime(DateTime.Now)
-                    };
-
-                    MessageBox.Show($"{assemblers[i]}");
-                    MessageBox.Show($"{EAV[j]}");
-                    MessageBox.Show($"{DateOnly.FromDateTime(DateTime.Now)}");
-
-                    try
-                    {
-                        await service.CreateAssemblage(assemblage);
-                    }
-                    catch (Exception ex) 
-                    {
-                        MessageBox.Show(ex.Message);
+                        if (flag == false)
+                        {
+                            EAV.Add(i.downer_vin.Text.ToString());
+                            flag = true;
+                        }
+                        else
+                        {
+                            EAV.Add(i.upper_vin.Text.ToString());
+                            EAV.Add(i.downer_vin.Text.ToString());
+                        }
                     }
                 }
+
+                for (int i = 0; i < assemblers.Count; i++)
+                {
+                    for (int j = 0; j < EAV.Count; j++)
+                    {
+                        Assemblages assemblage = new Assemblages
+                        {
+                            Assembler = assemblers[i],
+                            VIN = EAV[j],
+                            Date_ = DateOnly.FromDateTime(DateTime.Now)
+                        };
+
+                        MessageBox.Show($"{assemblers[i]}");
+                        MessageBox.Show($"{EAV[j]}");
+                        MessageBox.Show($"{DateOnly.FromDateTime(DateTime.Now)}");
+
+                        try
+                        {
+                            await service.CreateAssemblage(assemblage);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+                    }
+                }
+                MessageBox.Show("сборка добавлена!");
             }
-            MessageBox.Show("добавлено");
+            else
+            {
+                MessageBox.Show("комплектовки не хватает!");
+            }
+
+
         }
 
         private void goto_back(object sender, RoutedEventArgs e)

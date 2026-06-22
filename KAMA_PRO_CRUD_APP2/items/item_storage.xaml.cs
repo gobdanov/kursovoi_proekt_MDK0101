@@ -84,9 +84,18 @@ namespace KAMA_PRO_CRUD_APP.items
 
             Services service = new Services();
 
-            MessageBox.Show($"{component.Name}, {minus_tb.Text}");
+            try
+            {
+                await service.UpdateComponent(component.Name, -(Convert.ToInt32(minus_tb.Text)));
 
-            await service.UpdateComponent(component.Name, -(Convert.ToInt32(minus_tb.Text)));
+                count.Content = Convert.ToString(Convert.ToInt32(count.Content) - Convert.ToInt32(minus_tb.Text));
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
 
             //скрываем текстбокс
             minus_tb.Visibility = Visibility.Hidden;
@@ -107,9 +116,17 @@ namespace KAMA_PRO_CRUD_APP.items
 
             Services service = new Services();
 
-            MessageBox.Show($"{component.Name}, {plus_tb.Text}");
+            try 
+            {
+                await service.UpdateComponent(component.Name, Convert.ToInt32(plus_tb.Text));
 
-            await service.UpdateComponent(component.Name, Convert.ToInt32(plus_tb.Text));
+                count.Content = Convert.ToString(Convert.ToInt32(count.Content) + Convert.ToInt32(plus_tb.Text));
+            }
+            
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
             //показываем текстбокс
             plus_tb.Visibility = Visibility.Hidden;

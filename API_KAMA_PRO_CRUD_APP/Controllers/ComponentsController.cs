@@ -15,8 +15,7 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
         }
 
         [HttpPost]
-        [Route("{name}/{count}")]
-        public ActionResult Update(string name, int count)
+        public ActionResult Update([FromQuery] string name, [FromQuery] int count)
         {
             Components component = db.Components.Where(x => x.Name == name).FirstOrDefault();
 
@@ -25,7 +24,7 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
                 component.Quantity += count;
                 db.SaveChanges();
             }
-            return Ok();
+            return Ok(db.Components.Where(x =>x.Name == name));
         }
 
         [HttpGet]
