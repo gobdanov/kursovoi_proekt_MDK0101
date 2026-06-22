@@ -64,5 +64,30 @@ namespace KAMA_PRO_CRUD_APP2.classes.services
                 MessageBox.Show(ex.Message);
             }
         }
+
+        public async Task UpdateComponent(string name, int count)
+        {
+            try
+            {
+                var options = new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                };
+
+                await client.PostAsync(BASE_ADDRESS + $"Components?name={name}/count={count}", null);
+            }
+            catch (HttpIOException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            catch (JsonException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

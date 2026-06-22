@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using KAMA_PRO_CRUD_APP.classes.models;
 using KAMA_PRO_CRUD_APP2.classes.repo;
 
 namespace KAMA_PRO_CRUD_APP.pages
@@ -32,9 +33,9 @@ namespace KAMA_PRO_CRUD_APP.pages
             Repository repo = new Repository();
             await repo.GetComponentsAsync();
         
-            foreach(var i in repo.Components)
+            foreach(Components i in repo.Components)
             {
-                parent.Children.Add(new items.item_storage($"{i.Name}", i.Quantity));
+                parent.Children.Add(new items.item_storage(i));
             }
             
         }

@@ -30,6 +30,7 @@
     <None Remove="imgs\pencil.png" />
     <None Remove="imgs\plus.png" />
     <None Remove="imgs\pricep_authorizing_page.jpg" />
+    <None Remove="imgs\submit.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -89,6 +90,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="imgs\pricep_authorizing_page.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="imgs\submit.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

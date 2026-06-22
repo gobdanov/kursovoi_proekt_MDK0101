@@ -17,13 +17,31 @@
             <Label VerticalAlignment="Center"  Content="кол-во" x:Name="count" Grid.Column="1"/>
 
             <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Center">
-                <Image Source="/imgs/minus.png" Height="20" Width="20"/>
-                <Image Source="/imgs/plus.png" Height="20" Width="20"/>
+                <Grid>
+                    <Image Source="/imgs/submit.png" x:Name="minus_submit_img" Height="20" Width="20" Visibility="Hidden"/>
+                    <Image Source="/imgs/minus.png" x:Name="minus_img" Height="20" Width="20"/>
+                </Grid>
+
+                <Grid>
+                    <Image Source="/imgs/submit.png" x:Name="plus_submit_img" Height="20" Width="20" Visibility="Hidden"/>
+                    <Image Source="/imgs/plus.png" x:Name="plus_img" Height="20" Width="20"/>
+                </Grid>
+                
             </StackPanel>
 
             <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button Height="20" Width="20" Opacity="0" Click="minus" Cursor="Hand"/>
-                <Button Height="20" Width="20" Opacity="0" Click="plus" Cursor="Hand"/>
+                <TextBox Width="30" x:Name="minus_tb" Text="0" TextAlignment="Center"  Visibility="Hidden"/>
+                <Grid>
+                    <Button Height="20" Width="20" Opacity="0" Click="minus_submit" Cursor="Hand" Visibility="Hidden" x:Name="minus_submit_btn"/>
+                    <Button Height="20" Width="20" Opacity="0" Click="minus" Cursor="Hand" x:Name="minus_btn"/>
+                </Grid>
+
+                <Grid>
+                    <Button Height="20" Width="20" Opacity="0" Click="plus_submit" Cursor="Hand" Visibility="Hidden" x:Name="plus_submit_btn"/>
+                    <Button Height="20" Width="20" Opacity="0" Click="plus" Cursor="Hand" x:Name="plus_btn"/>
+                </Grid>
+
+                <TextBox Width="30" x:Name="plus_tb" Text="0" TextAlignment="Center" Visibility="Hidden"/>
             </StackPanel>
         </Grid>
 

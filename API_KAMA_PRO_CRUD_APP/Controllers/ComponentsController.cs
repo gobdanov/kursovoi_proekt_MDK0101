@@ -14,6 +14,20 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
             db = context;
         }
 
+        [HttpPost]
+        [Route("{name}/{count}")]
+        public ActionResult Update(string name, int count)
+        {
+            Components component = db.Components.Where(x => x.Name == name).FirstOrDefault();
+
+            if (component != null)
+            {
+                component.Quantity += count;
+                db.SaveChanges();
+            }
+            return Ok();
+        }
+
         [HttpGet]
         public ActionResult<Components> GetAll()
         {
