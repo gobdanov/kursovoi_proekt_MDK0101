@@ -123,16 +123,26 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
 
             List<string> components = db.Component_linkto_Trailer.Where(x => x.Trailer == trailer).Select(x => x.Component).ToList();
 
-            bool flag2 = false;
+            bool flag2 = true;
 
-            foreach(var i in components)
+            foreach (var i in components)
             {
-                if (Convert.ToInt32(db.Components.Where(x => x.Name == i).Select(x => x.Quantity).First()) * count > Convert.ToInt32(db.Component_linkto_Trailer.Where(x => x.Component == i).Select(x => x.Quantity).First()))
+                // Количество компонента на складе
+                int totalQuantity = db.Components.Where(x => x.Name == i).Select(x => x.Quantity).FirstOrDefault();
+
+                // Количество компонента, необходимого для одного прицепа
+                int neededPerTrailer = db.Component_linkto_Trailer.Where(x => x.Component == i).Select(x => x.Quantity).FirstOrDefault();
+
+                // Сколько нужно для всех прицепов
+                int neededTotal = neededPerTrailer * count;
+
+                // Проверяем, хватает ли на складе
+                if (totalQuantity < neededTotal)
                 {
-                    flag2 = true;
+                    flag2 = false;
+                    break; // Можно выйти из цикла, так как уже не хватает
                 }
             }
-
             if (flag2)
             {
                 // содержит id сборщиков для последующего добавления
@@ -192,10 +202,6 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
                             VIN = EAV[j],
                             Date_ = DateOnly.FromDateTime(DateTime.Now)
                         };
-
-                        MessageBox.Show($"{assemblers[i]}");
-                        MessageBox.Show($"{EAV[j]}");
-                        MessageBox.Show($"{DateOnly.FromDateTime(DateTime.Now)}");
 
                         try
                         {
