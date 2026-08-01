@@ -158,7 +158,7 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
                     }
                 }
 
-                // сохраняем план
+                // сохраняем план К
                 string plan = plans_cmbbx.SelectedValue.ToString();
 
                 
