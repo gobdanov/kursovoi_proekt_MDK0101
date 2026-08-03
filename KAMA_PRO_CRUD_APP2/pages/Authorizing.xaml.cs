@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using KAMA_PRO_CRUD_APP;
+using KAMA_PRO_CRUD_APP.classes.models;
 using KAMA_PRO_CRUD_APP2;
 using KAMA_PRO_CRUD_APP2.classes;
 using KAMA_PRO_CRUD_APP2.classes.repo;
@@ -33,18 +34,33 @@ namespace KAMA_PRO_CRUD_APP.pages
         }
         private async void SignIn(object sender, RoutedEventArgs e)
         {
+            
             Repository repo = new Repository();
 
-            var response = await repo.LoginUser(username_tb.Text, password_tb.Text);
+            Assemblers user = await repo.LoginUser(username_tb.Text, password_tb.Text);
 
-            if(response.ToString() == "success")
+
+            if (user != null)
             {
+
                 MainWindow1 mainWindow1 = new MainWindow1();
 
-                MessageBox.Show(temp_variables.userRole);
+                if (!string.IsNullOrEmpty(user.Role))
+                {
 
-                mainWindow1.Show();
-                mw.Close();
+                    temp_variables.userRole = user.Role;
+
+
+                    MessageBox.Show(temp_variables.userRole);
+
+
+                    mainWindow1.Show();
+                    mw.Close();
+                }
+                else
+                {
+                    MessageBox.Show("ROLE - ПУСТОЙ");
+                }
             }
             else
             {
