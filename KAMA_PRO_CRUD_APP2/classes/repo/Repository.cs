@@ -33,6 +33,26 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
 
         public static String BASE_ADDRESS = "https://localhost:7238/api/";
 
+        public async Task<string> LoginUser(string username, string pwd)
+        {
+            DTO.DTO_Assembler_Login asDTO = new DTO_Assembler_Login { password = pwd, username = username };
+            
+
+            var response = await client.PostAsJsonAsync(BASE_ADDRESS + "Assemblers/Login", asDTO);
+
+            var json = await response.Content.ReadAsStringAsync();
+
+            temp_variables.userRole = JsonSerializer.Deserialize<Assemblers>(json).Role;
+
+            MessageBox.Show(temp_variables.userRole);
+
+            if (response.IsSuccessStatusCode)
+            {
+                return "success";
+            }
+            return "error";
+        }
+
 
         public async Task GetConcreteAssemblagesAsync(string date)
         {

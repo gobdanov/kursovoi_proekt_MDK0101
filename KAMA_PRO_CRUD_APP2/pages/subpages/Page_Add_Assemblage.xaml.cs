@@ -161,8 +161,6 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
                 // сохраняем план К
                 string plan = plans_cmbbx.SelectedValue.ToString();
 
-                
-
                 //сохраняем шильды
                 List<string> EAV = new List<string>();
                 //если четное, то

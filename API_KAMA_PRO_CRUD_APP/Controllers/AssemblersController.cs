@@ -110,9 +110,9 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
         [Route("Login")]
         public ActionResult<Assemblers> Login([FromBody] DTO_Assembler_Login Login)
         {
-            string hash_password = SHA256_class.GetSha256Hash(Login.Password);
+            string hash_password = SHA256_class.GetSha256Hash(Login.password);
 
-            var assembler = db.Assemblers.Where(x => x.Username == Login.Username && x.Pwd == hash_password).FirstOrDefault();
+            var assembler = db.Assemblers.Where(x => x.Username == Login.username && x.Pwd == hash_password).FirstOrDefault();
             if (assembler != null)
             {
                 return Ok(assembler);
