@@ -1,6 +1,7 @@
 ﻿using API_KAMA_PRO_CRUD_APP.Classes;
 using API_KAMA_PRO_CRUD_APP.DTO;
 using KAMA_PRO_CRUD_APP.classes.models;
+using KAMA_PRO_CRUD_APP2.classes;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Routing;
 using System.Linq;
@@ -37,11 +38,11 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
                 //ищеи все сборки, которые собирал сборщик в течение недели
                 List<Assemblages> assemblages_with_assembler = db.Assemblages
                     .Where(x => x.Assembler == assembler.Id)
-                    .Where(x => x.Date_ >= DateOnly.FromDateTime(first_and_last_days[0]) 
+                    .Where(x => x.Date_ >= DateOnly.FromDateTime(first_and_last_days[0])
                     && x.Date_ <= DateOnly.FromDateTime(first_and_last_days[1])).ToList();
 
                 List<Assemblages> ALL_assemblages = db.Assemblages
-                    .Where(x => x.Date_ >= DateOnly.FromDateTime(first_and_last_days[0]) 
+                    .Where(x => x.Date_ >= DateOnly.FromDateTime(first_and_last_days[0])
                     && x.Date_ <= DateOnly.FromDateTime(first_and_last_days[1])).ToList();
 
                 //матрица для запоминания прицепа и кол-ва сборщиков
@@ -89,7 +90,7 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
                     // в переменную прибавляем эту сумму. переменная является общей суммой.
                     allSum += matrix[i].count;
                 }
-                return Ok(allSum);
+                return Ok(matrix);
             }
             else
             {
@@ -105,6 +106,7 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
             var assemblers = db.Assemblers.ToList();
             return Ok(assemblers);
         }
+
 
         [HttpPost]
         [Route("Login")]
@@ -150,7 +152,7 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
         public ActionResult<Assemblers> Delete([FromQuery] string username)
         {
             Assemblers assembler = db.Assemblers.Where(x => x.Username == username).First();
-            if(assembler != null)
+            if (assembler != null)
             {
                 db.Assemblers.Remove(assembler);
                 db.SaveChanges();

@@ -34,7 +34,7 @@ namespace KAMA_PRO_CRUD_APP.pages
         }
         private async void SignIn(object sender, RoutedEventArgs e)
         {
-            
+
             Repository repo = new Repository();
 
             Assemblers user = await repo.LoginUser(username_tb.Text, password_tb.Text);
@@ -42,30 +42,17 @@ namespace KAMA_PRO_CRUD_APP.pages
 
             if (user != null)
             {
+                temp_variables.loginedUser = user;
 
                 MainWindow1 mainWindow1 = new MainWindow1();
 
-                if (!string.IsNullOrEmpty(user.Role))
-                {
-
-                    temp_variables.userRole = user.Role;
-
-
-                    MessageBox.Show(temp_variables.userRole);
-
-
-                    mainWindow1.Show();
-                    mw.Close();
-                }
-                else
-                {
-                    MessageBox.Show("ROLE - ПУСТОЙ");
-                }
+                mainWindow1.Show();
+                mw.Close();
             }
             else
             {
                 MessageBox.Show("ошибка входа");
             }
-        }
+}
     }
 }
