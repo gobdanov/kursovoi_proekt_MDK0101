@@ -1,5 +1,6 @@
 ﻿using KAMA_PRO_CRUD_APP.classes.models;
 using KAMA_PRO_CRUD_APP2.classes;
+using KAMA_PRO_CRUD_APP2.classes.repo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static KAMA_PRO_CRUD_APP2.classes.repo.Repository;
 
 namespace KAMA_PRO_CRUD_APP.pages
 {
@@ -28,8 +30,29 @@ namespace KAMA_PRO_CRUD_APP.pages
             salaryFor.Content = "зарплата для пользователя " + temp_variables.loginedUser.Username;
             DateTime[] days = getWeek();
             salaryAt.Content = $"за период {days[0].ToString().Split()[0]} - {days[1].ToString().Split()[0]}";
+
+            this.Loaded += Page_SalaryLoaded;
         }
 
+        private async void Page_SalaryLoaded(object sender, RoutedEventArgs e)
+        {
+            Repository repo = new Repository();
+
+            DTORETURN DTO = await repo.GetSalary(temp_variables.loginedUser.Id);
+
+            if (DTO.ALLSUM != 0 && DTO.MATRIX != null)
+            {
+                allSum.Content = DTO.ALLSUM + "р";
+
+                foreach (helpful_class i in DTO.MATRIX)
+                {
+                    sdelka.Children.Add(new Label { Content = i.Trailer_Vin + " "+i.count });
+                }
+            }
+            
+        }
+
+        
         public static DateTime[] getWeek()
         {
             DateTime[] first_and_last = new DateTime[2];

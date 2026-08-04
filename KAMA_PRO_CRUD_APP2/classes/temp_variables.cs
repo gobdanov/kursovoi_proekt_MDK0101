@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static KAMA_PRO_CRUD_APP2.classes.repo.Repository;
 
 namespace KAMA_PRO_CRUD_APP2.classes
 {
@@ -22,4 +23,11 @@ namespace KAMA_PRO_CRUD_APP2.classes
         public string Nameplate { get; set; }
         public string Photo { get; set; }
     }
+
+    public class DTORETURN
+    {
+        public List<helpful_class> MATRIX { get; set; }
+        public int ALLSUM { get; set; }
+    }
+
 }

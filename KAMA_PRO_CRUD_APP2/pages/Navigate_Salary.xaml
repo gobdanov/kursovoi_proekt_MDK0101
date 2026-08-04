@@ -27,7 +27,7 @@
         <Grid Grid.ColumnSpan="1" Margin="10,20,0,0" Height="520" VerticalAlignment="Top">
             <Rectangle HorizontalAlignment="Left" Height="46" Fill="White" VerticalAlignment="Top" Width="193" RadiusX="9.733" RadiusY="9.733"/>
             <Image HorizontalAlignment="Left" Source="../imgs/moai.png" Height="28" Margin="0,8" VerticalAlignment="Top" Width="28"/>
-            <Label Content="вадим богданов" FontSize="16" HorizontalAlignment="Left" Margin="30,5,0,484" FontWeight="Bold" Width="153"/>
+            <Label Content="вадим богданов" x:Name="userFIO" FontSize="16" HorizontalAlignment="Left" Margin="30,5,0,484" FontWeight="Bold" Width="153"/>
         </Grid>
 
         <StackPanel Width="213" HorizontalAlignment="Center" Height="450" VerticalAlignment="Top" Margin="0,80,0,0">

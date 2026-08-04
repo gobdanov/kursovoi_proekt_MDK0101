@@ -17,8 +17,8 @@
             <RowDefinition Height="200*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="130*"/>
-            <ColumnDefinition Width="350*"/>
+            <ColumnDefinition Width="216*"/>
+            <ColumnDefinition Width="271*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.ColumnSpan="2" Grid.RowSpan="5">
             <Label Content="зарплата для пользователя вадим благовещенск" x:Name="salaryFor" HorizontalAlignment="Left" Margin="0,20,0,0" VerticalAlignment="Center" FontWeight="Bold" FontSize="14"/>
@@ -27,11 +27,8 @@
 
         <Border Grid.Column="0" Margin="5,5,5,5" Grid.Row="1" CornerRadius="20" Background="#f0f0f0">
             <ScrollViewer Margin="0,0,15,0">
-                <StackPanel Margin="10,0,0,0">
+                <StackPanel Margin="10,0,0,0" x:Name="sdelka">
                     <Label Content="сделка:" FontWeight="Bold"/>
-                    <Label Content="х4 2513"/>
-                    <Label Content="х2 3015"/>
-                    <Label Content="х8 3515"/>
                 </StackPanel>
             </ScrollViewer>
         </Border>
@@ -39,14 +36,14 @@
         <Border Grid.Column="0" Margin="5,5,5,5" Grid.Row="2" Background="#f0f0f0" CornerRadius="20">
             <StackPanel Margin="10,0,0,0">
                 <Label Content="сделка:" FontWeight="Bold"/>
-                <Label Content="12,5 ч"/>
+                <Label Content="0 ч"/>
             </StackPanel>
         </Border>
 
         <Border Grid.Column="0" Margin="5,5,5,5" Grid.Row="3" Background="#f0f0f0" CornerRadius="20">
             <StackPanel Margin="10,0,0,0">
                 <Label Content="итого:" FontWeight="Bold"/>
-                <Label Content="3000р"/>
+                <Label Content="3000р" x:Name="allSum"/>
             </StackPanel>
         </Border>
 
@@ -54,9 +51,9 @@
             <ScrollViewer Margin="0,0,15,0">
                 <StackPanel Margin="10,0,0,0">
                     <Label Content="прошлые выплаты:" FontWeight="Bold"/>
-                    <Label Content="03.02.26 - 18000р (21.01.26-27.01.26)  "/>
-                    <Label Content="25.01.26 - 18000р (14.01.26-20.01.26)"/>
-                    <Label Content="18.01.26 - 18000р (07.01.26-13.01.26)"/>
+                    <Label Content="-"/>
+                    <Label Content="-"/>
+                    <Label Content="-"/>
                 </StackPanel>
             </ScrollViewer>
         </Border>

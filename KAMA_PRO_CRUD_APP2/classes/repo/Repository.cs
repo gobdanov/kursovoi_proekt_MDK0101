@@ -32,8 +32,34 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
 
 
         public static String BASE_ADDRESS = "https://localhost:7238/api/";
+        
 
-        public async Task<Assemblers> LoginUser(string username, string pwd)
+        public async Task<DTORETURN> GetSalary(int id)
+        {
+            var response = await client.GetStringAsync(BASE_ADDRESS + "Assemblers/Salary?id="+id);
+
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true  // Игнорировать регистр
+            };
+
+            var json = JsonSerializer.Deserialize<DTORETURN>(response, options);
+
+            if (response != null)
+            {
+                return json;
+            }
+            return null;
+        }
+
+        public class helpful_class
+        {
+            public string Trailer_Vin { get; set; }
+            public int count { get; set; }
+        }
+
+
+            public async Task<Assemblers> LoginUser(string username, string pwd)
         {
 
             DTO.DTO_Assembler_Login asDTO = new DTO_Assembler_Login { password = pwd, username = username };

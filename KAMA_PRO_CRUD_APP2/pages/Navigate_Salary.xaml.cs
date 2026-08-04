@@ -22,9 +22,10 @@ namespace KAMA_PRO_CRUD_APP.pages
     /// </summary>
     public partial class Navigate_Salary : Page
     {
-        public Navigate_Salary()
+        public Navigate_Salary(string UserFIO)
         {
             InitializeComponent();
+            userFIO.Content = UserFIO;
             salary.Background = Brushes.LightGray;
         }
 

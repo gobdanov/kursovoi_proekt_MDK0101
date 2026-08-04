@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using KAMA_PRO_CRUD_APP.pages;
+using KAMA_PRO_CRUD_APP2.classes;
 
 namespace KAMA_PRO_CRUD_APP
 {
@@ -30,7 +31,7 @@ namespace KAMA_PRO_CRUD_APP
             mainWindow1 = this;
             frame1_out = frame1;
             frame2_out = frame2;
-            frame1.Navigate(new Navigate_Salary());
+            frame1.Navigate(new Navigate_Salary(temp_variables.loginedUser.Surname + " " + temp_variables.loginedUser.Name));
             frame2.Navigate(new Page_Salary());
         }
     }

@@ -90,7 +90,14 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
                     // в переменную прибавляем эту сумму. переменная является общей суммой.
                     allSum += matrix[i].count;
                 }
-                return Ok(matrix);
+
+                DTORETURN return_ = new DTORETURN
+                {
+                    MATRIX = matrix,
+                    ALLSUM = allSum
+                };
+
+                return Ok(return_);
             }
             else
             {
@@ -98,6 +105,12 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
             }
         }
 
+
+        class DTORETURN
+        {
+            public List<helpful_class> MATRIX { get; set; }
+            public int ALLSUM { get; set; }
+        }
 
 
         [HttpGet]
