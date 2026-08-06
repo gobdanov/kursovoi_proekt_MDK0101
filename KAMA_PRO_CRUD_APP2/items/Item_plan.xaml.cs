@@ -31,6 +31,7 @@ namespace KAMA_PRO_CRUD_APP.items
             if (Role == "User")
             {
                 delete_plan_btn.Visibility = Visibility.Hidden;
+                delete_plan_img.Visibility = Visibility.Hidden;
             }
         }
 

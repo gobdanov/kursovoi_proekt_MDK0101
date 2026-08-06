@@ -1,4 +1,5 @@
-﻿using KAMA_PRO_CRUD_APP2.classes.services;
+﻿using KAMA_PRO_CRUD_APP.classes.models;
+using KAMA_PRO_CRUD_APP2.classes.services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,13 +24,14 @@ namespace KAMA_PRO_CRUD_APP.items
     public partial class item_assembler : UserControl
     {
         public string username_to_delete;
-        public item_assembler(string fullname, string username)
+        public item_assembler(Assemblers assembler)
         {
             InitializeComponent();
-            fullname_tb.Content = fullname;
-            username_tb.Content = username;
+            fullname_tb.Content = $"{assembler.Surname} {assembler.Name} {assembler.Lastname}";
+            username_tb.Content = "имя пользователя: " + assembler.Username;
+            role_tb.Content = "роль пользователя: " + assembler.Role;
 
-            username_to_delete = username;
+            username_to_delete = assembler.Username;
         }
 
         private void delete_user(object sender, RoutedEventArgs e)

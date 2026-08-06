@@ -139,6 +139,36 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
         }
 
         [HttpPost]
+        [Route("Update")]
+        public ActionResult<Assemblers> Update([FromQuery] int old_assembler_id, [FromBody] DTO_Assembler new_assembler_DTO)
+        {
+            
+
+            Assemblers old_assembler = db.Assemblers.Where(x => x.Id == old_assembler_id).FirstOrDefault();
+
+            if(old_assembler != null)
+            {
+                Assemblers new_assembler = new Assemblers
+                {
+                    Id = old_assembler.Id,
+                    Lastname = new_assembler_DTO.Lastname,
+                    Name = new_assembler_DTO.Name,
+                    Pwd = SHA256_class.GetSha256Hash(new_assembler_DTO.Pwd),
+                    Surname = new_assembler_DTO.Surname,
+                    Username = new_assembler_DTO.Username,
+                };
+
+                old_assembler = new_assembler;
+
+                db.SaveChanges();
+
+                return Ok(new_assembler);
+            }
+
+            return BadRequest();
+        }
+
+        [HttpPost]
         public ActionResult<Assemblers> Create([FromBody] DTO_Assembler assembler)
         {
             if (db.Assemblers.Where(x => x.Username == assembler.Username).FirstOrDefault() == null)
@@ -149,7 +179,8 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
                     Surname = assembler.Surname,
                     Lastname = assembler.Lastname,
                     Username = assembler.Username,
-                    Pwd = SHA256_class.GetSha256Hash(assembler.Pwd)
+                    Pwd = SHA256_class.GetSha256Hash(assembler.Pwd),
+                    Role = assembler.Role
                 };
                 db.Assemblers.Add(assembler_ready);
                 db.SaveChanges();

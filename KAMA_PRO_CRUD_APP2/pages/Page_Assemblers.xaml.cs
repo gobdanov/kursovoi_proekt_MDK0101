@@ -15,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using KAMA_PRO_CRUD_APP2.classes.repo;
+using KAMA_PRO_CRUD_APP2.classes;
 
 namespace KAMA_PRO_CRUD_APP.pages
 {
@@ -37,7 +38,11 @@ namespace KAMA_PRO_CRUD_APP.pages
 
             foreach (var i in repository.Assemblers)
             {
-                stackpanel.Children.Add(new items.item_assembler(i.Name+" " + i.Lastname+" " + i.Surname, i.Username) { Margin = new Thickness(0, 10, 0, 0) });
+                if(i.Id != temp_variables.loginedUser.Id)
+                {
+                    stackpanel.Children.Add(new items.item_assembler(i) { Margin = new Thickness(0, 10, 0, 0) });
+                }
+                
             }
         }
 

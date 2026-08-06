@@ -4,6 +4,7 @@ using KAMA_PRO_CRUD_APP2.classes.contexts;
 using KAMA_PRO_CRUD_APP2.DTO;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -32,11 +33,11 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
 
 
         public static String BASE_ADDRESS = "https://localhost:7238/api/";
-        
+
 
         public async Task<DTORETURN> GetSalary(int id)
         {
-            var response = await client.GetStringAsync(BASE_ADDRESS + "Assemblers/Salary?id="+id);
+            var response = await client.GetStringAsync(BASE_ADDRESS + "Assemblers/Salary?id=" + id);
 
             var options = new JsonSerializerOptions
             {
@@ -59,7 +60,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
         }
 
 
-            public async Task<Assemblers> LoginUser(string username, string pwd)
+        public async Task<Assemblers> LoginUser(string username, string pwd)
         {
 
             DTO.DTO_Assembler_Login asDTO = new DTO_Assembler_Login { password = pwd, username = username };

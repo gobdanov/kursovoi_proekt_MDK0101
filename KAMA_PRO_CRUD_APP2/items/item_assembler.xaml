@@ -33,11 +33,9 @@
         </Border>
 
         <StackPanel Grid.Column="1" Margin="0,-10,0,0">
-            <Label x:Name="fullname_tb" Margin="0,15,0,-5"  Content="богданов вадим александрович" FontWeight="Bold"/>
-            <Label x:Name="username_tb" Margin="0,0,0,-5" Content="gobdanov" FontWeight="Bold"/>
-            <Label Margin="0,0,0,-5" Content="собрано прицепов: 1023"/>
-            <Label Margin="0,0,0,-5" Content="дата вступления в должность: 10.04.2026"/>
-            <Label Margin="0,0,0,-5" Content="стаж: 2г"/>
+            <Label x:Name="fullname_tb" Margin="0,15,0,-5"  Content="тестов тест тестович" FontWeight="Bold"/>
+            <Label x:Name="username_tb" Margin="0,0,0,-5" Content="имя пользователя: тестовый пользователь"/>
+            <Label x:Name="role_tb" Margin="0,0,0,-5" Content="роль пользователя: для теста"/>
         </StackPanel>
         <Grid Grid.Column="2">
 

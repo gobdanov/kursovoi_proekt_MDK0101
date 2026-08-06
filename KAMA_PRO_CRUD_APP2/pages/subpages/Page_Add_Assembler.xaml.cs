@@ -1,10 +1,13 @@
 ﻿using KAMA_PRO_CRUD_APP;
 using KAMA_PRO_CRUD_APP.pages;
+using KAMA_PRO_CRUD_APP2.classes.contexts;
 using KAMA_PRO_CRUD_APP2.classes.repo;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -16,7 +19,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using KAMA_PRO_CRUD_APP2.classes.contexts;
 
 namespace KAMA_PRO_CRUD_APP2.pages.subpages
 {
@@ -28,6 +30,9 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
         public Page_Add_Assembler()
         {
             InitializeComponent();
+
+            role_tb.Items.Add("Admin");
+            role_tb.Items.Add("User");
         }
 
         private async void add_assembler(object sender, RoutedEventArgs e)
@@ -40,12 +45,14 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
                 Surname = surname_tb.Text,
                 Lastname = lastname_tb.Text,
                 Username = username_tb.Text,
-                Pwd = pwd_tb.Text
+                Pwd = pwd_tb.Text,
+                Role = role_tb.SelectedValue.ToString()
             };
 
             Repository repo = new Repository();
 
             await repo.CreateAssemblerAsync(assembler);
+
             MessageBox.Show("сборщик создан!");
         }
 
