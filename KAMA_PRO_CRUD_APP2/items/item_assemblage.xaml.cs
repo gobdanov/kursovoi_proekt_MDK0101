@@ -24,11 +24,15 @@ namespace KAMA_PRO_CRUD_APP.items
     public partial class item_assemblage : UserControl
     {
         DateOnly dateOnly;
-        public item_assemblage(DateOnly date)
+        public item_assemblage(DateOnly date, string Role)
         {
             InitializeComponent();
             date_tb.Content = "сборка от " + date.ToString();
             dateOnly = date;
+            if(Role == "User")
+            {
+                delete_assemblage_btn.Visibility = Visibility.Hidden;
+            }
         }
 
         private void goto_assemblage(object sender, RoutedEventArgs e)

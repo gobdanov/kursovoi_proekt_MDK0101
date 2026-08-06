@@ -31,7 +31,7 @@ namespace KAMA_PRO_CRUD_APP
             mainWindow1 = this;
             frame1_out = frame1;
             frame2_out = frame2;
-            frame1.Navigate(new Navigate_Salary(temp_variables.loginedUser.Surname + " " + temp_variables.loginedUser.Name));
+            frame1.Navigate(new Navigate_Salary(temp_variables.loginedUser.Surname + " " + temp_variables.loginedUser.Name, temp_variables.loginedUser.Role));
             frame2.Navigate(new Page_Salary());
         }
     }

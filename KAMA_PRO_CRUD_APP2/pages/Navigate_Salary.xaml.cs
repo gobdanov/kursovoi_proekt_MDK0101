@@ -22,11 +22,18 @@ namespace KAMA_PRO_CRUD_APP.pages
     /// </summary>
     public partial class Navigate_Salary : Page
     {
-        public Navigate_Salary(string UserFIO)
+        public Navigate_Salary(string UserFIO,string Role)
         {
             InitializeComponent();
             userFIO.Content = UserFIO;
             salary.Background = Brushes.LightGray;
+            if (Role == "User")
+            {
+                assemblers_btn.Visibility = Visibility.Hidden;
+                storage_btn.Visibility = Visibility.Hidden;
+                assemblers.Visibility = Visibility.Hidden;
+                storage.Visibility = Visibility.Hidden;
+            }
         }
 
         private void goto_authorization_window(object sender, RoutedEventArgs e)
@@ -59,7 +66,7 @@ namespace KAMA_PRO_CRUD_APP.pages
 
         private void goto_plans_page(object sender, RoutedEventArgs e)
         {
-            MainWindow1.frame2_out.Navigate(new pages.Page_Plan());
+            MainWindow1.frame2_out.Navigate(new pages.Page_Plan(temp_variables.loginedUser.Role));
             assemblers.Background = null;
             storage.Background = null;
             plans.Background = Brushes.LightGray;

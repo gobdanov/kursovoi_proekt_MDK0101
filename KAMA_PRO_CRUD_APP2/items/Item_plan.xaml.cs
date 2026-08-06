@@ -22,12 +22,16 @@ namespace KAMA_PRO_CRUD_APP.items
     /// </summary>
     public partial class Item_plan : UserControl
     {
-        public Item_plan(string city,int all_trailers, int ready_trailers)
+        public Item_plan(string city,int all_trailers, int ready_trailers, string Role)
         {
             InitializeComponent();
             city_tb.Content = city;
             all_trailers_tb.Content = "всего: "+ all_trailers;
             ready_trailers_tb.Content = "собрано: "+ready_trailers;
+            if (Role == "User")
+            {
+                delete_plan_btn.Visibility = Visibility.Hidden;
+            }
         }
 
         private void goto_plan(object sender, RoutedEventArgs e)

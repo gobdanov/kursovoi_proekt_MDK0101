@@ -38,7 +38,7 @@
                 </StackPanel>
             </ScrollViewer>
         </Border>
-        <Button Grid.Column="1" Content="добавить" Style="{StaticResource ButtonStyle2}" Click="add_plan" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="112" Height="30"/>
+        <Button Grid.Column="1" Content="добавить" Style="{StaticResource ButtonStyle2}" Click="add_plan" x:Name="add_plan_btn" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="112" Height="30"/>
         <StackPanel Grid.Column="2" Grid.Row="2" Grid.RowSpan="2"/>
         <StackPanel Grid.Row="3">
             <Label Content="список планов по приоритетности сборки:" HorizontalAlignment="Left"  VerticalAlignment="Top" FontWeight="Bold"/>

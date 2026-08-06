@@ -1,19 +1,8 @@
 ﻿using KAMA_PRO_CRUD_APP2.pages.subpages;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using KAMA_PRO_CRUD_APP2.classes.repo;
+using KAMA_PRO_CRUD_APP2.classes;
 
 namespace KAMA_PRO_CRUD_APP.pages
 {
@@ -22,9 +11,15 @@ namespace KAMA_PRO_CRUD_APP.pages
     /// </summary>
     public partial class Page_Plan : Page
     {
-        public Page_Plan()
+        public Page_Plan(string Role)
         {
             InitializeComponent();
+
+            if(Role == "User")
+            {
+                add_plan_btn.Visibility = Visibility.Hidden;
+            }
+
             this.Loaded += Page_PlanLoaded;
             
         }
@@ -39,7 +34,7 @@ namespace KAMA_PRO_CRUD_APP.pages
             {
                 int all_trailers = repo.Plan_linkto_Trailer.Where(x => x.Plan == i.Name).Select(x=> x.Ready).Count();
                 int ready_trailers = repo.Plan_linkto_Trailer.Where(x => x.Plan == i.Name && x.Ready == true).Select(x => x.Ready).Count();
-                parent_Border.Children.Add(new items.Item_plan(i.Name,all_trailers,ready_trailers));
+                parent_Border.Children.Add(new items.Item_plan(i.Name,all_trailers,ready_trailers, temp_variables.loginedUser.Role));
             }
         }
         private void add_plan(object sender, RoutedEventArgs e)

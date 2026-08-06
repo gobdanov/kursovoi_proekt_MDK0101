@@ -41,6 +41,7 @@
                 Width="40" 
                 Margin="0,0,10,0" 
                 HorizontalAlignment="Right" 
+                x:Name="delete_assemblage_btn"
                 Click="delete_assemblage"/>
     </Grid>
 </UserControl>

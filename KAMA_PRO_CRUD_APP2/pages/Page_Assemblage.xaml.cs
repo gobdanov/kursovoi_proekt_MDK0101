@@ -15,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using KAMA_PRO_CRUD_APP2.classes.repo;
 using KAMA_PRO_CRUD_APP.classes.models;
+using KAMA_PRO_CRUD_APP2.classes;
 
 namespace KAMA_PRO_CRUD_APP.pages
 {
@@ -38,7 +39,7 @@ namespace KAMA_PRO_CRUD_APP.pages
 
             foreach(var i in assemblages)
             {
-                parent_Border.Children.Add(new items.item_assemblage(i) { Margin = new Thickness(0, 5, 0, 0) });
+                parent_Border.Children.Add(new items.item_assemblage(i, temp_variables.loginedUser.Role) { Margin = new Thickness(0, 5, 0, 0) });
             }
             
 

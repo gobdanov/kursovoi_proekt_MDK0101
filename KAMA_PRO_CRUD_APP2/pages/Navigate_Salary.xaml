@@ -108,10 +108,10 @@
             <Grid Height="40" Margin="0,21,0,0"  Opacity="0.5">
                 <Button Click="goto_plans_page" Style="{StaticResource NavigateMenuButtonStyle}"/>
             </Grid>
-            <Grid Height="40" Margin="0,21,0,0"  Opacity="0.5">
+            <Grid Height="40" x:Name="storage_btn" Margin="0,21,0,0"  Opacity="0.5">
                 <Button Click="goto_storage_page" Style="{StaticResource NavigateMenuButtonStyle}"/>
             </Grid >
-            <Grid Height="40" Margin="0,21,0,0"  Opacity="0.5">
+            <Grid Height="40" x:Name="assemblers_btn" Margin="0,21,0,0"  Opacity="0.5">
                 <Button Click="goto_assemblers_page" Style="{StaticResource NavigateMenuButtonStyle}"/>
             </Grid>
         </StackPanel>

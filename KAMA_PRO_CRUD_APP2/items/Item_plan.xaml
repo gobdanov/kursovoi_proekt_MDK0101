@@ -16,7 +16,7 @@
         </Grid>
 
         <Button Margin="5,5,5,5" Cursor="Hand" Click="goto_plan" Opacity="0"/>
-        <Button HorizontalAlignment="Right" Cursor="Hand" Click="delete_plan" Width="50" Margin="0,0,7,0" Opacity="0"/>
+        <Button HorizontalAlignment="Right" Cursor="Hand" Click="delete_plan" x:Name="delete_plan_btn" Width="50" Margin="0,0,7,0" Opacity="0"/>
 
     </Grid>
 </UserControl>

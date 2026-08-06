@@ -1,6 +1,8 @@
 ﻿using KAMA_PRO_CRUD_APP;
 using KAMA_PRO_CRUD_APP.classes.models;
 using KAMA_PRO_CRUD_APP.pages;
+using KAMA_PRO_CRUD_APP2.classes;
+using KAMA_PRO_CRUD_APP2.classes.repo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +17,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using KAMA_PRO_CRUD_APP2.classes.repo;
 
 namespace KAMA_PRO_CRUD_APP2.pages.subpages
 {
@@ -76,7 +77,7 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
 
         private void goto_back(object sender, RoutedEventArgs e)
         {
-            MainWindow1.frame2_out.Navigate(new Page_Plan());
+            MainWindow1.frame2_out.Navigate(new Page_Plan(temp_variables.loginedUser.Role));
         }
     }
 }
