@@ -129,7 +129,9 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
         {
             try
             {
+                //добавляем сборку
                 db.Assemblages.Add(assemblage);
+
                 db.SaveChanges();
                 return Ok();
             }

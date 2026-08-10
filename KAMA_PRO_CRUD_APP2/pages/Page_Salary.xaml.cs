@@ -40,7 +40,7 @@ namespace KAMA_PRO_CRUD_APP.pages
 
             DTORETURN DTO = await repo.GetSalary(temp_variables.loginedUser.Id);
 
-            if (DTO.ALLSUM != 0 && DTO.MATRIX != null)
+            if (DTO.ALLSUM != null && DTO.MATRIX != null)
             {
                 allSum.Content = DTO.ALLSUM + "р";
 
