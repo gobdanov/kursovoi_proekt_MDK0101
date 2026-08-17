@@ -34,6 +34,25 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
 
         public static String BASE_ADDRESS = "https://localhost:7238/api/";
 
+        public async Task UpdateAssembler(int id, DTO_Assembler dTO)
+        {
+            var response = await client.PostAsJsonAsync(BASE_ADDRESS + $"Assemblers/Update?old_assembler_id={id}", dTO);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+
+                var options = new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                };
+
+                Assemblers new_assembler = JsonSerializer.Deserialize<Assemblers>(json, options);
+
+            }
+
+        }
+
 
         public async Task<DTORETURN> GetSalary(int id)
         {

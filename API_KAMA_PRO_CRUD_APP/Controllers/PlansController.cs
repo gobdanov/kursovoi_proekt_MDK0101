@@ -17,6 +17,18 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
         [HttpPost]
         public ActionResult<Plans> Create([FromQuery] string name, [FromBody] List<Plan_linkto_Trailer> plan_content)
         {
+            Plans plan = new Plans { Name = name };
+            db.Plans.Add(plan);
+
+            db.SaveChanges();
+
+            foreach(var i in plan_content)
+            {
+                db.Plan_linkto_Trailer.Add(i);
+            }
+
+            db.SaveChanges();
+
             return Ok();
         }
 

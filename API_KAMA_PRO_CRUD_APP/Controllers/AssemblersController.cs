@@ -156,9 +156,16 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
                     Pwd = SHA256_class.GetSha256Hash(new_assembler_DTO.Pwd),
                     Surname = new_assembler_DTO.Surname,
                     Username = new_assembler_DTO.Username,
+                    Role = new_assembler_DTO.Role
                 };
 
-                old_assembler = new_assembler;
+                old_assembler.Id = new_assembler.Id;
+                old_assembler.Lastname = new_assembler.Lastname;
+                old_assembler.Pwd = new_assembler.Pwd;
+                old_assembler.Name = new_assembler.Name;
+                old_assembler.Username = new_assembler.Username;
+                old_assembler.Lastname = new_assembler.Lastname;
+                old_assembler.Role = new_assembler.Role;
 
                 db.SaveChanges();
 
