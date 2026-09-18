@@ -19,15 +19,6 @@
                        HorizontalAlignment="Stretch"
                        HorizontalContentAlignment="Center"
                        VerticalContentAlignment="Center"/>
-                
-                
-                <Image Source="/imgs/cross.png" 
-                       HorizontalAlignment="Right" 
-                       VerticalAlignment="Center"
-                       Width="25" 
-                       Height="25"
-                       Margin="0,0,10,0"
-                       x:Name="delete_assemblage_img"/>
             </Grid>
         </Border>
 
@@ -36,13 +27,5 @@
                 Margin="5" 
                 Click="goto_assemblage"
                 HorizontalAlignment="Stretch"/>
-
-        <Button Opacity="0" 
-                Cursor="Hand" 
-                Width="40" 
-                Margin="0,0,10,0" 
-                HorizontalAlignment="Right" 
-                x:Name="delete_assemblage_btn"
-                Click="delete_assemblage"/>
     </Grid>
 </UserControl>

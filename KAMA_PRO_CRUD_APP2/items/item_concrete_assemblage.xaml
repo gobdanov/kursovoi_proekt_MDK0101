@@ -22,7 +22,10 @@
             <Label VerticalAlignment="Center"  Content="комментарии" x:Name="Comments" Grid.Column="2"/>
             <Label VerticalAlignment="Center"  Content="план" x:Name="Plan" Grid.Column="3"/>
             <Label VerticalAlignment="Center"  Content="шильды" x:Name="Nameplate" Grid.Column="4"/>
-            <Image Source="/imgs/assemblage/assemblage1.jpg" Height="50" x:Name="Photo" Grid.Column="5"/>
+            <Grid Grid.Column="5" x:Name="delete_assemblage_grid">
+                <Image Source="/imgs/clear.png" Width="25" Height="25" />
+                <Button Opacity="0" Cursor="Hand" Width="40" HorizontalAlignment="Center" Click="delete_concrete_assemblage"/>
+            </Grid>
         </Grid>
 
     </Grid>

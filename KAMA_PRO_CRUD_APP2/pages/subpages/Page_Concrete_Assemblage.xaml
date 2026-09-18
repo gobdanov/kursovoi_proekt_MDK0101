@@ -41,7 +41,7 @@
             <Label Content="комментарии" x:Name="Comments" Grid.Column="2"/>
             <Label Content="план" x:Name="Plan" Grid.Column="3"/>
             <Label Content="шильды" x:Name="Nameplate" Grid.Column="4"/>
-            <Label Content="фото" x:Name="Photo" Grid.Column="5"/>
+            <Label Content="фото" x:Name="действия" Grid.Column="5"/>
         </Grid>
 
         <ScrollViewer Grid.Row="1" Margin="20,30,20,30">

@@ -25,7 +25,8 @@ namespace KAMA_PRO_CRUD_APP2.items
             string assemblers,
             string comments,
             string plan,
-            string nameplate)
+            string nameplate,
+            bool isAdmin)
         {
             InitializeComponent();
             Trailer.Content = trailer;
@@ -33,6 +34,20 @@ namespace KAMA_PRO_CRUD_APP2.items
             Comments.Content = comments;
             Plan.Content = plan;
             Nameplate.Content = nameplate;
+            if(isAdmin == false)
+            {
+                delete_assemblage_grid.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                delete_assemblage_grid.Visibility = Visibility.Visible;
+            }
+            
+        }
+
+        private void delete_concrete_assemblage(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("удаление конкретной сборки");
         }
     }
 }

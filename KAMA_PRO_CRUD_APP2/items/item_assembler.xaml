@@ -37,14 +37,20 @@
                 <Label x:Name="fullname_tb" Margin="0,15,0,-5"  Content="тестов тест тестович" FontWeight="Bold"/>
                 <TextBox x:Name="fullname_edit" Height="20" Margin="0,20,0,-5" Width="200" HorizontalAlignment="Left" Text="тестов тест тестович" Visibility="Hidden"/>
             </Grid>
-            
+
+            <StackPanel Orientation="Horizontal">
+                <Label Margin="0,0,0,-5" Content="id:"/>
+                <Grid>
+                    <Label x:Name="id" Content="0"/>
+                </Grid>
+            </StackPanel>
+
             <StackPanel Orientation="Horizontal">
                 <Label Margin="0,0,0,-5" Content="имя пользователя:"/>
                 <Grid>
                     <Label x:Name="username_tb" Content="тест"/>
                     <TextBox x:Name="username_edit" HorizontalAlignment="Left" Height="20" Width="150" Margin="0,5,0,0" Text="тестов тест тестович" Visibility="Hidden"/>
                 </Grid>
-                
             </StackPanel>
 
             <StackPanel Orientation="Horizontal">

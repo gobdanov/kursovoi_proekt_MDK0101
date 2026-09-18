@@ -46,6 +46,8 @@ namespace KAMA_PRO_CRUD_APP.items
             role_tb.Content = "" + assembler.Role;
             role_edit.SelectedValue = assembler.Role;
 
+            id.Content = assembler.Id;
+
             username_to_delete = assembler.Username;
         }
 

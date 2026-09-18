@@ -16,6 +16,7 @@
     <None Remove="imgs\car.png" />
     <None Remove="imgs\casino.png" />
     <None Remove="imgs\city.png" />
+    <None Remove="imgs\clear.png" />
     <None Remove="imgs\cross.png" />
     <None Remove="imgs\door.png" />
     <None Remove="imgs\file-cabinet.png" />
@@ -50,6 +51,7 @@
     <Resource Include="imgs\car.png" />
     <Resource Include="imgs\casino.png" />
     <Resource Include="imgs\city.png" />
+    <Resource Include="imgs\clear.png" />
     <Resource Include="imgs\cross.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>

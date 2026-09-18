@@ -16,6 +16,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using KAMA_PRO_CRUD_APP2.classes;
 
 namespace KAMA_PRO_CRUD_APP2.pages.subpages
 {
@@ -43,7 +44,18 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
                 {
                     assemblers += a+" ";
                 }
-                parent.Children.Add(new items.item_concrete_assemblage(i.Trailer, assemblers, i.Comments, i.Plan, i.Nameplate));
+
+                bool flag = false;
+                if(temp_variables.loginedUser.Role == "Admin")
+                {
+                    flag = true;
+                }
+
+                parent.Children.Add(new items.item_concrete_assemblage(i.Trailer, assemblers, i.Comments, i.Plan, i.Nameplate, flag));
+            }
+            if (temp_variables.loginedUser.Role == "User")
+            {
+
             }
         }
 

@@ -29,21 +29,11 @@ namespace KAMA_PRO_CRUD_APP.items
             InitializeComponent();
             date_tb.Content = "сборка от " + date.ToString();
             dateOnly = date;
-            if(Role == "User")
-            {
-                delete_assemblage_btn.Visibility = Visibility.Hidden;
-                delete_assemblage_img.Visibility = Visibility.Hidden;
-            }
         }
 
         private void goto_assemblage(object sender, RoutedEventArgs e)
         {
             MainWindow1.frame2_out.Navigate(new Page_Concrete_Assemblage(Convert.ToString(dateOnly)));
-        }
-
-        private void delete_assemblage(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("удаление сборки");
         }
     }
 }

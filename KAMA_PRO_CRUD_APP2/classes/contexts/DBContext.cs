@@ -5,6 +5,8 @@ namespace KAMA_PRO_CRUD_APP2.classes.contexts
 {
     public class DBContext : DbContext
     {
+
+        public string ConnectionString = "Server=127.0.1.16;Port=3306;Database=kama_pro_db;Uid=root;Pwd=;";
         public DbSet<Assemblages> Assemblages { get; set; }
         public DbSet<Assemblers> Assemblers { get; set; }
         public DbSet<Component_linkto_Trailer> Component_linkto_Trailer { get; set; }
@@ -15,9 +17,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.contexts
         public DbSet<Trailers> Trailers { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql(
-                "server=localhost;database=kama_pro_db;user=root;password=;",
-                new MySqlServerVersion(new Version(8,0,34)));
+            optionsBuilder.UseMySql(ConnectionString, ServerVersion.AutoDetect(ConnectionString));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
