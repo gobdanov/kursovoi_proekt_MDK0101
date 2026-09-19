@@ -1,5 +1,6 @@
 ﻿using KAMA_PRO_CRUD_APP.classes.models;
 using KAMA_PRO_CRUD_APP2.classes;
+using KAMA_PRO_CRUD_APP2.classes.DTO;
 using KAMA_PRO_CRUD_APP2.classes.repo;
 using System;
 using System.Collections.Generic;
@@ -42,14 +43,30 @@ namespace KAMA_PRO_CRUD_APP.pages
 
             if (DTO.ALLSUM != null && DTO.MATRIX != null)
             {
-                allSum.Content = DTO.ALLSUM + "р";
 
                 foreach (helpful_class i in DTO.MATRIX)
                 {
-                    sdelka.Children.Add(new Label { Content = i.Trailer_Vin + " "+i.count });
+                    sdelka.Children.Add(new Label { Content = i.Trailer_Vin + " | "+i.count +"р" });
                 }
             }
-            
+
+            List<DTO_Payment> payments = await repo.GetPayment(temp_variables.loginedUser.Id);
+            if (payments != null)
+            {
+                int sum = 0;
+                foreach(var pay in payments)
+                {
+                    if(pay.Date_ > DateOnly.FromDateTime(getWeek()[0]) && pay.Date_ < DateOnly.FromDateTime(getWeek()[1]))
+                    {
+                        sum += pay.Hours * 350;
+                    }
+                }
+                Payment.Content = sum+"р";
+
+                int trulyAllSum = DTO.ALLSUM + sum;
+
+                allSum.Content = trulyAllSum + "р";
+            }
         }
 
         

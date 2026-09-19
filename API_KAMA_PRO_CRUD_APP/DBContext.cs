@@ -1,4 +1,5 @@
 ﻿using KAMA_PRO_CRUD_APP.classes.models;
+using KAMA_PRO_CRUD_APP2.classes.models;
 using Microsoft.EntityFrameworkCore;
 
 namespace API_KAMA_PRO_CRUD_APP
@@ -17,6 +18,7 @@ namespace API_KAMA_PRO_CRUD_APP
         public DbSet<Plan_linkto_Trailer> Plan_linkto_Trailer { get; set; }
         public DbSet<Plans> Plans { get; set; }
         public DbSet<Trailers> Trailers { get; set; }
+        public DbSet<Payments> Payments { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseMySql(
@@ -50,6 +52,8 @@ namespace API_KAMA_PRO_CRUD_APP
 
             modelBuilder.Entity<Component_linkto_Trailer>()
                 .HasNoKey();
+
+            modelBuilder.Entity<Payments>().HasKey(p => p.Id);
 
             //ВНЕШНИЕ КЛЮЧИ
             //настройка внешнего ключа для Assemblages
@@ -85,7 +89,10 @@ namespace API_KAMA_PRO_CRUD_APP
                 .WithMany()
                 .HasForeignKey(PT => PT.Pack);
 
-            
+            modelBuilder.Entity<Payments>().
+                HasOne<Assemblers>()
+                .WithMany()
+                .HasForeignKey(a => a.Assembler);
         }
     }
 }

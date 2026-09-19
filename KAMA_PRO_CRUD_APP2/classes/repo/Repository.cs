@@ -1,6 +1,7 @@
 ﻿using KAMA_PRO_CRUD_APP.classes.models;
 using KAMA_PRO_CRUD_APP2;
 using KAMA_PRO_CRUD_APP2.classes.contexts;
+using KAMA_PRO_CRUD_APP2.classes.DTO;
 using KAMA_PRO_CRUD_APP2.DTO;
 using System;
 using System.Collections.Generic;
@@ -33,6 +34,22 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
 
 
         public static String BASE_ADDRESS = "https://localhost:7238/api/";
+
+        public async Task<List<DTO_Payment>> GetPayment(int AssemblerId)
+        {
+            var response = await client.GetStringAsync(BASE_ADDRESS + $"Payments/get?id={AssemblerId}");
+
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+            if (response != null)
+            {
+                var json = JsonSerializer.Deserialize<List<DTO_Payment>>(response, options);
+                return json ?? new List<DTO_Payment>();
+            }
+            return null;
+        }
 
         public async Task PostPlan(string name, List<Plan_linkto_Trailer> list)
         {
@@ -99,7 +116,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
         public async Task<Assemblers> LoginUser(string username, string pwd)
         {
 
-            DTO.DTO_Assembler_Login asDTO = new DTO_Assembler_Login { password = pwd, username = username };
+            DTO_Assembler_Login asDTO = new DTO_Assembler_Login { password = pwd, username = username };
 
             var response = await client.PostAsJsonAsync(BASE_ADDRESS + "Assemblers/Login", asDTO);
 
@@ -136,7 +153,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
         {
             Assemblages = await GetSmthngAsync<Assemblages>("Assemblages");
         }
-        public async Task CreateAssemblerAsync(DTO.DTO_Assembler assembler)
+        public async Task CreateAssemblerAsync(DTO_Assembler assembler)
         {
             await CreateSmthngAsync<DTO_Assembler>("Assemblers", assembler);
         }
