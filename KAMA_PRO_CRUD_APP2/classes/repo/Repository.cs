@@ -35,6 +35,22 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
 
         public static String BASE_ADDRESS = "https://localhost:7238/api/";
 
+        public async Task CreatePayment(DTO_Payment paymentDto)
+        {
+            var response = await client.PostAsJsonAsync(BASE_ADDRESS + $"/Payments", paymentDto);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+
+                var options = new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                };
+
+            }
+        }
+
         public async Task<List<DTO_Payment>> GetPayment(int AssemblerId)
         {
             var response = await client.GetStringAsync(BASE_ADDRESS + $"Payments/get?id={AssemblerId}");

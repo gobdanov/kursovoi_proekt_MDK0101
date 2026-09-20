@@ -46,7 +46,7 @@ namespace KAMA_PRO_CRUD_APP.pages
 
                 foreach (helpful_class i in DTO.MATRIX)
                 {
-                    sdelka.Children.Add(new Label { Content = i.Trailer_Vin + " | "+i.count +"р" });
+                    sdelka.Children.Add(new Label { Content = i.Trailer_Vin + " | " + i.count + "р" });
                 }
             }
 
@@ -54,18 +54,24 @@ namespace KAMA_PRO_CRUD_APP.pages
             if (payments != null)
             {
                 int sum = 0;
-                foreach(var pay in payments)
+                foreach (var pay in payments)
                 {
-                    if(pay.Date_ > DateOnly.FromDateTime(getWeek()[0]) && pay.Date_ < DateOnly.FromDateTime(getWeek()[1]))
+                    if (pay.Date_ > DateOnly.FromDateTime(getWeek()[0]) && pay.Date_ < DateOnly.FromDateTime(getWeek()[1]))
                     {
                         sum += pay.Hours * 350;
                     }
                 }
-                Payment.Content = sum+"р";
+                Payment.Content = sum + "р";
 
                 int trulyAllSum = DTO.ALLSUM + sum;
 
                 allSum.Content = trulyAllSum + "р";
+            }
+
+            await repo.GetAssemblersAsync();
+            foreach (var i in repo.Assemblers)
+            {
+                usersCombobox.Items.Add($"id:{i.Id}: {i.Surname} {i.Name} {i.Lastname}");
             }
         }
 
@@ -111,6 +117,24 @@ namespace KAMA_PRO_CRUD_APP.pages
                 first_and_last[1] = DateTime.Now.Date.AddDays(1);
             }
             return first_and_last;
+        }
+
+        private  void createPayment(object sender, RoutedEventArgs e)
+        {
+            
+            Repository repo = new Repository();
+
+            DTO_Payment dtoPayment = new DTO_Payment
+            {
+                Assembler = Convert.ToInt32(usersCombobox.SelectedValue.ToString().Split()[0]),
+                Date_ = DateOnly.FromDateTime(DateTime.Now),
+                Hours = Convert.ToInt32(countHours)
+            };
+
+             repo.CreatePayment(dtoPayment);
+
+            MessageBox.Show("успешно!");
+            
         }
     }
 }
