@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KAMA_PRO_CRUD_APP2.classes.repo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -47,7 +48,21 @@ namespace KAMA_PRO_CRUD_APP2.items
 
         private void delete_concrete_assemblage(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("удаление конкретной сборки");
+            try
+            {
+                Repository repo = new Repository();
+                var response = repo.DeleteAssemblageById(Nameplate.Content.ToString());
+                MessageBox.Show("сборка удалена успешно!");
+
+                if (this.Parent is Panel panel)
+                {
+                    panel.Children.Remove(this);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("произошла ошибка");
+            }
         }
     }
 }

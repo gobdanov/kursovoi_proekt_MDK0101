@@ -35,9 +35,27 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
 
         public static String BASE_ADDRESS = "https://localhost:7238/api/";
 
+        public async Task<string> DeleteAssemblageById(string vin)
+        {
+            var response = await client.DeleteAsync(BASE_ADDRESS + $"Assemblages?vin={vin}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+
+                var options = new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                };
+
+                return json;
+            }
+            return "";
+        }
+
         public async Task CreatePayment(DTO_Payment paymentDto)
         {
-            var response = await client.PostAsJsonAsync(BASE_ADDRESS + $"/Payments", paymentDto);
+            var response = await client.PostAsJsonAsync(BASE_ADDRESS + $"Payments", paymentDto);
 
             if (response.IsSuccessStatusCode)
             {

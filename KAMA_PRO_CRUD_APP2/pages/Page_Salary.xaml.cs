@@ -119,22 +119,27 @@ namespace KAMA_PRO_CRUD_APP.pages
             return first_and_last;
         }
 
-        private  void createPayment(object sender, RoutedEventArgs e)
+        private async void createPayment(object sender, RoutedEventArgs e)
         {
-            
-            Repository repo = new Repository();
-
-            DTO_Payment dtoPayment = new DTO_Payment
+            try
             {
-                Assembler = Convert.ToInt32(usersCombobox.SelectedValue.ToString().Split()[0]),
-                Date_ = DateOnly.FromDateTime(DateTime.Now),
-                Hours = Convert.ToInt32(countHours)
-            };
+                Repository repo = new Repository();
 
-             repo.CreatePayment(dtoPayment);
+                DTO_Payment dtoPayment = new DTO_Payment
+                {
+                    Assembler = Convert.ToInt32(usersCombobox.SelectedValue.ToString().Split()[0].Replace("id", "").Replace(":", "")),
+                    Date_ = DateOnly.FromDateTime(DateTime.Now),
+                    Hours = Convert.ToInt32(countHours.Text)
+                };
 
-            MessageBox.Show("успешно!");
-            
+                await repo.CreatePayment(dtoPayment);
+
+                MessageBox.Show("успешно!");
+            }
+            catch
+            {
+                MessageBox.Show("ошибка!");
+            }            
         }
     }
 }

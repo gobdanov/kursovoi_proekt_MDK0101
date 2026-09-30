@@ -129,8 +129,6 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
         {
             try
             {
-                
-
                 //добавляем сборку
                 db.Assemblages.Add(assemblage);
 
@@ -142,6 +140,35 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
                 return BadRequest(ex.Message);
             }
             
+        }
+
+        [HttpDelete]
+        public ActionResult<Assemblages> DeleteById(string vin)
+        {
+            try
+            {
+                List<Assemblages> assemblages = db.Assemblages.Where(x => x.VIN == vin).ToList();
+                //добавляем сборку
+                if (assemblages.Any())
+                {
+                    foreach (var assemblage in assemblages)
+                    {
+                        db.Assemblages.Remove(assemblage);
+                    }
+                    db.SaveChanges();
+                    return Ok();
+                }
+                else
+                {
+                    return NotFound("сборка не найдена");
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
         }
     }
 }

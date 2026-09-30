@@ -35,14 +35,32 @@ namespace KAMA_PRO_CRUD_APP.pages
 
             await repo.GetPlansAsync();
             await repo.GetPlan_linkto_TrailerAsync();
+            List<(string name, float koef)> matrix = new List<(string name, float koef)>();
+
+            DateTime now = DateTime.Now;
 
             foreach (var i in repo.Plans)
             {
                 int all_trailers = repo.Plan_linkto_Trailer.Where(x => x.Plan == i.Name).Select(x => x.Ready).Count();
                 int ready_trailers = repo.Plan_linkto_Trailer.Where(x => x.Plan == i.Name && x.Ready == true).Select(x => x.Ready).Count();
                 parent_Border.Children.Add(new items.Item_plan(i.Name, all_trailers, ready_trailers, temp_variables.loginedUser.Role));
+
+                //высчитываем значения для расчёта приоритетности
+                matrix.Add((i.Name, (now.Date - i.created_at.Date).Days / (all_trailers - ready_trailers)));
+            }
+
+            var sorted = matrix.OrderBy(x => x.koef).ToList();
+            int count = 1;
+            foreach (var i in sorted)
+            {
+                list_plans.Children.Add(new System.Windows.Controls.Label { Content = $"{count}. {i.name} - {i.koef}" });
+                count++;
             }
         }
+
+
+
+
         private void add_plan(object sender, RoutedEventArgs e)
         {
             ChooseExcelFile();
