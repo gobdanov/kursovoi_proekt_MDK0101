@@ -60,28 +60,20 @@
             </Grid>
 
             <!-- сборщики -->
-            <Grid Margin="0,10,0,0" Grid.Column="0" Grid.Row="1" Grid.RowSpan="1">
+            <StackPanel Margin="0,10,0,0" Grid.Column="0" Grid.Row="1" Grid.RowSpan="1">
                 <Label Content="укажите сборщиков:" Margin="20,0,0,0"/>
-                <ScrollViewer>
-                    <StackPanel x:Name="assemblers_sp" Margin="10,30,0,0"/>
+                <ScrollViewer  VerticalAlignment="Top">
+                    <StackPanel x:Name="assemblers_sp" Margin="10,30,0,0" VerticalAlignment="Top"/>
                 </ScrollViewer>
 
-            </Grid>
+            </StackPanel>
         </StackPanel>
 
         <Button Grid.Row="2" Content="добавить" Click="add_assemblage" Style="{StaticResource ButtonStyle2}" HorizontalAlignment="Center" Margin="0,145,0,0" VerticalAlignment="Top" Width="112" Height="30"/>
 
-        <ScrollViewer Grid.Row="1" Margin="162,0,0,15" Grid.ColumnSpan="2">
+        <Grid Grid.Row="1" Margin="162,0,0,15" Grid.ColumnSpan="2" Grid.RowSpan="2">
             <StackPanel  x:Name="trailers"  HorizontalAlignment="Center"/>
-        </ScrollViewer>
-
-        <Label Content="добавьте комментарии:"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,0,0,0" Grid.Row="2" Grid.Column="1"/>
-        <TextBox VerticalAlignment="Top" TextWrapping="Wrap" HorizontalAlignment="Left" Width="140" Height="110" Margin="0,30,0,0" Grid.Row="2" Grid.Column="1"/>
-
-        <Label Content="укажите комплектацию:" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,0,30,0" Grid.Row="2" Grid.Column="1"/>
-        <ScrollViewer VerticalAlignment="Top" HorizontalAlignment="Right" Width="140" Height="110" Margin="0,30,30,0" Grid.Row="2" Grid.Column="1">
-            <StackPanel x:Name="equipment"/>
-        </ScrollViewer>
+        </Grid>
 
     </Grid>
 </Page>

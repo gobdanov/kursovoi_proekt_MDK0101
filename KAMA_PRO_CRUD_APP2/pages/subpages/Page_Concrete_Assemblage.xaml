@@ -23,7 +23,7 @@
         <Button Click="goto_back" Grid.Column="0" Grid.Row="0" Margin="0,0,80,45" Opacity="0" Cursor="Hand"/>
 
         <StackPanel Grid.Column="0" Grid.Row="0">
-            <Label Content="сборка за конкретную дату" Margin="0,20,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+            <Label Content="сборка за конкретную дату" Margin="0,20,0,0" HorizontalAlignment="Left" x:Name="sborka_date"  VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
         </StackPanel>
 
         <Grid Grid.Row="1" Background="AliceBlue" Margin="20,0,20,0" Height="30" VerticalAlignment="Top">
@@ -44,8 +44,11 @@
             <Label Content="фото" x:Name="действия" Grid.Column="5"/>
         </Grid>
 
-        <ScrollViewer Grid.Row="1" Margin="20,30,20,30">
+        <ScrollViewer Grid.Row="1" Margin="20,30,20,70">
             <StackPanel x:Name="parent" />
         </ScrollViewer>
+
+        <Button Content="сгенерировать отчёт за " x:Name="button_generate_report" Click="generate" Grid.Row="1" Height="20" Margin="0,400,0,0"/>
+
     </Grid>
 </Page>

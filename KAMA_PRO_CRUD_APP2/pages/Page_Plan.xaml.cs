@@ -38,7 +38,6 @@ namespace KAMA_PRO_CRUD_APP.pages
             List<(string name, float koef)> matrix = new List<(string name, float koef)>();
 
             DateTime now = DateTime.Now;
-
             foreach (var i in repo.Plans)
             {
                 int all_trailers = repo.Plan_linkto_Trailer.Where(x => x.Plan == i.Name).Select(x => x.Ready).Count();
@@ -46,14 +45,14 @@ namespace KAMA_PRO_CRUD_APP.pages
                 parent_Border.Children.Add(new items.Item_plan(i.Name, all_trailers, ready_trailers, temp_variables.loginedUser.Role));
 
                 //высчитываем значения для расчёта приоритетности
-                matrix.Add((i.Name, (now.Date - i.created_at.Date).Days / (all_trailers - ready_trailers)));
+                matrix.Add((i.Name, (all_trailers - ready_trailers) / (now.Date - i.created_at.Date).Days));
             }
 
             var sorted = matrix.OrderBy(x => x.koef).ToList();
             int count = 1;
             foreach (var i in sorted)
             {
-                list_plans.Children.Add(new System.Windows.Controls.Label { Content = $"{count}. {i.name} - {i.koef}" });
+                list_plans.Children.Add(new System.Windows.Controls.Label { Content = $"{count}. {i.name}" });
                 count++;
             }
         }

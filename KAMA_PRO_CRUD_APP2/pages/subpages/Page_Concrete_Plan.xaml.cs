@@ -72,6 +72,7 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
                     parent.Children.Add(new items.item_concrete_plan(i.Trailer, i.VIN, Convert.ToString(i.Ready), assemblers_stroke));
                 }
 
+
             }
         }
 
@@ -79,5 +80,6 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
         {
             MainWindow1.frame2_out.Navigate(new Page_Plan(temp_variables.loginedUser.Role));
         }
+
     }
 }
