@@ -31,6 +31,13 @@ namespace KAMA_PRO_CRUD_APP.pages
         {
             InitializeComponent();
 
+            osnost.Text = "";
+            t0_.Text = "";
+
+            Date_.Text = "";
+
+            cmbbx_trlr.SelectedValue = null;
+
             this.Loaded += Page_AssemblageLoaded;
         }
 
@@ -93,7 +100,7 @@ namespace KAMA_PRO_CRUD_APP.pages
             await repo.GetAssemblagesAsync();
 
             List<Assemblages> assemblages = repo.Assemblages
-                .Where(x => x.VIN == "EAV90920" + osnost.Text + "T0" + t0_.Text)
+                .Where(x => x.VIN == "EAV90920" + osnost.Text + "T" + t0_.Text)
                 .ToList();
 
             List<DateOnly> assemblages_date = assemblages.Select(x => x.Date_).ToList();

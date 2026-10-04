@@ -73,9 +73,14 @@ namespace KAMA_PRO_CRUD_APP.pages
             {
                 usersCombobox.Items.Add($"id:{i.Id}: {i.Surname} {i.Name} {i.Lastname}");
             }
+
+            if (temp_variables.loginedUser.Role != "Admin")
+            {
+                post_salary_div.Visibility = Visibility.Hidden;
+            }
         }
 
-        
+
         public static DateTime[] getWeek()
         {
             DateTime[] first_and_last = new DateTime[2];
@@ -123,23 +128,47 @@ namespace KAMA_PRO_CRUD_APP.pages
         {
             try
             {
-                Repository repo = new Repository();
-
-                DTO_Payment dtoPayment = new DTO_Payment
+                if (usersCombobox.SelectedValue == null |
+                    string.IsNullOrWhiteSpace(countHours.Text))
+                {     
+                    MessageBox.Show("Введены не все данные", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                else
                 {
-                    Assembler = Convert.ToInt32(usersCombobox.SelectedValue.ToString().Split()[0].Replace("id", "").Replace(":", "")),
-                    Date_ = DateOnly.FromDateTime(DateTime.Now),
-                    Hours = Convert.ToInt32(countHours.Text)
-                };
+                    int assemblerId = Convert.ToInt32(usersCombobox.SelectedValue
+                    .ToString()
+                    .Split()[0]
+                    .Replace("id", "")
+                    .Replace(":", ""));
 
-                await repo.CreatePayment(dtoPayment);
+                    int hours = Convert.ToInt32(countHours.Text);
 
-                MessageBox.Show("успешно!");
+                    Repository repo = new Repository();
+
+                    DTO_Payment dtoPayment = new DTO_Payment
+                    {
+                        Assembler = Convert.ToInt32(assemblerId),
+                        Date_ = DateOnly.FromDateTime(DateTime.Now),
+                        Hours = hours
+                    };
+
+                    await repo.CreatePayment(dtoPayment);
+
+                    MessageBox.Show("Часы успешно назначены сборщику", "Успешно", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Введен неверный тип данных", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            catch (OverflowException)
+            {
+                MessageBox.Show("Введеные данные слишком велики", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
             catch
             {
-                MessageBox.Show("ошибка!");
-            }            
+                MessageBox.Show("Неизвестная ошибка", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

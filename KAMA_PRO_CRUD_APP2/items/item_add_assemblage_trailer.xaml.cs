@@ -20,6 +20,7 @@ namespace KAMA_PRO_CRUD_APP2.items
     /// </summary>
     public partial class item_add_assemblage_trailer : UserControl
     {
+        public bool is_even;
         public item_add_assemblage_trailer()
         {
             InitializeComponent();
@@ -27,6 +28,7 @@ namespace KAMA_PRO_CRUD_APP2.items
         public item_add_assemblage_trailer(bool is_even)
         {
             InitializeComponent();
+            this.is_even = is_even;
             if(is_even)
                 upper.Visibility = Visibility.Hidden;
         }

@@ -60,7 +60,7 @@
 
             
 
-            <Border Grid.Column="1" Margin="5,5,5,5" Grid.Row="2" CornerRadius="20" Background="#f0f0f0">
+            <Border Grid.Column="1" Margin="5,5,5,5" Grid.Row="2" CornerRadius="20" Background="#f0f0f0" x:Name="post_salary_div">
                 <StackPanel Margin="5">
                     <Label Content="назначить почасовку" FontWeight="Bold"/>
                     <StackPanel Margin="0,10,0,0">

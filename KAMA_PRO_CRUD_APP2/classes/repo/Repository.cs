@@ -173,7 +173,9 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
         }
 
 
-        public async Task GetConcreteAssemblagesAsync(string date)
+        public async Task 
+            
+            GetConcreteAssemblagesAsync(string date)
         {
             concrete_Assemblage = await GetSmthngAsync<Concrete_Assemblage_Date>("Assemblages/" + date);
         }
