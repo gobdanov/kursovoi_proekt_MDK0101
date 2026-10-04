@@ -1,64 +1,138 @@
 ﻿<UserControl x:Class="KAMA_PRO_CRUD_APP.items.item_storage"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:KAMA_PRO_CRUD_APP.items"
-             mc:Ignorable="d"  d:DesignWidth="400">
+             mc:Ignorable="d" d:DesignWidth="400">
     <Grid>
-        <Grid Grid.Row="1" Background="Beige" VerticalAlignment="Top">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-            </Grid.ColumnDefinitions>
-
-            <Label VerticalAlignment="Center" Content="название" x:Name="name" Grid.Column="0"/>
-            <Label VerticalAlignment="Center"  Content="кол-во" x:Name="count" Grid.Column="1"/>
-
-            <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Center">
-                <Grid>
-                    <Image Source="/imgs/submit.png" x:Name="minus_submit_img" Height="20" Width="20" Visibility="Hidden"/>
-                    <Image Source="/imgs/minus.png" x:Name="minus_img" Height="20" Width="20"/>
-                </Grid>
-
-                <Grid>
-                    <Image Source="/imgs/submit.png" x:Name="plus_submit_img" Height="20" Width="20" Visibility="Hidden"/>
-                    <Image Source="/imgs/plus.png" x:Name="plus_img" Height="20" Width="20"/>
-                </Grid>
-                
-            </StackPanel>
-
-            <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Center">
-                <TextBox Width="30" x:Name="minus_tb" Text="0" TextAlignment="Center"  Visibility="Hidden"/>
-                <Grid>
-                    <Button Height="20" Width="20" Opacity="0" Click="minus_submit" Cursor="Hand" Visibility="Hidden" x:Name="minus_submit_btn"/>
-                    <Button Height="20" Width="20" Opacity="0" Click="minus" Cursor="Hand" x:Name="minus_btn"/>
-                </Grid>
-
-                <Grid>
-                    <Button Height="20" Width="20" Opacity="0" Click="plus_submit" Cursor="Hand" Visibility="Hidden" x:Name="plus_submit_btn"/>
-                    <Button Height="20" Width="20" Opacity="0" Click="plus" Cursor="Hand" x:Name="plus_btn"/>
-                </Grid>
-
-                <TextBox Width="30" x:Name="plus_tb" Text="0" TextAlignment="Center" Visibility="Hidden"/>
-            </StackPanel>
-        </Grid>
-
-
-
-
-        <!--
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="test1" x:Name="name" HorizontalAlignment="Left" Grid.Column="0" />
-        <Label Content="test1" x:Name="count" HorizontalAlignment="Left" Grid.Column="1" />
-        
 
-        
-        -->
+        <!-- Название -->
+        <Label VerticalAlignment="Center"
+               Content="название"
+               Padding="10,0,0,0"
+               x:Name="name"
+               Grid.Column="0"
+               FontSize="14"
+               Foreground="Black"/>
+
+        <!-- Количество -->
+        <Label VerticalAlignment="Center"
+               Content="кол-во"
+               x:Name="count"
+               Grid.Column="1"
+               FontSize="14"
+               Foreground="#666666"
+               Padding="10,0,0,0"/>
+
+        <!-- Действия -->
+        <StackPanel Grid.Column="2"
+                    Margin="10,0,0,0"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center">
+
+            <!-- ===== МИНУС ===== -->
+            <Grid Margin="2,0">
+                <!-- 1. Фон-иконка "минус" (видима всегда) -->
+                <Border x:Name="minus_btn_border"
+                        Background="#F0F0F0"
+                        BorderBrush="#CCCCCC"
+                        BorderThickness="1"
+                        CornerRadius="10"
+                        Height="28" Width="28">
+                    <Image Source="/imgs/minus.png"
+                           x:Name="minus_img"
+                           Height="14" Width="14"/>
+                </Border>
+
+                <!-- 2. Видимая кнопка "минус" (прозрачная, поверх иконки) -->
+                <Button Height="28" Width="28"
+                        Opacity="0"
+                        Click="minus"
+                        Cursor="Hand"
+                        x:Name="minus_btn" Margin="8,0,-8,0"/>
+
+                <!-- 3. Скрытая кнопка "подтвердить минус" (поверх всех) -->
+                <Image Source="/imgs/submit.png"
+                       x:Name="minus_submit_img"
+                       Height="20" Width="20"
+                       Visibility="Hidden"/>
+
+                <Button Height="28" Width="28"
+                        Opacity="0"
+                        Click="minus_submit"
+                        Cursor="Hand"
+                        Visibility="Hidden"
+                        x:Name="minus_submit_btn"/>
+            </Grid>
+
+            <!-- Поле ввода для минуса -->
+            <TextBox Height="20"
+                     Width="30"
+                     x:Name="minus_tb"
+                     Text="0"
+                     TextAlignment="Center"
+                     Visibility="Hidden"
+                     VerticalContentAlignment="Center"
+                     Background="White"
+                     BorderBrush="#CCCCCC"
+                     BorderThickness="1"
+                     Margin="2,0"/>
+
+            <!-- ===== ПЛЮС ===== -->
+            <Grid Margin="2,0">
+                <!-- 1. Фон-иконка "плюс" -->
+                <Border x:Name="plus_btn_border"
+                        Background="#F0F0F0"
+                        BorderBrush="#CCCCCC"
+                        BorderThickness="1"
+                        CornerRadius="10"
+                        Height="28" Width="28">
+                    <Image Source="/imgs/plus.png"
+                           x:Name="plus_img"
+                           Height="14" Width="14"/>
+                </Border>
+
+                <!-- 2. Видимая кнопка "плюс" -->
+                <Button Height="28" Width="28"
+                        Opacity="0"
+                        Click="plus"
+                        Cursor="Hand"
+                        x:Name="plus_btn"/>
+
+                <!-- 3. Скрытая кнопка "подтвердить плюс" (поверх всех) -->
+                <Image Source="/imgs/submit.png"
+                       x:Name="plus_submit_img"
+                       Height="20" Width="20"
+                       Visibility="Hidden"/>
+
+                <Button Height="28" Width="28"
+                        Opacity="0"
+                        Click="plus_submit"
+                        Cursor="Hand"
+                        Visibility="Hidden"
+                        x:Name="plus_submit_btn"/>
+            </Grid>
+
+            <!-- Поле ввода для плюса -->
+            <TextBox 
+                     x:Name="plus_tb"
+                     Text="0"
+                     TextAlignment="Center"
+                     Visibility="Hidden"
+                     Height="20"
+                     Width="30"
+                     VerticalContentAlignment="Center"
+                     Background="White"
+                     BorderBrush="#CCCCCC"
+                     BorderThickness="1"
+                     Margin="2,0"/>
+        </StackPanel>
     </Grid>
 </UserControl>

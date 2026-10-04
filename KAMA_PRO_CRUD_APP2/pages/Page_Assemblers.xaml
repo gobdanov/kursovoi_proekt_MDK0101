@@ -7,7 +7,13 @@
       mc:Ignorable="d" 
       d:DesignHeight="550" d:DesignWidth="487"
       Title="Page_Assemblers">
-
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/style/styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
     <Grid>
 
         <Grid.RowDefinitions>
@@ -34,6 +40,6 @@
             </ScrollViewer>
         </Border>
 
-        <Button Grid.Row="4" Grid.ColumnSpan="2" Height="40" Width="200" Click="add_assembler" Content="добавить"/>
+        <Button Grid.Row="4" Grid.ColumnSpan="2" Height="40" Width="200" Click="add_assembler" Content="добавить" Style="{StaticResource MyButtonStyle}"/>
     </Grid>
 </Page>

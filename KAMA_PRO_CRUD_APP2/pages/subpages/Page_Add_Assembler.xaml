@@ -7,7 +7,13 @@
       mc:Ignorable="d" 
      d:DesignHeight="550" d:DesignWidth="487"
       Title="Page_Add_Assembler">
-
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/style/styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="70"/>
@@ -22,47 +28,47 @@
         <Button Click="goto_back" Grid.Column="0" Grid.Row="0" Margin="0,0,80,45" Opacity="0" Cursor="Hand"/>
 
         <StackPanel Grid.Column="0" Grid.Row="0">
-            <Label Content="добавить план" Margin="0,20,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+            <Label Content="добавить сборщика" Margin="0,20,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
         </StackPanel>
 
         <StackPanel Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="20,0,0,0">
             <Label Content="укажите имя:" FontSize="18"/>
             <Grid>
                 <Image Source="/imgs/file-folder.png" Height="30" HorizontalAlignment="Left"/>
-                <TextBox x:Name="name_tb" Margin="50,0,30,0" FontSize="14"/>
+                <TextBox x:Name="name_tb" Margin="50,0,30,0" FontSize="14" Style="{StaticResource MyTextBoxStyle}"/>
             </Grid>
 
             <Label Content="укажите фамилию:" FontSize="18"/>
             <Grid>
                 <Image Source="/imgs/pencil.png" Height="30" HorizontalAlignment="Left"/>
-                <TextBox x:Name="surname_tb" Margin="50,0,30,0" FontSize="14"/>
+                <TextBox x:Name="surname_tb" Margin="50,0,30,0" FontSize="14" Style="{StaticResource MyTextBoxStyle}"/>
             </Grid>
 
             <Label Content="укажите отчество:" FontSize="18"/>
             <Grid>
                 <Image Source="/imgs/file-folder.png" Height="30" HorizontalAlignment="Left"/>
-                <TextBox x:Name="lastname_tb" Margin="50,0,30,0" FontSize="14"/>
+                <TextBox x:Name="lastname_tb" Margin="50,0,30,0" FontSize="14" Style="{StaticResource MyTextBoxStyle}"/>
             </Grid>
 
             <Label Content="укажите имя пользователя:" FontSize="18"/>
             <Grid>
                 <Image Source="/imgs/calendar.png" Height="30" HorizontalAlignment="Left"/>
-                <TextBox x:Name="username_tb" Margin="50,0,30,0" FontSize="14"/>
+                <TextBox x:Name="username_tb" Margin="50,0,30,0" FontSize="14" Style="{StaticResource MyTextBoxStyle}"/>
             </Grid>
 
             <Label Content="укажите пароль" FontSize="18"/>
             <Grid>
                 <Image Source="/imgs/calendar.png" Height="30" HorizontalAlignment="Left"/>
-                <TextBox x:Name="pwd_tb" Margin="50,0,30,0" FontSize="14"/>
+                <TextBox x:Name="pwd_tb" Margin="50,0,30,0" FontSize="14" Style="{StaticResource MyTextBoxStyle}"/>
             </Grid>
 
             <Label Content="укажите роль:" FontSize="18"/>
             <Grid>
                 <Image Source="/imgs/calendar.png" Height="30" HorizontalAlignment="Left"/>
-                <ComboBox x:Name="role_tb" Margin="50,0,30,0" FontSize="14"/>
+                <ComboBox x:Name="role_tb" Margin="50,0,30,0" FontSize="14" Style="{StaticResource MyComboBoxStyle}"/>
             </Grid>
         </StackPanel>
 
-        <Button Click="add_assembler" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="2" Width="175" Height="30" Margin="0,0,0,30 " Content="добавить"/>
+        <Button Click="add_assembler" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="2" Width="175" Height="30" Margin="0,0,0,30 " Content="добавить" Style="{StaticResource MyButtonStyle}"/>
     </Grid>
 </Page>

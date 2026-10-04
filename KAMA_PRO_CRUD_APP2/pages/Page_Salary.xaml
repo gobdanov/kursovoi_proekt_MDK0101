@@ -7,6 +7,13 @@
       mc:Ignorable="d" 
       d:DesignHeight="550" d:DesignWidth="487"
       Title="Page_Salary">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/style/styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
 
     <Grid>
         <Grid.RowDefinitions>
@@ -49,19 +56,26 @@
 
         <StackPanel Grid.Column="1" Margin="5,5,5,5" Grid.Row="1" Grid.RowSpan="3">
 
-            <Label Content="назначить почасовку"/>
+            
 
-            <StackPanel Margin="0,10,0,0">
-                <Label Content="выберите пользователя"/>
-                <ComboBox x:Name="usersCombobox"/>
-            </StackPanel>
+            
 
-            <StackPanel Margin="0,10,0,0">
-                <Label Content="введите кол-во часов"/>
-                <TextBox x:Name="countHours"/>
-            </StackPanel>
+            <Border Grid.Column="1" Margin="5,5,5,5" Grid.Row="2" CornerRadius="20" Background="#f0f0f0">
+                <StackPanel Margin="5">
+                    <Label Content="назначить почасовку" FontWeight="Bold"/>
+                    <StackPanel Margin="0,10,0,0">
+                        <Label Content="выберите пользователя:"/>
+                        <ComboBox x:Name="usersCombobox" Height="30" Style="{StaticResource MyComboBoxStyle}"/>
+                    </StackPanel>
+                    <StackPanel Margin="0,10,0,0">
+                        <Label Content="введите кол-во часов:"/>
+                        <TextBox x:Name="countHours" Height="30" Style="{StaticResource MyTextBoxStyle}"/>
+                        <Button Margin="0,10,0,0" Width="150" Height="30" HorizontalAlignment="Center" Style="{StaticResource MyButtonStyle}" Content="назначить" Click="createPayment"/>
+                    </StackPanel>
+                </StackPanel>
 
-            <Button Margin="0,10,0,0" Width="150" HorizontalAlignment="Center" Content="назначить" Click="createPayment"/>
+            </Border>
+           
 
         </StackPanel>
     </Grid>
