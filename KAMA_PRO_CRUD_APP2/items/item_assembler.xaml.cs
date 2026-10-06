@@ -53,13 +53,13 @@ namespace KAMA_PRO_CRUD_APP.items
 
         private void delete_user(object sender, RoutedEventArgs e)
         {
-            var res = MessageBox.Show("вы действительно хотите удалить пользователя? отменить это действие будет невозможно", "Предупреждение", MessageBoxButton.YesNo);
+            var res = MessageBox.Show("Вы действительно хотите удалить пользователя?\nОтменить это действие будет невозможно", "Предупреждение", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (res == MessageBoxResult.Yes)
             {
-
                 Services service = new Services();
                 service.DeleteAssembler(username_to_delete);
-                MessageBox.Show("пользователь удалён!");
+                MessageBox.Show("Пользователь удалён", "Успешно", MessageBoxButton.OK, MessageBoxImage.Information);
+
             }
         }
 
@@ -71,41 +71,57 @@ namespace KAMA_PRO_CRUD_APP.items
 
             pencil.Visibility = Visibility.Hidden;
             confirm.Visibility = Visibility.Visible;
+
+            fullname_tb.Content = null;
+            username_tb.Content = null;
+
         }
 
         private async void confirm_btn(object sender, RoutedEventArgs e)
         {
-            try
+            if (role_edit.SelectedValue == null
+                || string.IsNullOrEmpty(username_edit.Text)
+                || string.IsNullOrEmpty(fullname_edit.Text))
             {
-                Repository repo = new Repository();
-
-                DTO_Assembler new_assembler = new DTO_Assembler();
-                new_assembler.Pwd = this_assembler.Pwd;
-
-                new_assembler.Role = role_edit.SelectedValue?.ToString();
-                new_assembler.Username = username_edit.Text;
-
-                string[] FIO = fullname_edit.Text.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
-                new_assembler.Surname = FIO[0];
-                new_assembler.Name = FIO[1];
-                new_assembler.Lastname = FIO[2];
-
-                await repo.UpdateAssembler(this_assembler.Id, new_assembler);
-
-                MessageBox.Show("пользователь изменен!");
+                System.Windows.MessageBox.Show($"Введены не все данные", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                try
+                {
+                    Repository repo = new Repository();
+
+                    DTO_Assembler new_assembler = new DTO_Assembler();
+                    new_assembler.Pwd = this_assembler.Pwd;
+
+                    new_assembler.Role = role_edit.SelectedValue?.ToString();
+                    role_tb.Content = role_edit.SelectedValue.ToString();
+
+                    new_assembler.Username = username_edit.Text;
+                    username_tb.Content = username_edit.Text;
+
+                    string[] FIO = fullname_edit.Text.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+                    new_assembler.Surname = FIO[0];
+                    new_assembler.Name = FIO[1];
+                    new_assembler.Lastname = FIO[2];
+
+                    fullname_tb.Content = fullname_edit.Text;
+
+                    await repo.UpdateAssembler(this_assembler.Id, new_assembler);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+                fullname_edit.Visibility = Visibility.Hidden;
+                username_edit.Visibility = Visibility.Hidden;
+                role_edit.Visibility = Visibility.Hidden;
+
+                pencil.Visibility = Visibility.Visible;
+                confirm.Visibility = Visibility.Hidden;
             }
-
-            fullname_edit.Visibility = Visibility.Hidden;
-            username_edit.Visibility = Visibility.Hidden;
-            role_edit.Visibility = Visibility.Hidden;
-
-            pencil.Visibility = Visibility.Visible;
-            confirm.Visibility = Visibility.Hidden;
         }
     }
 }

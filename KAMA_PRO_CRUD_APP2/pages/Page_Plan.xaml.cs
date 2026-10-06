@@ -70,22 +70,29 @@ namespace KAMA_PRO_CRUD_APP.pages
 
         private void ChooseExcelFile()
         {
-            // Создаем диалог выбора файла
-            System.Windows.Forms.OpenFileDialog dialog = new System.Windows.Forms.OpenFileDialog();
-            // Настройка фильтров файлов
-            dialog.Filter = "Excel файлы (*.xlsx)|*.xlsx|Все файлы (*.*)|*.*";
-            dialog.FilterIndex = 1; // По умолчанию выбираем первый фильтр
-            dialog.Title = "Выберите Excel файл";
-
-            dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-
-            dialog.Multiselect = false;
-
-            if (dialog.ShowDialog() == DialogResult.OK)
+            try
             {
-                string pathToFile = dialog.FileName;
+                // Создаем диалог выбора файла
+                System.Windows.Forms.OpenFileDialog dialog = new System.Windows.Forms.OpenFileDialog();
+                // Настройка фильтров файлов
+                dialog.Filter = "Excel файлы (*.xlsx)|*.xlsx|Все файлы (*.*)|*.*";
+                dialog.FilterIndex = 1; // По умолчанию выбираем первый фильтр
+                dialog.Title = "Выберите Excel файл";
 
-                Execute(pathToFile);
+                dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+
+                dialog.Multiselect = false;
+
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    string pathToFile = dialog.FileName;
+
+                    Execute(pathToFile);
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Windows.MessageBox.Show($"Произошла ошибка\nОшибка: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -105,7 +112,7 @@ namespace KAMA_PRO_CRUD_APP.pages
             }
             catch (Exception ex)
             {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
+                System.Windows.MessageBox.Show($"Произошла ошибка\nОшибка: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

@@ -142,18 +142,17 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
         [Route("Update")]
         public ActionResult<Assemblers> Update([FromQuery] int old_assembler_id, [FromBody] DTO_Assembler new_assembler_DTO)
         {
-            
-
             Assemblers old_assembler = db.Assemblers.Where(x => x.Id == old_assembler_id).FirstOrDefault();
 
             if(old_assembler != null)
             {
+                //пароль останется как у старого пользователя, это специально для UI
                 Assemblers new_assembler = new Assemblers
                 {
                     Id = old_assembler.Id,
                     Lastname = new_assembler_DTO.Lastname,
                     Name = new_assembler_DTO.Name,
-                    Pwd = SHA256_class.GetSha256Hash(new_assembler_DTO.Pwd),
+                    Pwd = old_assembler.Pwd,
                     Surname = new_assembler_DTO.Surname,
                     Username = new_assembler_DTO.Username,
                     Role = new_assembler_DTO.Role

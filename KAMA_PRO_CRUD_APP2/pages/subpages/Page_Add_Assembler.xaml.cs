@@ -37,23 +37,43 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
 
         private async void add_assembler(object sender, RoutedEventArgs e)
         {
-            DBContext db = new DBContext();
-
-            DTO.DTO_Assembler assembler = new DTO.DTO_Assembler
+            try
             {
-                Name = name_tb.Text,
-                Surname = surname_tb.Text,
-                Lastname = lastname_tb.Text,
-                Username = username_tb.Text,
-                Pwd = pwd_tb.Text,
-                Role = role_tb.SelectedValue.ToString()
-            };
+                if (string.IsNullOrEmpty(name_tb.Text)
+                || string.IsNullOrEmpty(surname_tb.Text)
+                || string.IsNullOrEmpty(lastname_tb.Text)
+                || string.IsNullOrEmpty(username_tb.Text)
+                || string.IsNullOrEmpty(pwd_tb.Text)
+                || role_tb.SelectedValue == null)
+                {
+                    System.Windows.MessageBox.Show($"Введены не все данные", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                else
+                {
+                    DBContext db = new DBContext();
 
-            Repository repo = new Repository();
+                    DTO.DTO_Assembler assembler = new DTO.DTO_Assembler
+                    {
+                        Name = name_tb.Text,
+                        Surname = surname_tb.Text,
+                        Lastname = lastname_tb.Text,
+                        Username = username_tb.Text,
+                        Pwd = pwd_tb.Text,
+                        Role = role_tb.SelectedValue.ToString()
+                    };
 
-            await repo.CreateAssemblerAsync(assembler);
+                    Repository repo = new Repository();
 
-            MessageBox.Show("сборщик создан!");
+                    await repo.CreateAssemblerAsync(assembler);
+
+                    System.Windows.MessageBox.Show($"Сборщик успешно создан", "Успешно", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Windows.MessageBox.Show($"Произошла ошибка\nОшибка: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+                
         }
 
         private void goto_back(object sender, RoutedEventArgs e)

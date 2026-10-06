@@ -155,6 +155,9 @@ namespace KAMA_PRO_CRUD_APP.pages
                     await repo.CreatePayment(dtoPayment);
 
                     MessageBox.Show("Часы успешно назначены сборщику", "Успешно", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                    usersCombobox.SelectedValue = null;
+                    countHours.Text = null;
                 }
             }
             catch (FormatException)

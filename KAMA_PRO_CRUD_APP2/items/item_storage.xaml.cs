@@ -50,25 +50,10 @@ namespace KAMA_PRO_CRUD_APP.items
             minus_submit_btn.Visibility = Visibility.Visible;
 
             //показываем текстбокс
-            minus_tb.Visibility = Visibility.Visible;
+            minus_tb.IsEnabled = true;
 
         }
 
-        private void plus(object sender, RoutedEventArgs e)
-        {
-            //скрываем иконку плюса
-            plus_img.Visibility = Visibility.Hidden;
-            //скрываем кнопку plus_btn
-            plus_btn.Visibility = Visibility.Hidden;
-
-            //показываем иконку submit
-            plus_submit_img.Visibility = Visibility.Visible;
-            //показываем кнопку подтверждения
-            plus_submit_btn.Visibility = Visibility.Visible;
-
-            //показываем текстбокс
-            plus_tb.Visibility = Visibility.Visible;
-        }
 
         private async void minus_submit(object sender, RoutedEventArgs e)
         {
@@ -88,9 +73,16 @@ namespace KAMA_PRO_CRUD_APP.items
 
             try
             {
-                await service.UpdateComponent(component.Name, -(Convert.ToInt32(minus_tb.Text)));
+                if(Convert.ToInt32(count.Content) + (Convert.ToInt32(minus_tb.Text)) < 0)
+                {
+                    System.Windows.MessageBox.Show($"Кол-во не может быть отрицательным", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                else
+                {
+                    await service.UpdateComponent(component.Name, (Convert.ToInt32(minus_tb.Text)));
 
-                count.Content = Convert.ToString(Convert.ToInt32(count.Content) - Convert.ToInt32(minus_tb.Text));
+                    count.Content = Convert.ToString(Convert.ToInt32(count.Content) + (Convert.ToInt32(minus_tb.Text)));
+                }
             }
 
             catch (Exception ex)
@@ -100,43 +92,10 @@ namespace KAMA_PRO_CRUD_APP.items
 
             minus_tb.Text = "0";
             //скрываем текстбокс
-            minus_tb.Visibility = Visibility.Hidden;
+            minus_tb.IsEnabled = false;
 
 
         }
 
-        private async void plus_submit(object sender, RoutedEventArgs e)
-        {
-            
-
-            //скрываем иконку плюса
-            plus_img.Visibility = Visibility.Visible;
-            //скрываем кнопку plus_btn
-            plus_btn.Visibility = Visibility.Visible;
-
-            //показываем иконку submit
-            plus_submit_img.Visibility = Visibility.Hidden;
-            //показываем кнопку подтверждения
-            plus_submit_btn.Visibility = Visibility.Hidden;
-
-            Services service = new Services();
-
-            try 
-            {
-                await service.UpdateComponent(component.Name, Convert.ToInt32(plus_tb.Text));
-
-                count.Content = Convert.ToString(Convert.ToInt32(count.Content) + Convert.ToInt32(plus_tb.Text));
-            }
-            
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-            plus_tb.Text = "0";
-
-            //показываем текстбокс
-            plus_tb.Visibility = Visibility.Hidden;
-        }
     }
 }

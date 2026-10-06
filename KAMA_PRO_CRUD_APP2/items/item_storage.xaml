@@ -46,7 +46,7 @@
                         BorderThickness="1"
                         CornerRadius="10"
                         Height="28" Width="28">
-                    <Image Source="/imgs/minus.png"
+                    <Image Source="/imgs/pencil.png"
                            x:Name="minus_img"
                            Height="14" Width="14"/>
                 </Border>
@@ -78,56 +78,7 @@
                      x:Name="minus_tb"
                      Text="0"
                      TextAlignment="Center"
-                     Visibility="Hidden"
-                     VerticalContentAlignment="Center"
-                     Background="White"
-                     BorderBrush="#CCCCCC"
-                     BorderThickness="1"
-                     Margin="2,0"/>
-
-            <!-- ===== ПЛЮС ===== -->
-            <Grid Margin="2,0">
-                <!-- 1. Фон-иконка "плюс" -->
-                <Border x:Name="plus_btn_border"
-                        Background="#F0F0F0"
-                        BorderBrush="#CCCCCC"
-                        BorderThickness="1"
-                        CornerRadius="10"
-                        Height="28" Width="28">
-                    <Image Source="/imgs/plus.png"
-                           x:Name="plus_img"
-                           Height="14" Width="14"/>
-                </Border>
-
-                <!-- 2. Видимая кнопка "плюс" -->
-                <Button Height="28" Width="28"
-                        Opacity="0"
-                        Click="plus"
-                        Cursor="Hand"
-                        x:Name="plus_btn"/>
-
-                <!-- 3. Скрытая кнопка "подтвердить плюс" (поверх всех) -->
-                <Image Source="/imgs/submit.png"
-                       x:Name="plus_submit_img"
-                       Height="20" Width="20"
-                       Visibility="Hidden"/>
-
-                <Button Height="28" Width="28"
-                        Opacity="0"
-                        Click="plus_submit"
-                        Cursor="Hand"
-                        Visibility="Hidden"
-                        x:Name="plus_submit_btn"/>
-            </Grid>
-
-            <!-- Поле ввода для плюса -->
-            <TextBox 
-                     x:Name="plus_tb"
-                     Text="0"
-                     TextAlignment="Center"
-                     Visibility="Hidden"
-                     Height="20"
-                     Width="30"
+                     IsEnabled="False"
                      VerticalContentAlignment="Center"
                      Background="White"
                      BorderBrush="#CCCCCC"

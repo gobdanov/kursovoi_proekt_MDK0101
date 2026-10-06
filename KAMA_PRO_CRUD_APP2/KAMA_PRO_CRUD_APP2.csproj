@@ -13,6 +13,7 @@
     <None Remove="imgs\avatars\alien.png" />
     <None Remove="imgs\avatars\mechanic-body.png" />
     <None Remove="imgs\bar-chart.png" />
+    <None Remove="imgs\bust.png" />
     <None Remove="imgs\car.png" />
     <None Remove="imgs\casino.png" />
     <None Remove="imgs\city.png" />
@@ -22,7 +23,12 @@
     <None Remove="imgs\file-cabinet.png" />
     <None Remove="imgs\file-folder.png" />
     <None Remove="imgs\hammer-and-wrench.png" />
+    <None Remove="imgs\id_person.png" />
+    <None Remove="imgs\key.png" />
     <None Remove="imgs\left-arrow.png" />
+    <None Remove="imgs\locked.png" />
+    <None Remove="imgs\man_suit.png" />
+    <None Remove="imgs\masks.png" />
     <None Remove="imgs\mechanic-light-skin-tone.png" />
     <None Remove="imgs\mechanic-medium-light-skin-tone.png" />
     <None Remove="imgs\minus.png" />
@@ -48,6 +54,7 @@
     <Resource Include="imgs\bar-chart.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="imgs\bust.png" />
     <Resource Include="imgs\car.png" />
     <Resource Include="imgs\casino.png" />
     <Resource Include="imgs\city.png" />
@@ -67,9 +74,14 @@
     <Resource Include="imgs\hammer-and-wrench.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="imgs\id_person.png" />
+    <Resource Include="imgs\key.png" />
     <Resource Include="imgs\left-arrow.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="imgs\locked.png" />
+    <Resource Include="imgs\man_suit.png" />
+    <Resource Include="imgs\masks.png" />
     <Resource Include="imgs\mechanic-light-skin-tone.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
