@@ -48,6 +48,7 @@ namespace KAMA_PRO_CRUD_APP.pages
                 {
                     sdelka.Children.Add(new Label { Content = i.Trailer_Vin + " | " + i.count + "р" });
                 }
+
             }
 
             List<DTO_Payment> payments = await repo.GetPayment(temp_variables.loginedUser.Id);

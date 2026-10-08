@@ -33,7 +33,7 @@
         </StackPanel>
         <Border Background="#f0f0f0"  Margin="5,5,5,5" CornerRadius="20" Grid.Column="0" Grid.Row="1"  Grid.RowSpan="2">
             <ScrollViewer>
-                <StackPanel x:Name="parent_Border">
+                <StackPanel x:Name="parent_Border" Margin="10,10,0,10">
             
                 </StackPanel>
             </ScrollViewer>

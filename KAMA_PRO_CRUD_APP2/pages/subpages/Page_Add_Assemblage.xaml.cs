@@ -54,7 +54,6 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
                 assemblers_sp.Children.Add(new CheckBox { Content = i.Username });
             }
 
-
             await repository.GetPlansAsync();
             foreach (var i in repository.Plans)
             {

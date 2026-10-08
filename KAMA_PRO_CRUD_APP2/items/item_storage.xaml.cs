@@ -33,7 +33,7 @@ namespace KAMA_PRO_CRUD_APP.items
             InitializeComponent();
             this.component = component;
 
-            name.Content = component.Name;
+            name.Content = component.Name.ToString().Replace("_", "__");
             count.Content = Convert.ToString(component.Quantity);
         }
 

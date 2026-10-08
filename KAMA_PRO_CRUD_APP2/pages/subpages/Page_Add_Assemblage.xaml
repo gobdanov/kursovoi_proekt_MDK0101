@@ -22,15 +22,15 @@
             <RowDefinition Height="37*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="230*"/>
+            <ColumnDefinition Width="257*"/>
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="0" Grid.Row="0">
             <Image Source="/imgs/left-arrow.png" Margin="0,4,0,0"  Height="20" Width="20" VerticalAlignment="Top" HorizontalAlignment="Left"/>
             <Label Content="вернуться" Margin="20,0,0,0"/>
         </Grid>
 
-        
+
 
         <StackPanel Grid.Column="0" Grid.Row="0">
             <Label Content="добавить сборку" Margin="0,20,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
@@ -38,32 +38,32 @@
 
         <Button Click="goto_back" Grid.Column="0" Grid.Row="0" Margin="0,0,80,45" Opacity="0" Cursor="Hand"/>
 
-            <StackPanel Grid.Column="0" Grid.Row="1" Margin="0,0,0,40" Grid.RowSpan="2">
+        <StackPanel Grid.Column="0" Grid.Row="1" Margin="0,0,0,40" Grid.RowSpan="2">
 
             <!-- комбобоксы и текстбокс-->
             <Grid>
                 <Image Source="/imgs/car.png" Height="20" Width="20" HorizontalAlignment="Left" Margin="10,25,0,0"/>
                 <Label Content="выберите прицеп:" Margin="10,0,0,0"/>
-                <ComboBox x:Name="trailers_cmbbx" Margin="40,30,50,0" Height="20" Style="{StaticResource MyComboBoxStyle}"/>
+                <ComboBox x:Name="trailers_cmbbx" Margin="40,30,20,0" Height="20" Style="{StaticResource MyComboBoxStyle}"/>
             </Grid>
 
             <Grid Margin="0,10,0,0">
                 <Image Source="/imgs/city.png" Height="20" Width="20" HorizontalAlignment="Left" Margin="10,25,0,0"/>
                 <Label Content="выберите город:" Margin="10,0,0,0"/>
-                <ComboBox x:Name="plans_cmbbx" Margin="40,30,50,0" Height="20" Style="{StaticResource MyComboBoxStyle}"/>
+                <ComboBox x:Name="plans_cmbbx" Margin="40,30,20,0" Height="20" Style="{StaticResource MyComboBoxStyle}"/>
             </Grid>
 
             <Grid Margin="0,10,0,0">
                 <Image Source="/imgs/casino.png" Height="20" Width="20" HorizontalAlignment="Left" Margin="10,25,0,0"/>
                 <Label Content="введите кол-во:" Margin="10,0,0,0"/>
-                <TextBox x:Name="quantity_trailers" TextChanged="init_trailers" Margin="40,30,50,0" Height="20" Style="{StaticResource MyTextBoxStyle}"/>
+                <TextBox x:Name="quantity_trailers" TextChanged="init_trailers" Margin="40,30,20,0" Height="20" Style="{StaticResource MyTextBoxStyle}"/>
             </Grid>
 
             <!-- сборщики -->
             <StackPanel Margin="0,10,0,0" Grid.Column="0" Grid.Row="1" Grid.RowSpan="1">
                 <Label Content="укажите сборщиков:" Margin="20,0,0,0"/>
-                <ScrollViewer  VerticalAlignment="Top">
-                    <StackPanel x:Name="assemblers_sp" Margin="10,30,0,0" VerticalAlignment="Top"/>
+                <ScrollViewer Height="200">
+                    <StackPanel x:Name="assemblers_sp" />
                 </ScrollViewer>
 
             </StackPanel>
@@ -71,7 +71,7 @@
 
         <Button Grid.Row="2" Content="добавить" Click="add_assemblage" Style="{StaticResource MyButtonStyle}" HorizontalAlignment="Center" Margin="0,145,0,0" VerticalAlignment="Top" Width="112" Height="30"/>
 
-        <Grid Grid.Row="1" Margin="162,0,0,15" Grid.ColumnSpan="2" Grid.RowSpan="2">
+        <Grid Grid.Row="1" Grid.Column="1" Grid.RowSpan="2">
             <StackPanel  x:Name="trailers"  HorizontalAlignment="Center"/>
         </Grid>
 

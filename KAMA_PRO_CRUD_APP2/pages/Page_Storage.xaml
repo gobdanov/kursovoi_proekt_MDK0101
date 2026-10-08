@@ -63,9 +63,7 @@
             </Grid>
         </Border>
 
-        <ScrollViewer Grid.Row="1" Margin="20,30,20,30">
-            <StackPanel x:Name="parent" />
-        </ScrollViewer>
+        <StackPanel Grid.Row="1" Margin="20,30,20,30" x:Name="parent" />
 
     </Grid>
 </Page>

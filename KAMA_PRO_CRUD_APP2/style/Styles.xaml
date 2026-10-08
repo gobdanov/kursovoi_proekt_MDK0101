@@ -9,7 +9,7 @@
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="Padding" Value="8,0"/>
         <Setter Property="Height" Value="35"/>
-        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontSize" Value="12"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="Height" Value="30"/>
            
@@ -84,9 +84,9 @@
         <Setter Property="Foreground" Value="Black"/>
         <Setter Property="BorderBrush" Value="#CCCCCC"/>
         <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="Padding" Value="10,0"/>
+        <Setter Property="Padding" Value="5,0,-5,0"/>
         <Setter Property="Height" Value="35"/>
-        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontSize" Value="12"/>
         <Setter Property="Cursor" Value="Hand"/>
 
         <Setter Property="Template">

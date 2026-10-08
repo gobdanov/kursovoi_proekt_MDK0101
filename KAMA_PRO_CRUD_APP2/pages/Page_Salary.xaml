@@ -33,7 +33,7 @@
         </StackPanel>
 
         <Border Grid.Column="0" Margin="5,5,5,5" Grid.Row="1" CornerRadius="20" Background="#f0f0f0">
-            <ScrollViewer Margin="0,0,15,0">
+            <ScrollViewer>
                 <StackPanel Margin="10,0,0,0" x:Name="sdelka">
                     <Label Content="сделка:" FontWeight="Bold"/>
                 </StackPanel>
@@ -54,20 +54,15 @@
             </StackPanel>
         </Border>
 
-        <StackPanel Grid.Column="1" Margin="5,5,5,5" Grid.Row="1" Grid.RowSpan="3">
-
-            
-
-            
-
-            <Border Grid.Column="1" Margin="5,5,5,5" Grid.Row="2" CornerRadius="20" Background="#f0f0f0" x:Name="post_salary_div">
+        <Grid Grid.Column="1" Margin="5,5,5,5" Grid.Row="1" Grid.RowSpan="3">
+            <Border  Margin="5,5,5,5" CornerRadius="20" Background="#f0f0f0" x:Name="post_salary_div">
                 <StackPanel Margin="5">
                     <Label Content="назначить почасовку" FontWeight="Bold"/>
-                    <StackPanel Margin="0,10,0,0">
+                    <StackPanel Margin="5,10,5,0">
                         <Label Content="выберите пользователя:"/>
                         <ComboBox x:Name="usersCombobox" Height="30" Style="{StaticResource MyComboBoxStyle}"/>
                     </StackPanel>
-                    <StackPanel Margin="0,10,0,0">
+                    <StackPanel Margin="5,10,5,0">
                         <Label Content="введите кол-во часов:"/>
                         <TextBox x:Name="countHours" Height="30" Style="{StaticResource MyTextBoxStyle}"/>
                         <Button Margin="0,10,0,0" Width="150" Height="30" HorizontalAlignment="Center" Style="{StaticResource MyButtonStyle}" Content="назначить" Click="createPayment"/>
@@ -75,8 +70,6 @@
                 </StackPanel>
 
             </Border>
-           
-
-        </StackPanel>
+        </Grid>
     </Grid>
 </Page>
