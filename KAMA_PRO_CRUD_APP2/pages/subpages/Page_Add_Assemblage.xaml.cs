@@ -5,6 +5,7 @@ using KAMA_PRO_CRUD_APP.pages;
 using KAMA_PRO_CRUD_APP2.classes.contexts;
 using KAMA_PRO_CRUD_APP2.classes.repo;
 using KAMA_PRO_CRUD_APP2.classes.services;
+using KAMA_PRO_CRUD_APP2.DTO;
 using KAMA_PRO_CRUD_APP2.items;
 using KAMA_PRO_CRUD_APP2.pages;
 using System;
@@ -30,6 +31,7 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
     /// </summary>
     public partial class Page_Add_Assemblage : Page
     {
+        Repository repo = new Repository();
         public Page_Add_Assemblage()
         {
             InitializeComponent();
@@ -40,22 +42,22 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
 
         public async void Page_Add_Assemblage_Loaded(object sender, RoutedEventArgs e)
         {
-            Repository repository = new Repository();
 
-            await repository.GetTrailersAsync();
-            foreach (var i in repository.Trailers)
+
+            await repo.GetTrailersAsync();
+            foreach (var i in repo.Trailers)
             {
                 trailers_cmbbx.Items.Add(i.Name);
             }
 
-            await repository.GetAssemblersAsync();
-            foreach (var i in repository.Assemblers)
+            await repo.GetAssemblersAsync();
+            foreach (var i in repo.Assemblers)
             {
                 assemblers_sp.Children.Add(new CheckBox { Content = i.Username });
             }
 
-            await repository.GetPlansAsync();
-            foreach (var i in repository.Plans)
+            await repo.GetPlansAsync();
+            foreach (var i in repo.Plans)
             {
                 plans_cmbbx.Items.Add(i.Name);
             }
@@ -109,168 +111,152 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
 
         private async void add_assemblage(object sender, RoutedEventArgs e)
         {
-            if(trailers_cmbbx.SelectedValue == null)
+            // ---------- UI-валидация ----------
+            if (trailers_cmbbx.SelectedValue == null)
             {
                 MessageBox.Show("Не выбрана модель прицепа", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
             }
-            else if (plans_cmbbx.SelectedValue == null)
+            if (plans_cmbbx.SelectedValue == null)
             {
                 MessageBox.Show("Не выбран план", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
             }
-            else if (string.IsNullOrEmpty(quantity_trailers.Text))
+            if (string.IsNullOrEmpty(quantity_trailers.Text))
             {
                 MessageBox.Show("Не введено кол-во прицепов", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
             }
-            else if (!assemblers_sp.Children.OfType<CheckBox>().Any(cb => cb.IsChecked == true))
+            if (!assemblers_sp.Children.OfType<CheckBox>().Any(cb => cb.IsChecked == true))
             {
                 MessageBox.Show("Не выбран ни один сборщик", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
             }
-            else if (true)
+
+            // ---------- Проверка VIN-полей ----------
+            bool hasError = false;
+            foreach (item_add_assemblage_trailer i in trailers.Children)
             {
-                bool hasError = false;
-
-                foreach (item_add_assemblage_trailer i in trailers.Children)
+                bool needUpper = !i.is_even;
+                if (needUpper)
                 {
-                    // используем бизнес-флаг вместо Visibility
-                    bool needUpper = !i.is_even; // или i.upper.Visibility != Visibility.Visible
-
-                    if (needUpper)
+                    if (string.IsNullOrEmpty(i.downer_vin.Text) ||
+                        string.IsNullOrEmpty(i.upper_vin.Text) ||
+                        !VinRegex.IsMatch(i.downer_vin.Text) ||
+                        !VinRegex.IsMatch(i.upper_vin.Text))
                     {
-                        if (string.IsNullOrEmpty(i.downer_vin.Text) ||
-                            string.IsNullOrEmpty(i.upper_vin.Text) ||
-                            !VinRegex.IsMatch(i.downer_vin.Text) ||
-                            !VinRegex.IsMatch(i.upper_vin.Text))
-                        {
-                            hasError = true;
-                            break;
-                        }
-                    }
-                    else
-                    {
-                        if (string.IsNullOrEmpty(i.downer_vin.Text))
-                        {
-                            hasError = true;
-                            break;
-                        }
+                        hasError = true;
+                        break;
                     }
                 }
-
-                if (hasError)
+                else
                 {
-                    MessageBox.Show("Неверно введены VIN-коды", "Ошибка",
-                        MessageBoxButton.OK, MessageBoxImage.Error);
-                    return; // прерываем выполнение, чтобы не сохранять
+                    if (string.IsNullOrEmpty(i.downer_vin.Text) ||
+                        !VinRegex.IsMatch(i.downer_vin.Text))
+                    {
+                        hasError = true;
+                        break;
+                    }
+                }
+            }
+
+            if (hasError)
+            {
+                MessageBox.Show("Неверно введены VIN-коды", "Ошибка",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            // ---------- Сбор данных для отправки ----------
+            string trailer = trailers_cmbbx.SelectedValue.ToString();
+            string plan = plans_cmbbx.SelectedValue.ToString();
+            int count = Convert.ToInt32(quantity_trailers.Text);
+
+            // Сбор VIN-ов с учётом чётности
+            List<string> EAV = new List<string>();
+            if (count % 2 == 0)
+            {
+                foreach (item_add_assemblage_trailer i in trailers.Children)
+                {
+                    EAV.Add(i.upper_vin.Text);
+                    EAV.Add(i.downer_vin.Text);
                 }
             }
             else
             {
-                DBContext db = new DBContext();
-
-                Services service = new Services();
-
-                // сохраняем собираемый прицеп
-                string trailer = trailers_cmbbx.SelectedValue.ToString();
-
-                // сохраняем кол-во прицепов
-                int count = Convert.ToInt32(quantity_trailers.Text);
-
-                List<string> components = db.Component_linkto_Trailer.Where(x => x.Trailer == trailer).Select(x => x.Component).ToList();
-
-                bool flag2 = true;
-
-                foreach (var i in components)
+                bool first = true;
+                foreach (item_add_assemblage_trailer i in trailers.Children)
                 {
-                    // Количество компонента на складе
-                    int totalQuantity = db.Components.Where(x => x.Name == i).Select(x => x.Quantity).FirstOrDefault();
-
-                    // Количество компонента, необходимого для одного прицепа
-                    int neededPerTrailer = db.Component_linkto_Trailer.Where(x => x.Component == i).Select(x => x.Quantity).FirstOrDefault();
-
-                    // Сколько нужно для всех прицепов
-                    int neededTotal = neededPerTrailer * count;
-
-                    // Проверяем, хватает ли на складе
-                    if (totalQuantity < neededTotal)
+                    if (first)
                     {
-                        flag2 = false;
-                        break; // Можно выйти из цикла, так как уже не хватает
-                    }
-                }
-                if (flag2)
-                {
-                    // содержит id сборщиков для последующего добавления
-                    List<int> assemblers = new List<int>();
-                    foreach (CheckBox i in assemblers_sp.Children)
-                    {
-                        // если checkbox выделен, то
-                        if (i.IsChecked == true)
-                        {
-                            // сохраняем айди того сборщика, который выделен
-                            Assemblers ass = db.Assemblers.Where(x => x.Username == i.Content).First();
-                            assemblers.Add(ass.Id);
-                        }
-                    }
-
-                    // сохраняем план К
-                    string plan = plans_cmbbx.SelectedValue.ToString();
-
-                    //сохраняем шильды
-                    List<string> EAV = new List<string>();
-                    //если четное, то
-                    if (count % 2 == 0)
-                    {
-                        foreach (item_add_assemblage_trailer i in trailers.Children)
-                        {
-                            EAV.Add(i.upper_vin.Text.ToString());
-                            EAV.Add(i.downer_vin.Text.ToString());
-                        }
+                        EAV.Add(i.downer_vin.Text);
+                        first = false;
                     }
                     else
                     {
-                        bool flag = false;
-                        foreach (item_add_assemblage_trailer i in trailers.Children)
-                        {
-                            if (flag == false)
-                            {
-                                EAV.Add(i.downer_vin.Text.ToString());
-                                flag = true;
-                            }
-                            else
-                            {
-                                EAV.Add(i.upper_vin.Text.ToString());
-                                EAV.Add(i.downer_vin.Text.ToString());
-                            }
-                        }
+                        EAV.Add(i.upper_vin.Text);
+                        EAV.Add(i.downer_vin.Text);
                     }
-
-                    for (int i = 0; i < assemblers.Count; i++)
-                    {
-                        for (int j = 0; j < EAV.Count; j++)
-                        {
-                            Assemblages assemblage = new Assemblages
-                            {
-                                Assembler = assemblers[i],
-                                VIN = EAV[j],
-                                Date_ = DateOnly.FromDateTime(DateTime.Now)
-                            };
-
-                            try
-                            {
-                                await service.CreateAssemblage(assemblage);
-                            }
-                            catch (Exception ex)
-                            {
-                                MessageBox.Show(ex.Message);
-                            }
-                        }
-                    }
-                    MessageBox.Show("сборка добавлена!");
-                }
-                else
-                {
-                    MessageBox.Show("комплектовки не хватает!");
                 }
             }
+
+            var duplicates = EAV
+                .GroupBy(v => v, StringComparer.OrdinalIgnoreCase)
+                .Where(g => g.Count() > 1)
+                .Select(g => g.Key)
+                .ToList();
+
+            if (duplicates.Count > 0)
+            {
+                MessageBox.Show(
+                    "Обнаружены дублирующиеся VIN-коды:\n" + string.Join("\n", duplicates),
+                    "Ошибка",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+                return;
+            }
+
+            // Сбор Id сборщиков
+            List<int> assemblerIds = new List<int>();
+            foreach (CheckBox cb in assemblers_sp.Children.OfType<CheckBox>())
+            {
+                if (cb.IsChecked == true)
+                {
+                    var ass = repo.Assemblers.Where(x => x.Username == cb.Content?.ToString()).FirstOrDefault();
+                    if (ass != null)
+                    {
+                        assemblerIds.Add(ass.Id);
+                    }
+                }
+            }
+
+            if (assemblerIds.Count == 0)
+            {
+                MessageBox.Show("Не удалось определить выбранных сборщиков", "Ошибка",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            // ---------- Формирование DTO ----------
+            DTO_AddAssemblage request = new DTO_AddAssemblage
+            {
+                Plan = plan,
+                Trailer = trailer,
+                VINs = EAV,
+                AssemblerIds = assemblerIds,
+                Date = DateOnly.FromDateTime(DateTime.Now)
+            };
+
+            // ---------- Отправка на сервер ----------
+            string error = await repo.CreateAssemblagesAsync(request);
+
+            if (error != null)
+            {
+                MessageBox.Show(error, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            MessageBox.Show("Сборка добавлена!");
         }
 
         private void goto_back(object sender, RoutedEventArgs e)

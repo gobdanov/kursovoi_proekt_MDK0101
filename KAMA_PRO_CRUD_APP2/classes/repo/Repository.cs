@@ -35,6 +35,40 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
 
         public static String BASE_ADDRESS = "https://localhost:7238/api/";
 
+        public async Task<string> CreateAssemblagesAsync(DTO_AddAssemblage request)
+        {
+            try
+            {
+                var response = await client.PostAsJsonAsync(BASE_ADDRESS + "Assemblages", request);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return null; // успех
+                }
+
+                // читаем текст ошибки от сервера
+                string error = await response.Content.ReadAsStringAsync();
+
+                // сервер может вернуть строку в кавычках (JSON-строка) — убираем кавычки
+                if (!string.IsNullOrWhiteSpace(error))
+                {
+                    error = error.Trim('"');
+                }
+
+                return string.IsNullOrWhiteSpace(error)
+                    ? $"Ошибка сервера: {response.StatusCode}"
+                    : error;
+            }
+            catch (HttpRequestException ex)
+            {
+                return $"Не удалось связаться с сервером: {ex.Message}";
+            }
+            catch (Exception ex)
+            {
+                return $"Непредвиденная ошибка: {ex.Message}";
+            }
+        }
+
         public async Task<string> DeleteAssemblageById(string vin)
         {
             var response = await client.DeleteAsync(BASE_ADDRESS + $"Assemblages?vin={vin}");
