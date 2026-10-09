@@ -75,7 +75,8 @@ namespace KAMA_PRO_CRUD_APP.items
             {
                 if(Convert.ToInt32(count.Content) + (Convert.ToInt32(minus_tb.Text)) < 0)
                 {
-                    System.Windows.MessageBox.Show($"Кол-во не может быть отрицательным", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    System.Windows.MessageBox.Show
+                        ($"Кол-во не может быть отрицательным", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
                 else
                 {

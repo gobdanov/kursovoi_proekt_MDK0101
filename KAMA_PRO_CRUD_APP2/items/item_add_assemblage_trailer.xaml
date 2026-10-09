@@ -8,17 +8,32 @@
     <Grid Height="70">
         <!-- нижний -->
         <Grid>
-            <Rectangle Height="40" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="20" Fill="LightGray" Stroke="Black"/>
-            <Rectangle Height="20" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="250" Fill="LightGray" Stroke="Black"/>
+            <Path Stroke="Black" Fill="LightGray" StrokeThickness="1"
+      HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                <Path.Data>
+                    <PathGeometry>
+                        <PathFigure StartPoint="0,0" IsClosed="True">
+                            <PolyLineSegment Points="20,0 20,20 250,20 250,40 0,40"/>
+                        </PathFigure>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
             <TextBox HorizontalAlignment="Left" x:Name="downer_vin" Margin="21,52,0,0" FontSize="10" TextWrapping="Wrap" Text="VIN КОД" VerticalAlignment="Top" Width="132"/>
-            <Image Source="/imgs/camera.png" HorizontalAlignment="Right" Height="20" Width="20" VerticalAlignment="Bottom" Margin="0,0,20,2"/>
-            <Button Opacity="0" Cursor="Hand" Click="goto_add_photo_trailer" HorizontalAlignment="Right" Height="18" Width="20" VerticalAlignment="Bottom" Margin="0,0,20,2"/>
         </Grid>
 
-            <!-- верхний -->
+        <!-- верхний -->
         <Grid x:Name="upper" Visibility="Visible" Margin="0,5,0,0">
-            <Rectangle Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Width="20" Fill="LightGray" Stroke="Black"/>
-            <Rectangle Height="20" HorizontalAlignment="Right" VerticalAlignment="Top" Width="250" Fill="LightGray" Stroke="Black"/>
+            <Path Stroke="Black" Fill="LightGray" StrokeThickness="1"
+      HorizontalAlignment="Center" VerticalAlignment="Top"
+      Width="250" Height="40" Stretch="None">
+                <Path.Data>
+                    <PathGeometry>
+                        <PathFigure StartPoint="0,0" IsClosed="True">
+                            <PolyLineSegment Points="250,0 250,40 230,40 230,20 0,20"/>
+                        </PathFigure>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
             <TextBox HorizontalAlignment="Left" x:Name="upper_vin" Margin="98,2,0,0" FontSize="10" TextWrapping="Wrap" Text="VIN КОД" VerticalAlignment="Top" Width="132"/>
         </Grid>
     </Grid>

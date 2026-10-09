@@ -86,15 +86,12 @@ namespace KAMA_PRO_CRUD_APP.pages
         private async void model_TextChanged(object sender, TextChangedEventArgs e)
         {
             await UpdateAssemblages();
+            
         }
 
         private async Task UpdateAssemblages()
         {
             parent_Border.Children.Clear();
-
-            Date_.Text = "";
-
-            cmbbx_trlr.SelectedValue = null;
 
             Repository repo = new Repository();
             await repo.GetAssemblagesAsync();
@@ -112,21 +109,21 @@ namespace KAMA_PRO_CRUD_APP.pages
                     Margin = new Thickness(0, 5, 0, 0)
                 });
             }
+            type_of_filtration.Content = "применен тип фильтрации: по VIN-коду";
         }
 
         private async void DatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (Date_.SelectedDate == null)
+                return;
+
+            // СРАЗУ сохраняем значение — до любых await и сбросов
+            DateOnly cur_date = DateOnly.FromDateTime(Date_.SelectedDate.Value);
+
             parent_Border.Children.Clear();
-
-            osnost.Text = "";
-            t0_.Text = "";
-
-            cmbbx_trlr.SelectedValue = null;
 
             Repository repo = new Repository();
             await repo.GetAssemblagesAsync();
-
-            DateOnly cur_date = DateOnly.FromDateTime(Convert.ToDateTime(Date_.Text));
 
             List<Assemblages> assemblages = repo.Assemblages
                 .Where(x => x.Date_ == cur_date)
@@ -141,18 +138,17 @@ namespace KAMA_PRO_CRUD_APP.pages
                     Margin = new Thickness(0, 5, 0, 0)
                 });
             }
+            type_of_filtration.Content = "применен тип фильтрации: по дате";
+
         }
+
 
         private async void Combobox_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
         {
             if (is_page_loaded) 
             {
+                
                 parent_Border.Children.Clear();
-
-                osnost.Text = "";
-                t0_.Text = "";
-
-                Date_.Text = "";
 
                 Repository repo = new Repository();
                 await repo.GetPlan_linkto_TrailerAsync();
@@ -192,6 +188,7 @@ namespace KAMA_PRO_CRUD_APP.pages
                         }
                     }
                 }
+                type_of_filtration.Content = "применен тип фильтрации: по прицепам";
             }
         }
     }

@@ -60,7 +60,7 @@
                     <Label Content="назначить почасовку" FontWeight="Bold"/>
                     <StackPanel Margin="5,10,5,0">
                         <Label Content="выберите пользователя:"/>
-                        <ComboBox x:Name="usersCombobox" Height="30" Style="{StaticResource MyComboBoxStyle}"/>
+                        <ComboBox x:Name="usersCombobox"  Style="{StaticResource MyComboBoxStyle}"/>
                     </StackPanel>
                     <StackPanel Margin="5,10,5,0">
                         <Label Content="введите кол-во часов:"/>

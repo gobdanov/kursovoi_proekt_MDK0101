@@ -73,7 +73,7 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
 
                 if (count >= 13)
                 {
-                    MessageBox.Show("слишком много прицепов!");
+                    MessageBox.Show("Слишком много прицепов", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                     quantity_trailers.Text = "";
                     return;
                 }
@@ -100,7 +100,7 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
             }
             catch
             {
-                MessageBox.Show("введите корректное число!");
+                MessageBox.Show("Введите корректное число", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 quantity_trailers.Text = "";
                 return;
             }
@@ -256,7 +256,7 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
                 return;
             }
 
-            MessageBox.Show("Сборка добавлена!");
+            MessageBox.Show("Сборка добавлена", "Успешно", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
         private void goto_back(object sender, RoutedEventArgs e)
