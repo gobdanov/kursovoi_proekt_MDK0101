@@ -57,9 +57,7 @@ namespace KAMA_PRO_CRUD_APP.items
 
         private async void minus_submit(object sender, RoutedEventArgs e)
         {
-            
-
-            //показываем иконку минуса
+           //показываем иконку минуса
             minus_img.Visibility = Visibility.Visible;
             //показываем кнопку minus_btn
             minus_btn.Visibility = Visibility.Visible;
@@ -94,8 +92,6 @@ namespace KAMA_PRO_CRUD_APP.items
             minus_tb.Text = "0";
             //скрываем текстбокс
             minus_tb.IsEnabled = false;
-
-
         }
 
     }

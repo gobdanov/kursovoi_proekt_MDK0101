@@ -194,7 +194,7 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
             }
             else
             {
-                return BadRequest("такой пользователь уже есть!");
+                return BadRequest("Такой пользователь уже есть!");
             }
         }
 

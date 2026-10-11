@@ -53,6 +53,6 @@ namespace KAMA_PRO_CRUD_APP.pages
             {
                 MessageBox.Show("Ошибка авторизации", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-}
+        }
     }
 }
