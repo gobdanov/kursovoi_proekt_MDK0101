@@ -32,7 +32,6 @@ namespace KAMA_PRO_CRUD_APP2.items
             InitializeComponent();
             Trailer.Content = trailer;
             Assemblers.Content = assemblers;
-            Comments.Content = comments;
             Plan.Content = plan;
             Nameplate.Content = nameplate;
             if(isAdmin == false)
