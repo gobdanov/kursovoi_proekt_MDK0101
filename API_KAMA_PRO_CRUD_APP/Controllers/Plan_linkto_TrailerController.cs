@@ -26,7 +26,7 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
             }
             catch
             {
-                return BadRequest("Неерный токен");
+                return BadRequest("Неверный токен");
             }
             var plan_linkto_trailer = db.Plan_linkto_Trailer.ToList();
             return Ok(plan_linkto_trailer);

@@ -1,6 +1,5 @@
 ﻿using KAMA_PRO_CRUD_APP;
 using KAMA_PRO_CRUD_APP.pages;
-using KAMA_PRO_CRUD_APP2.classes.contexts;
 using KAMA_PRO_CRUD_APP2.classes.repo;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -50,7 +49,6 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
                 }
                 else
                 {
-                    DBContext db = new DBContext();
 
                     DTO.DTO_Assembler assembler = new DTO.DTO_Assembler
                     {

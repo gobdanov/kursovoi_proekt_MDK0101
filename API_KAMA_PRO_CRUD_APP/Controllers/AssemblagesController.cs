@@ -36,7 +36,7 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
             }
             catch
             {
-                return BadRequest("Неерный токен");
+                return BadRequest("Неверный токен");
             }
             //получаем все сборки
             List<Assemblages> assemblages = db.Assemblages.ToList();
@@ -95,7 +95,7 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
             }
             catch
             {
-                return BadRequest("Неерный токен");
+                return BadRequest("Неверный токен");
             }
             try
             {
@@ -152,7 +152,7 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
             }
             catch
             {
-                return BadRequest("Неерный токен");
+                return BadRequest("Неверный токен");
             }
             // ---------- 1. Базовая валидация входных данных ----------
             if (request == null)
@@ -321,7 +321,7 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
             }
             catch
             {
-                return BadRequest("Неерный токен");
+                return BadRequest("Неверный токен");
             }
             if (claims.IsInRole("Admin"))
             {

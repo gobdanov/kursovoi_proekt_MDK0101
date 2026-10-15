@@ -41,10 +41,16 @@ namespace KAMA_PRO_CRUD_APP.items
             try
             {
                 Repository repo = new Repository();
-                var response = System.Windows.MessageBox.Show($"Вы действительно хотите удалить план?\nЭто действие отменить будет невозможно", "Вопрос", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                var response = System.Windows.MessageBox.Show($"Вы действительно хотите удалить план? ({city_tb.Content.ToString()})\nЭто действие отменить будет невозможно", "Вопрос", MessageBoxButton.YesNo, MessageBoxImage.Question);
                 if (response == MessageBoxResult.Yes)
                 {
-                    repo.DeletePlanByName(city_tb.Name);
+                    repo.DeletePlanByName(city_tb.Content.ToString());
+
+                    if (this.Parent is Panel panel)
+                    {
+                        panel.Children.Remove(this);
+                    }
+
                     System.Windows.MessageBox.Show($"План удалён", "Успешно", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
             }

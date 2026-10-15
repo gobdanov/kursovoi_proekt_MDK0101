@@ -35,7 +35,7 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
             }
             catch
             {
-                return BadRequest("Неерный токен");
+                return BadRequest("Неверный токен");
             }
             //проверяем существует ли сборщик с таким id
             Assemblers assembler = db.Assemblers.Where(x => x.Id == id).FirstOrDefault();
@@ -124,8 +124,21 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
 
 
         [HttpGet]
-        public ActionResult<Assemblers> Read()
+        public ActionResult<Assemblers> Read([FromQuery] string token)
         {
+            ClaimsPrincipal claims;
+            try
+            {
+                claims = JwtTokenGenerator.Validate(token);
+            }
+            catch
+            {
+                return BadRequest("Неверный токен");
+            }
+            if (!claims.IsInRole("Admin"))
+            {
+                return BadRequest($"Только админ может просмотреть сборщиков пользователя!");
+            }
             var assemblers = db.Assemblers.ToList();
             return Ok(assemblers);
         }
@@ -170,7 +183,7 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
             }
             catch
             {
-                return BadRequest("Неерный токен");
+                return BadRequest("Неверный токен");
             }
             if (claims.IsInRole("Admin"))
             {

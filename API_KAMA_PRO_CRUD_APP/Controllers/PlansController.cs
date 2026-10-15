@@ -27,7 +27,7 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
             }
             catch
             {
-                return BadRequest("Неерный токен");
+                return BadRequest("Неверный токен");
             }
             if (claims.IsInRole("Admin"))
             {
@@ -86,7 +86,7 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
             }
             catch
             {
-                return BadRequest("Неерный токен");
+                return BadRequest("Неверный токен");
             }
             var plans = db.Plans.ToList();
             return Ok(plans);
