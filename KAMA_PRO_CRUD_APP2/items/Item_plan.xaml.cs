@@ -28,21 +28,11 @@ namespace KAMA_PRO_CRUD_APP.items
             city_tb.Content = city;
             all_trailers_tb.Content = "всего: "+ all_trailers;
             ready_trailers_tb.Content = "собрано: "+ready_trailers;
-            if (Role == "User")
-            {
-                delete_plan_btn.Visibility = Visibility.Hidden;
-                delete_plan_img.Visibility = Visibility.Hidden;
-            }
         }
 
         private void goto_plan(object sender, RoutedEventArgs e)
         {
             MainWindow1.frame2_out.Navigate(new Page_Concrete_Plan(Convert.ToString(city_tb.Content)));
-        }
-
-        private void delete_plan(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("удаление плана");
         }
     }
 }

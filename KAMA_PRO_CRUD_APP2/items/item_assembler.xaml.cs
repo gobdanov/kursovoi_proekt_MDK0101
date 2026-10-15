@@ -58,6 +58,13 @@ namespace KAMA_PRO_CRUD_APP.items
             {
                 Services service = new Services();
                 service.DeleteAssembler(username_to_delete);
+
+
+                if (this.Parent is Panel panel)
+                {
+                    panel.Children.Remove(this);
+                }
+
                 MessageBox.Show("Пользователь удалён", "Успешно", MessageBoxButton.OK, MessageBoxImage.Information);
 
             }
