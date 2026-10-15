@@ -4,7 +4,9 @@ using KAMA_PRO_CRUD_APP.classes.models;
 using KAMA_PRO_CRUD_APP2.classes;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Routing;
+using OfficeOpenXml.FormulaParsing.LexicalAnalysis;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Windows;
 using System.Windows.Media;
@@ -24,9 +26,17 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
         }
 
         [HttpGet("Salary")]
-        public ActionResult<Assemblers> GetSalary([FromQuery] int id)
+        public ActionResult<Assemblers> GetSalary([FromQuery] string token, [FromQuery] int id)
         {
-
+            ClaimsPrincipal claims;
+            try
+            {
+                claims = JwtTokenGenerator.Validate(token);
+            }
+            catch
+            {
+                return BadRequest("Неерный токен");
+            }
             //проверяем существует ли сборщик с таким id
             Assemblers assembler = db.Assemblers.Where(x => x.Id == id).FirstOrDefault();
 
@@ -123,14 +133,21 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
 
         [HttpPost]
         [Route("Login")]
-        public ActionResult<Assemblers> Login([FromBody] DTO_Assembler_Login Login)
+        public ActionResult Login([FromBody] DTO_Assembler_Login Login)
         {
+            
             string hash_password = SHA256_class.GetSha256Hash(Login.password);
 
             var assembler = db.Assemblers.Where(x => x.Username == Login.username && x.Pwd == hash_password).FirstOrDefault();
             if (assembler != null)
             {
-                return Ok(assembler);
+                var token = Classes.JwtTokenGenerator.Generate(new Dictionary<string, object>
+                {
+                    ["Username"] = assembler.Username,
+                    [ClaimTypes.Role] = assembler.Role,
+                    [ClaimTypes.Name] = assembler.Name
+                });
+                return Ok("token is: " + token);
             }
             else
             {
@@ -140,75 +157,123 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
 
         [HttpPost]
         [Route("Update")]
-        public ActionResult<Assemblers> Update([FromQuery] int old_assembler_id, [FromBody] DTO_Assembler new_assembler_DTO)
+        public ActionResult<Assemblers> Update([FromQuery] string token, [FromQuery] int old_assembler_id, [FromBody] DTO_Assembler new_assembler_DTO)
         {
-            Assemblers old_assembler = db.Assemblers.Where(x => x.Id == old_assembler_id).FirstOrDefault();
-
-            if(old_assembler != null)
+            ClaimsPrincipal claims;
+            try
             {
-                //пароль останется как у старого пользователя, это специально для UI
-                Assemblers new_assembler = new Assemblers
+                claims = JwtTokenGenerator.Validate(token);
+            }
+            catch
+            {
+                return BadRequest("Неерный токен");
+            }
+            if (claims.IsInRole("Admin"))
+            {
+                Assemblers old_assembler = db.Assemblers.Where(x => x.Id == old_assembler_id).FirstOrDefault();
+
+                if (old_assembler != null)
                 {
-                    Id = old_assembler.Id,
-                    Lastname = new_assembler_DTO.Lastname,
-                    Name = new_assembler_DTO.Name,
-                    Pwd = old_assembler.Pwd,
-                    Surname = new_assembler_DTO.Surname,
-                    Username = new_assembler_DTO.Username,
-                    Role = new_assembler_DTO.Role
-                };
+                    //пароль останется как у старого пользователя, это специально для UI
+                    Assemblers new_assembler = new Assemblers
+                    {
+                        Id = old_assembler.Id,
+                        Lastname = new_assembler_DTO.Lastname,
+                        Name = new_assembler_DTO.Name,
+                        Pwd = old_assembler.Pwd,
+                        Surname = new_assembler_DTO.Surname,
+                        Username = new_assembler_DTO.Username,
+                        Role = new_assembler_DTO.Role
+                    };
 
-                old_assembler.Id = new_assembler.Id;
-                old_assembler.Lastname = new_assembler.Lastname;
-                old_assembler.Pwd = new_assembler.Pwd;
-                old_assembler.Name = new_assembler.Name;
-                old_assembler.Username = new_assembler.Username;
-                old_assembler.Lastname = new_assembler.Lastname;
-                old_assembler.Role = new_assembler.Role;
+                    old_assembler.Id = new_assembler.Id;
+                    old_assembler.Lastname = new_assembler.Lastname;
+                    old_assembler.Pwd = new_assembler.Pwd;
+                    old_assembler.Name = new_assembler.Name;
+                    old_assembler.Username = new_assembler.Username;
+                    old_assembler.Lastname = new_assembler.Lastname;
+                    old_assembler.Role = new_assembler.Role;
 
-                db.SaveChanges();
+                    db.SaveChanges();
 
-                return Ok(new_assembler);
+                    return Ok(new_assembler);
+                }
+            }
+            else
+            {
+                return BadRequest($"Только админ может обновить пользователя!");
             }
 
             return BadRequest();
         }
 
         [HttpPost]
-        public ActionResult<Assemblers> Create([FromBody] DTO_Assembler assembler)
+        public ActionResult<Assemblers> Create([FromQuery] string token,[FromBody] DTO_Assembler assembler)
         {
-            if (db.Assemblers.Where(x => x.Username == assembler.Username).FirstOrDefault() == null)
+            ClaimsPrincipal claims;
+            try
             {
-                Assemblers assembler_ready = new Assemblers
+                claims = JwtTokenGenerator.Validate(token);
+            }
+            catch
+            {
+                return BadRequest("Неверный токен");
+            }
+            if (claims.IsInRole("Admin"))
+            {
+                if (db.Assemblers.Where(x => x.Username == assembler.Username).FirstOrDefault() == null)
                 {
-                    Name = assembler.Name,
-                    Surname = assembler.Surname,
-                    Lastname = assembler.Lastname,
-                    Username = assembler.Username,
-                    Pwd = SHA256_class.GetSha256Hash(assembler.Pwd),
-                    Role = assembler.Role
-                };
-                db.Assemblers.Add(assembler_ready);
-                db.SaveChanges();
-                return Ok(assembler_ready);
+                    Assemblers assembler_ready = new Assemblers
+                    {
+                        Name = assembler.Name,
+                        Surname = assembler.Surname,
+                        Lastname = assembler.Lastname,
+                        Username = assembler.Username,
+                        Pwd = SHA256_class.GetSha256Hash(assembler.Pwd),
+                        Role = assembler.Role
+                    };
+                    db.Assemblers.Add(assembler_ready);
+                    db.SaveChanges();
+                    return Ok(assembler_ready);
+                }
+                else
+                {
+                    return BadRequest("Такой пользователь уже есть!");
+                }
             }
             else
             {
-                return BadRequest("Такой пользователь уже есть!");
+                return BadRequest($"Только админ может создать пользователя!");
             }
         }
 
         [HttpDelete]
-        public ActionResult<Assemblers> Delete([FromQuery] string username)
+        public ActionResult<Assemblers> Delete([FromQuery] string token, [FromQuery] string username)
         {
-            Assemblers assembler = db.Assemblers.Where(x => x.Username == username).First();
-            if (assembler != null)
+            ClaimsPrincipal claims;
+            try
             {
-                db.Assemblers.Remove(assembler);
-                db.SaveChanges();
-                return Ok();
+                claims = JwtTokenGenerator.Validate(token);
             }
-            return NotFound();
+            catch
+            {
+                return BadRequest("Неверный токен");
+            }
+            if (claims.IsInRole("Admin"))
+            {
+                Assemblers assembler = db.Assemblers.Where(x => x.Username == username).First();
+                if (assembler != null)
+                {
+                    db.Assemblers.Remove(assembler);
+                    db.SaveChanges();
+                    return Ok();
+                }
+                return NotFound();
+            }
+            else
+            {
+                return BadRequest($"Только админ может удалить пользователя!");
+            }
         }
     }
 

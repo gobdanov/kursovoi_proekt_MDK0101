@@ -1,6 +1,8 @@
-﻿using KAMA_PRO_CRUD_APP.classes.models;
+﻿using API_KAMA_PRO_CRUD_APP.Classes;
+using KAMA_PRO_CRUD_APP.classes.models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace API_KAMA_PRO_CRUD_APP.Controllers
 {
@@ -16,52 +18,76 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Plans> Create([FromQuery] string name, [FromBody] List<Plan_linkto_Trailer> plan_content)
+        public ActionResult<Plans> Create([FromQuery] string token, [FromQuery] string name, [FromBody] List<Plan_linkto_Trailer> plan_content)
         {
-            bool flag = true;
-            foreach (var p in db.Plans)
+            ClaimsPrincipal claims;
+            try
             {
-                if (p.Name == name)
-                {
-                    flag = false;
-                }
+                claims = JwtTokenGenerator.Validate(token);
             }
-            if (flag)
+            catch
             {
-                Plans plan = new Plans { Name = name };
-                db.Plans.Add(plan);
-
-                db.SaveChanges();
-
-                try
+                return BadRequest("Неерный токен");
+            }
+            if (claims.IsInRole("Admin"))
+            {
+                bool flag = true;
+                foreach (var p in db.Plans)
                 {
-                    foreach (var i in plan_content)
+                    if (p.Name == name)
                     {
-                        db.Plan_linkto_Trailer.Add(i);
+                        flag = false;
                     }
                 }
-                catch (DbUpdateException ex)
+                if (flag)
                 {
-                    Console.WriteLine(ex.Message);
+                    Plans plan = new Plans { Name = name };
+                    db.Plans.Add(plan);
+
+                    db.SaveChanges();
+
+                    try
+                    {
+                        foreach (var i in plan_content)
+                        {
+                            db.Plan_linkto_Trailer.Add(i);
+                        }
+                    }
+                    catch (DbUpdateException ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
+                    catch (Exception ex)
+                    {
+                        // Любая другая ошибка
+                        Console.WriteLine(ex.Message);
+                    }
+
+
+
+                    db.SaveChanges();
+
+                    return Ok();
                 }
-                catch (Exception ex)
-                {
-                    // Любая другая ошибка
-                    Console.WriteLine(ex.Message);
-                }
-
-
-
-                db.SaveChanges();
-
-                return Ok();
+                return BadRequest("план уже существует!");
             }
-            return BadRequest("план уже существует!");
+            else
+            {
+                return BadRequest($"Только админ может создавать план!");
+            }
         }
 
         [HttpGet]
-        public ActionResult<Plans> GetAll()
+        public ActionResult<Plans> GetAll([FromQuery] string token)
         {
+            try
+            {
+                JwtTokenGenerator.Validate(token);
+            }
+            catch
+            {
+                return BadRequest("Неерный токен");
+            }
             var plans = db.Plans.ToList();
             return Ok(plans);
         }

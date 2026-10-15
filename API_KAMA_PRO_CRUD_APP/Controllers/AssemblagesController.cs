@@ -1,8 +1,11 @@
-﻿using KAMA_PRO_CRUD_APP.classes.models;
-using Microsoft.AspNetCore.Mvc;
+﻿using API_KAMA_PRO_CRUD_APP.Classes;
+using API_KAMA_PRO_CRUD_APP.DTO;
+using KAMA_PRO_CRUD_APP.classes.models;
 using KAMA_PRO_CRUD_APP.classes.models;
 using KAMA_PRO_CRUD_APP2.classes;
-using API_KAMA_PRO_CRUD_APP.DTO;
+using Microsoft.AspNetCore.Mvc;
+using OfficeOpenXml.FormulaParsing.LexicalAnalysis;
+using System.Security.Claims;
 
 namespace API_KAMA_PRO_CRUD_APP.Controllers
 {
@@ -22,11 +25,19 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
         //вин-код, дата, вид прицепа
         [HttpGet]
         public ActionResult<Assemblages> Read(
+            [FromQuery] string token,
             [FromQuery] string EAV = null,
             [FromQuery] DateOnly? date = null,
             [FromQuery] string trailer = null)
         {
-
+            try
+            {
+                JwtTokenGenerator.Validate(token);
+            }
+            catch
+            {
+                return BadRequest("Неерный токен");
+            }
             //получаем все сборки
             List<Assemblages> assemblages = db.Assemblages.ToList();
 
@@ -76,8 +87,16 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
 
 
         [HttpGet("{Date}")]
-        public ActionResult<Assemblages> Read(string Date)
+        public ActionResult<Assemblages> Read([FromQuery] string token, string Date)
         {
+            try
+            {
+                JwtTokenGenerator.Validate(token);
+            }
+            catch
+            {
+                return BadRequest("Неерный токен");
+            }
             try
             {
                 //получаем дату сборки
@@ -125,8 +144,16 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Create([FromBody] DTO.DTO_AddAssemblage request)
+        public async Task<ActionResult> Create([FromQuery] string token, [FromBody] DTO.DTO_AddAssemblage request)
         {
+            try
+            {
+                JwtTokenGenerator.Validate(token);
+            }
+            catch
+            {
+                return BadRequest("Неерный токен");
+            }
             // ---------- 1. Базовая валидация входных данных ----------
             if (request == null)
                 return BadRequest("Пустой запрос");
@@ -284,51 +311,49 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
             return Ok();
         }
 
-
-        [HttpPost("old")]
-        public ActionResult<Assemblages> Create_Old([FromBody] Assemblages assemblage)
-        {
-            try
-            {
-                //добавляем сборку
-                db.Assemblages.Add(assemblage);
-
-                db.SaveChanges();
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-            
-        }
-
         [HttpDelete]
-        public ActionResult<Assemblages> DeleteById(string vin)
+        public ActionResult<Assemblages> DeleteById([FromQuery] string token, string vin)
         {
+            ClaimsPrincipal claims;
             try
             {
-                List<Assemblages> assemblages = db.Assemblages.Where(x => x.VIN == vin).ToList();
-                //добавляем сборку
-                if (assemblages.Any())
-                {
-                    foreach (var assemblage in assemblages)
-                    {
-                        db.Assemblages.Remove(assemblage);
-                    }
-                    db.SaveChanges();
-                    return Ok();
-                }
-                else
-                {
-                    return NotFound("сборка не найдена");
-                }
-                
+                claims = JwtTokenGenerator.Validate(token);
             }
-            catch (Exception ex)
+            catch
             {
-                return BadRequest(ex.Message);
+                return BadRequest("Неерный токен");
             }
+            if (claims.IsInRole("Admin"))
+            {
+                try
+                {
+                    List<Assemblages> assemblages = db.Assemblages.Where(x => x.VIN == vin).ToList();
+                    //добавляем сборку
+                    if (assemblages.Any())
+                    {
+                        foreach (var assemblage in assemblages)
+                        {
+                            db.Assemblages.Remove(assemblage);
+                        }
+                        db.SaveChanges();
+                        return Ok();
+                    }
+                    else
+                    {
+                        return NotFound("сборка не найдена");
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest(ex.Message);
+                }
+            }
+            else
+            {
+                return BadRequest($"Только админ может удалить сборку!");
+            }
+
 
         }
     }

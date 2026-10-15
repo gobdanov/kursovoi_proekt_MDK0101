@@ -1,5 +1,7 @@
-﻿using KAMA_PRO_CRUD_APP.classes.models;
+﻿using API_KAMA_PRO_CRUD_APP.Classes;
+using KAMA_PRO_CRUD_APP.classes.models;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace API_KAMA_PRO_CRUD_APP.Controllers
 {
@@ -15,8 +17,16 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
         }
 
         [HttpGet]
-        public ActionResult<Component_linkto_Trailer> GetAll()
+        public ActionResult<Component_linkto_Trailer> GetAll([FromQuery] string token)
         {
+            try
+            {
+                JwtTokenGenerator.Validate(token);
+            }
+            catch
+            {
+                return BadRequest("Неерный токен");
+            }
             var component_linkto_trailer = db.Component_linkto_Trailer.ToList();
             return Ok(component_linkto_trailer);
         }
