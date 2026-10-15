@@ -147,7 +147,11 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
                     [ClaimTypes.Role] = assembler.Role,
                     [ClaimTypes.Name] = assembler.Name
                 });
-                return Ok("token is: " + token);
+                return Ok(new
+                {
+                    token = token,
+                    assembler = assembler
+                });
             }
             else
             {

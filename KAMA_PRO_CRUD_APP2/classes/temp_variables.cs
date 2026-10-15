@@ -11,6 +11,7 @@ namespace KAMA_PRO_CRUD_APP2.classes
     public class temp_variables
     {
         public static Assemblers loginedUser;
+        public static string token;
     }
 
     public class Concrete_Assemblage_Date

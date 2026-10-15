@@ -17,6 +17,7 @@ using KAMA_PRO_CRUD_APP.classes.models;
 using KAMA_PRO_CRUD_APP2;
 using KAMA_PRO_CRUD_APP2.classes;
 using KAMA_PRO_CRUD_APP2.classes.repo;
+using KAMA_PRO_CRUD_APP2.classes.DTO;
 
 
 namespace KAMA_PRO_CRUD_APP.pages
@@ -32,17 +33,21 @@ namespace KAMA_PRO_CRUD_APP.pages
             InitializeComponent();
             this.mw = mw;
         }
+
+
+
         private async void SignIn(object sender, RoutedEventArgs e)
         {
 
             Repository repo = new Repository();
 
-            Assemblers user = await repo.LoginUser(username_tb.Text, password_tb.Text);
+            LoginResponse user = await repo.LoginUser(username_tb.Text, password_tb.Text);
 
 
             if (user != null)
             {
-                temp_variables.loginedUser = user;
+                temp_variables.loginedUser = user.Assembler;
+                temp_variables.token = user.Token;
 
                 MainWindow1 mainWindow1 = new MainWindow1();
 

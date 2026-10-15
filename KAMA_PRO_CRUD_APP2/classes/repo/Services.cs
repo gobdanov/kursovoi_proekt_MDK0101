@@ -13,6 +13,17 @@ namespace KAMA_PRO_CRUD_APP2.classes.services
 {
     public class Services
     {
+
+        private string WithToken(string endpoint)
+        {
+            var token = temp_variables.token;
+            if (string.IsNullOrEmpty(token))
+                return endpoint;
+
+            var sep = endpoint.Contains('?') ? "&" : "?";
+            return $"{endpoint}{sep}token={Uri.EscapeDataString(token)}";
+        }
+
         private String BASE_ADDRESS = "https://localhost:7238/api/";
         HttpClient client = new HttpClient();
         public async Task CreateAssemblage(Assemblages assemblage)
@@ -24,7 +35,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.services
                     PropertyNameCaseInsensitive = true
                 };
 
-                 await client.PostAsJsonAsync(BASE_ADDRESS + "Assemblages", assemblage);
+                 await client.PostAsJsonAsync(BASE_ADDRESS + WithToken("Assemblages"), assemblage);
 
             }
             catch (HttpIOException ex)
@@ -50,7 +61,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.services
                     PropertyNameCaseInsensitive = true
                 };
 
-                await client.DeleteAsync(BASE_ADDRESS + $"Assemblers?username={username}");
+                await client.DeleteAsync(BASE_ADDRESS + WithToken($"Assemblers?username={username}"));
             }
             catch (HttpIOException ex)
             {
@@ -70,7 +81,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.services
         {
             try
             {
-                await client.PostAsync(BASE_ADDRESS + $"Components?name={name}&count={count}", null);
+                await client.PostAsync(BASE_ADDRESS + WithToken($"Components?name={name}&count={count}"), null);
             }
             catch (HttpIOException ex)
             {

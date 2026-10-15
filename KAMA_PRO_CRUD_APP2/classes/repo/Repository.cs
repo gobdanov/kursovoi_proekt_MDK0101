@@ -35,11 +35,22 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
 
         public static String BASE_ADDRESS = "https://localhost:7238/api/";
 
+
+        private string WithToken(string endpoint)
+        {
+            var token = temp_variables.token;
+            if (string.IsNullOrEmpty(token))
+                return endpoint;
+
+            var sep = endpoint.Contains('?') ? "&" : "?";
+            return $"{endpoint}{sep}token={Uri.EscapeDataString(token)}";
+        }
+
         public async Task<string> CreateAssemblagesAsync(DTO_AddAssemblage request)
         {
             try
             {
-                var response = await client.PostAsJsonAsync(BASE_ADDRESS + "Assemblages", request);
+                var response = await client.PostAsJsonAsync(BASE_ADDRESS + WithToken("Assemblages"), request);
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -71,7 +82,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
 
         public async Task<string> DeleteAssemblageById(string vin)
         {
-            var response = await client.DeleteAsync(BASE_ADDRESS + $"Assemblages?vin={vin}");
+            var response = await client.DeleteAsync(BASE_ADDRESS + WithToken($"Assemblages?vin={vin}"));
 
             if (response.IsSuccessStatusCode)
             {
@@ -89,7 +100,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
 
         public async Task CreatePayment(DTO_Payment paymentDto)
         {
-            var response = await client.PostAsJsonAsync(BASE_ADDRESS + $"Payments", paymentDto);
+            var response = await client.PostAsJsonAsync(BASE_ADDRESS + WithToken($"Payments"), paymentDto);
 
             if (response.IsSuccessStatusCode)
             {
@@ -105,7 +116,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
 
         public async Task<List<DTO_Payment>> GetPayment(int AssemblerId)
         {
-            var response = await client.GetStringAsync(BASE_ADDRESS + $"Payments/get?id={AssemblerId}");
+            var response = await client.GetStringAsync(BASE_ADDRESS + WithToken($"Payments/get?id={AssemblerId}"));
 
             var options = new JsonSerializerOptions
             {
@@ -121,7 +132,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
 
         public async Task PostPlan(string name, List<Plan_linkto_Trailer> list)
         {
-            var response = await client.PostAsJsonAsync(BASE_ADDRESS + $"Plans?name={name}", list);
+            var response = await client.PostAsJsonAsync(BASE_ADDRESS + WithToken($"Plans?name={name}"), list);
 
             if (response.IsSuccessStatusCode)
             {
@@ -138,7 +149,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
 
         public async Task UpdateAssembler(int id, DTO_Assembler dTO)
         {
-            var response = await client.PostAsJsonAsync(BASE_ADDRESS + $"Assemblers/Update?old_assembler_id={id}", dTO);
+            var response = await client.PostAsJsonAsync(BASE_ADDRESS + WithToken($"Assemblers/Update?old_assembler_id={id}"), dTO);
 
             if (response.IsSuccessStatusCode)
             {
@@ -158,7 +169,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
 
         public async Task<DTORETURN> GetSalary(int id)
         {
-            var response = await client.GetStringAsync(BASE_ADDRESS + "Assemblers/Salary?id=" + id);
+            var response = await client.GetStringAsync(BASE_ADDRESS + WithToken($"Assemblers/Salary?id={id}"));
 
             var options = new JsonSerializerOptions
             {
@@ -181,7 +192,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
         }
 
 
-        public async Task<Assemblers> LoginUser(string username, string pwd)
+        public async Task<LoginResponse> LoginUser(string username, string pwd)
         {
 
             DTO_Assembler_Login asDTO = new DTO_Assembler_Login { password = pwd, username = username };
@@ -198,7 +209,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
                     PropertyNameCaseInsensitive = true
                 };
 
-                Assemblers assembler = JsonSerializer.Deserialize<Assemblers>(json, options);
+                LoginResponse assembler = JsonSerializer.Deserialize<LoginResponse>(json, options);
 
                 return assembler;
             }
@@ -207,9 +218,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
         }
 
 
-        public async Task 
-            
-            GetConcreteAssemblagesAsync(string date)
+        public async Task GetConcreteAssemblagesAsync(string date)
         {
             concrete_Assemblage = await GetSmthngAsync<Concrete_Assemblage_Date>("Assemblages/" + date);
         }
@@ -261,7 +270,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
                     PropertyNameCaseInsensitive = true
                 };
 
-                await client.PostAsJsonAsync(BASE_ADDRESS + endpoint, obj);
+                await client.PostAsJsonAsync(BASE_ADDRESS + WithToken(endpoint), obj);
             }
             catch (HttpIOException ex)
             {
@@ -282,7 +291,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
             List<T> massive = new List<T>();
             try
             {
-                var response = await client.GetAsync(BASE_ADDRESS + endpoint);
+                var response = await client.GetAsync(BASE_ADDRESS + WithToken(endpoint));
                 if (response.IsSuccessStatusCode)
                 {
                     string json = await response.Content.ReadAsStringAsync();
