@@ -1,4 +1,5 @@
 ﻿using KAMA_PRO_CRUD_APP.pages;
+using KAMA_PRO_CRUD_APP2.classes.repo;
 using KAMA_PRO_CRUD_APP2.pages.subpages;
 using System;
 using System.Collections.Generic;
@@ -33,6 +34,25 @@ namespace KAMA_PRO_CRUD_APP.items
         private void goto_plan(object sender, RoutedEventArgs e)
         {
             MainWindow1.frame2_out.Navigate(new Page_Concrete_Plan(Convert.ToString(city_tb.Content)));
+        }
+
+        private void delete_plan(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Repository repo = new Repository();
+                var response = System.Windows.MessageBox.Show($"Вы действительно хотите удалить план?\nЭто действие отменить будет невозможно", "Вопрос", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (response == MessageBoxResult.Yes)
+                {
+                    repo.DeletePlanByName(city_tb.Name);
+                    System.Windows.MessageBox.Show($"План удалён", "Успешно", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+            }
+            catch(Exception ex)
+            {
+                System.Windows.MessageBox.Show($"Произошла ошибка {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            
         }
     }
 }

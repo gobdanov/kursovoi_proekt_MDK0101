@@ -147,6 +147,41 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
 
         }
 
+        public async Task<string> DeletePlanByName(string name)
+        {
+            try
+            {
+                var response = await client.DeleteAsync(
+                    BASE_ADDRESS + WithToken($"Plans?name={Uri.EscapeDataString(name)}"));
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return null; // успех
+                }
+
+                // читаем текст ошибки от сервера
+                string error = await response.Content.ReadAsStringAsync();
+
+                // сервер может вернуть строку в кавычках (JSON-строка) — убираем кавычки
+                if (!string.IsNullOrWhiteSpace(error))
+                {
+                    error = error.Trim('"');
+                }
+
+                return string.IsNullOrWhiteSpace(error)
+                    ? $"Ошибка сервера: {response.StatusCode}"
+                    : error;
+            }
+            catch (HttpRequestException ex)
+            {
+                return $"Не удалось связаться с сервером: {ex.Message}";
+            }
+            catch (Exception ex)
+            {
+                return $"Непредвиденная ошибка: {ex.Message}";
+            }
+        }
+
         public async Task UpdateAssembler(int id, DTO_Assembler dTO)
         {
             var response = await client.PostAsJsonAsync(BASE_ADDRESS + WithToken($"Assemblers/Update?old_assembler_id={id}"), dTO);

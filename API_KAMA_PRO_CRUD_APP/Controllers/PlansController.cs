@@ -91,5 +91,48 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
             var plans = db.Plans.ToList();
             return Ok(plans);
         }
+
+        [HttpDelete]
+        public ActionResult Delete([FromQuery] string token, [FromQuery] string name)
+        {
+            ClaimsPrincipal claims;
+            try
+            {
+                claims = JwtTokenGenerator.Validate(token);
+            }
+            catch
+            {
+                return BadRequest("Неверный токен");
+            }
+
+            if (!claims.IsInRole("Admin"))
+            {
+                return BadRequest("Только админ может удалять план!");
+            }
+
+            var plan = db.Plans.FirstOrDefault(p => p.Name == name);
+            if (plan == null)
+            {
+                return NotFound("План не найден");
+            }
+
+            try
+            {
+                db.Plans.Remove(plan);
+                db.SaveChanges();
+            }
+            catch (DbUpdateException ex)
+            {
+                Console.WriteLine(ex.Message);
+                return BadRequest("Ошибка при удалении плана");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return BadRequest("Ошибка при удалении плана");
+            }
+
+            return Ok();
+        }
     }
 }
