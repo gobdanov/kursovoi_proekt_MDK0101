@@ -8,6 +8,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -36,6 +37,9 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
 
         private async void add_assembler(object sender, RoutedEventArgs e)
         {
+
+            Regex RegexName = new Regex(@"^[a-zA-Z]+$");
+
             try
             {
                 if (string.IsNullOrEmpty(name_tb.Text)
@@ -46,6 +50,12 @@ namespace KAMA_PRO_CRUD_APP2.pages.subpages
                 || role_tb.SelectedValue == null)
                 {
                     System.Windows.MessageBox.Show($"Введены не все данные", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                else if (!RegexName.IsMatch(name_tb.Text) ||
+                    !RegexName.IsMatch(surname_tb.Text) ||
+                    !RegexName.IsMatch(lastname_tb.Text))
+                {
+                    System.Windows.MessageBox.Show($"Имя, фамилия и отчество только в буквах", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
                 else
                 {

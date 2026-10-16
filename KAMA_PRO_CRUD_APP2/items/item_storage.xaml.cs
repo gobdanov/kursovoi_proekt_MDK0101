@@ -1,7 +1,10 @@
 ﻿using Accessibility;
+using KAMA_PRO_CRUD_APP.classes.models;
+using KAMA_PRO_CRUD_APP2.classes.repo;
 using KAMA_PRO_CRUD_APP2.classes.services;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +17,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using KAMA_PRO_CRUD_APP.classes.models;
 
 namespace KAMA_PRO_CRUD_APP.items
 {
@@ -94,5 +96,32 @@ namespace KAMA_PRO_CRUD_APP.items
             minus_tb.IsEnabled = false;
         }
 
+        private async void delete(object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show(
+        $"Удалить компонент?",
+        "Вопрос",
+        MessageBoxButton.YesNo,
+        MessageBoxImage.Question);
+
+            if (result != MessageBoxResult.Yes) return;
+
+            Repository repo = new Repository();
+
+
+            string error = await repo.DeleteComponentAsync(component.Name);
+
+            if (error == null)
+            {
+                MessageBox.Show("Компонент удалён!");
+                // удалить карточку из UI
+                if (Parent is Panel panel)
+                    panel.Children.Remove(this);
+            }
+            else
+            {
+                MessageBox.Show(error, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
     }
 }

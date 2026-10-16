@@ -146,6 +146,72 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
 
         }
 
+        public async Task<string> DeleteComponentAsync(string name)
+        {
+            try
+            {
+                var url = BASE_ADDRESS
+                          + WithToken("Components/delete")
+                          + $"&name={Uri.EscapeDataString(name)}";
+
+                var response = await client.PostAsync(url, null);
+
+                if (response.IsSuccessStatusCode)
+                    return null;
+
+                string error = await response.Content.ReadAsStringAsync();
+                if (!string.IsNullOrWhiteSpace(error))
+                    error = error.Trim('"');
+
+                return string.IsNullOrWhiteSpace(error)
+                    ? $"Ошибка сервера: {response.StatusCode}"
+                    : error;
+            }
+            catch (HttpRequestException ex)
+            {
+                return $"Не удалось связаться с сервером: {ex.Message}";
+            }
+            catch (Exception ex)
+            {
+                return $"Непредвиденная ошибка: {ex.Message}";
+            }
+        }
+
+        public async Task<string> CreateComponent(Components comp)
+        {
+            try
+            {
+                var response = await client.PostAsJsonAsync(
+                    BASE_ADDRESS + WithToken($"Components/create"), comp);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return null; // успех
+                }
+
+                // читаем текст ошибки от сервера
+                string error = await response.Content.ReadAsStringAsync();
+
+                // сервер может вернуть строку в кавычках (JSON-строка) — убираем кавычки
+                if (!string.IsNullOrWhiteSpace(error))
+                {
+                    error = error.Trim('"');
+                }
+
+                return string.IsNullOrWhiteSpace(error)
+                    ? $"Ошибка сервера: {response.StatusCode}"
+                    : error;
+            }
+            catch (HttpRequestException ex)
+            {
+                return $"Не удалось связаться с сервером: {ex.Message}";
+            }
+            catch (Exception ex)
+            {
+                return $"Непредвиденная ошибка: {ex.Message}";
+            }
+        }
+
         public async Task<string> DeletePlanByName(string name)
         {
             try
@@ -282,7 +348,7 @@ namespace KAMA_PRO_CRUD_APP2.classes.repo
 
         public async Task GetComponentsAsync()
         {
-            Components = await GetSmthngAsync<Components>("Components");
+            Components = await GetSmthngAsync<Components>("Components/get");
         }
 
         public async Task GetPlansAsync()

@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -86,11 +87,21 @@ namespace KAMA_PRO_CRUD_APP.items
 
         private async void confirm_btn(object sender, RoutedEventArgs e)
         {
+
+            Regex pattern = new Regex(@"^[a-zA-Z]+$");
+
             if (role_edit.SelectedValue == null
                 || string.IsNullOrEmpty(username_edit.Text)
                 || string.IsNullOrEmpty(fullname_edit.Text))
             {
                 System.Windows.MessageBox.Show($"Введены не все данные", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
+            string[] fullnameMass = fullname_edit.Text.Split(" ");
+
+            if(fullnameMass.Count() != 3 || !pattern.IsMatch(fullname_edit.Text))
+            {
+                System.Windows.MessageBox.Show($"ФИО введено неверно", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
             else
             {

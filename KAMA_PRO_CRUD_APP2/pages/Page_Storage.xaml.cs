@@ -1,4 +1,7 @@
-﻿using System;
+﻿using KAMA_PRO_CRUD_APP.classes.models;
+using KAMA_PRO_CRUD_APP2.classes.repo;
+using KAMA_PRO_CRUD_APP2.pages.subpages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,8 +15,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using KAMA_PRO_CRUD_APP.classes.models;
-using KAMA_PRO_CRUD_APP2.classes.repo;
 
 namespace KAMA_PRO_CRUD_APP.pages
 {
@@ -37,8 +38,11 @@ namespace KAMA_PRO_CRUD_APP.pages
             {
                 parent.Children.Add(new items.item_storage(i));
             }
-            
         }
-        
+
+        private void goto_page_add_comp(object sender, RoutedEventArgs e)
+        {
+            MainWindow1.frame2_out.Navigate(new Page_Add_Component());
+        }
     }
 }

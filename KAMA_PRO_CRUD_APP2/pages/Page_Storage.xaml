@@ -7,10 +7,20 @@
       mc:Ignorable="d"
       d:DesignHeight="550" d:DesignWidth="487"
       Title="Page_Storage">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/style/styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="70"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
 
 
@@ -63,7 +73,10 @@
             </Grid>
         </Border>
 
-        <StackPanel Grid.Row="1" Margin="20,30,20,30" x:Name="parent" />
+        <StackPanel Grid.Row="1" Margin="20,30,20,36" x:Name="parent" />
+
+        <Button Grid.Row="2" VerticalAlignment="Top" Margin="0,10,0,0" Width="150" Height="30" Click="goto_page_add_comp" Content="добавить" Style="{StaticResource MyButtonStyle}" Grid.RowSpan="2" />
+
 
     </Grid>
 </Page>
