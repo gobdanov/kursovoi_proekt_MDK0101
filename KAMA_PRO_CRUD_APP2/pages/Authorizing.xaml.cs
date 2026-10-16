@@ -39,24 +39,31 @@ namespace KAMA_PRO_CRUD_APP.pages
         private async void SignIn(object sender, RoutedEventArgs e)
         {
 
-            Repository repo = new Repository();
-
-            LoginResponse user = await repo.LoginUser(username_tb.Text, password_tb.Text);
-
-
-            if (user != null)
+            try
             {
-                temp_variables.loginedUser = user.Assembler;
-                temp_variables.token = user.Token;
+                Repository repo = new Repository();
 
-                MainWindow1 mainWindow1 = new MainWindow1();
+                LoginResponse user = await repo.LoginUser(username_tb.Text, password_tb.Text);
 
-                mainWindow1.Show();
-                mw.Close();
+
+                if (user != null)
+                {
+                    temp_variables.loginedUser = user.Assembler;
+                    temp_variables.token = user.Token;
+
+                    MainWindow1 mainWindow1 = new MainWindow1();
+
+                    mainWindow1.Show();
+                    mw.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Ошибка авторизации", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Ошибка авторизации", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(ex.Message);
             }
         }
     }

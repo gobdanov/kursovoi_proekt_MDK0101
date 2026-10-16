@@ -60,7 +60,7 @@ namespace API_KAMA_PRO_CRUD_APP.Controllers
             return Ok(comp);
         }
 
-        [HttpPost("update")]
+        [HttpPost]
         public ActionResult Update([FromQuery] string token, [FromQuery] string name, [FromQuery] int count)
         {
             ClaimsPrincipal claims;
